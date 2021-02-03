@@ -22,6 +22,7 @@ client.on('message', message => {
                         .then(() => {
                             message.react('👎') });
                         }
+                
             });
 
 
