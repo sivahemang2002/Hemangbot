@@ -12,10 +12,14 @@ client.on('message', message => {
     if (sentence.includes("F")) {
         message.react('🇫');
     }
-        if (message.channel.id === "806583846253494331") {
-            message.react('🇦')
-                .then(() => {
-                    message.react('🇧') });
+        if (message.channel.id === "806551728979574794") {
+            let mes = message.content.substr(0);
+let sentence = mes.split("\n");
+for(var i=1;i<sentence.length;i++)
+{
+let x = sentence[i].split(" ");
+message.react(x[0]);
+}
                 }
                 
                 
