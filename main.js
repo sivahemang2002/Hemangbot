@@ -45,7 +45,7 @@ message.react(x[0]);
                         let sentence1 = msg1.split(" ")
                         if(sentence1.includes("<@&806585398335635456>"))
                         {
-                            message.channel.send("<@" + message.author + ">" + "Wait for a moment the Wardens will be with you shortly");
+                            message.channel.send("<@" + message.author + ">" + " Wait for a moment, the Wardens will be with you shortly");
                         }
                 
                         
