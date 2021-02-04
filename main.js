@@ -41,7 +41,9 @@ message.react(x[0]);
                         message.channel.send("<@" + message.author + ">" + response[row]);
                         }
                         console.log(message.content);
-                        if(message.content == "806542235691646976")
+                        let msg1 = message.content.substr(0);
+                        let sentence1 = msg1.split(" ")
+                        if(sentence1.includes("<@&806542235691646976>"))
                         {
                             message.channel.send("<@" + message.author + ">" + "Wait for a moment the Wardens will be with you shortly");
                         }
