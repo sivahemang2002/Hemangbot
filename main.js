@@ -40,8 +40,14 @@ message.react(x[0]);
                         var row = Math.floor(Math.random()*((response.length)-1)+1);
                         message.channel.send("<@" + message.author + ">" + response[row]);
                         }
+
+                if(message.content === "806542235691646976 ");
+                {
+                    message.channel.send("<@" + message.author + ">" + "Wait for a moment the Wardens will be with you shortly");
+                }
+                
+                
                         
-                       
                 
             });
 
