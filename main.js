@@ -30,7 +30,7 @@ client.on('message', message => {
                             message.react('👎') });
                         }
                 
-                        var response = ['Nope','Not likely','Too hard to hell','Quite Possible','Defiinitely','Maybe','Fuckoff'];
+                        var response = ['Nope','Not likely','Too hard to hell','Quite Possible','Definitely','Maybe','Fuckoff'];
                         if(message.mentions.has(client.user)&& message.content.endsWith("?"))
                         {
                         var row = Math.floor(Math.random()*((response.length)-1)+1);
