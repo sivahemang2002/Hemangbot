@@ -47,7 +47,10 @@ message.react(x[0]);
                         {
                             message.channel.send("<@" + message.author + ">" + " Wait for a moment, the Wardens will be with you shortly");
                         }
-                
+                   if(message.content === "Server is dead")
+                   {
+                       message.channel.send("<@" + message.author + ">" + " We don't talk about it here");
+                   }
                         
                 
             });
