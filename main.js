@@ -52,6 +52,10 @@ message.react(x[0]);
                    {
                        message.channel.send("<@" + message.author + ">" + " We don't talk about it here");
                    }
+                   if (message.content.startsWith("!ping")) {
+                    var ping = Date.now() - message.createdTimestamp + " ms";
+                    message.channel.sendMessage("Your ping is `" + `${ping}` + " ms`");
+                }
                         
                 
             });
