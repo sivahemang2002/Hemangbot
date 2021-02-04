@@ -17,17 +17,7 @@ client.on('message', message => {
                 .then(() => {
                     message.react('🇧') });
                 }
-                if (message.channel.id === "806583895402348596") {
-                    message.react('👍')
-                        .then(() => {
-                            message.react('👎') });
-                        }
-                        if (message.channel.id === "806746337609646100") {
-                            message.react('👍')
-                                .then(() => {
-                                    message.react('👎') });
-                                }
-                    
+               
 
                 
             });
