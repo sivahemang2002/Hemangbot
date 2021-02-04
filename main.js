@@ -47,9 +47,8 @@ message.react(x[0]);
                         {
                             message.channel.send("<@" + message.author + ">" + " Wait for a moment, the Wardens will be with you shortly");
                         }
-                   let msg2 = message.content.substr(0);
-                   let sentence2 = msg2.split(" ")
-                   if(sentence2.includes("Server is dead"))
+                   
+                   if(message.content("Dead server"))
                    {
                        message.channel.send("<@" + message.author + ">" + " We don't talk about it here");
                    }
