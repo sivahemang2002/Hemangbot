@@ -24,6 +24,11 @@ client.on('message', message => {
                 .then(() => {
                     message.react('🇧') });
                 }
+                if (message.channel.id === "806583895402348596") {
+                    message.react('👍')
+                        .then(() => {
+                            message.react('👎') });
+                        }
 
                 
             });
