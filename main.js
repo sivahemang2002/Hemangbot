@@ -48,7 +48,7 @@ message.react(x[0]);
                             message.channel.send("<@" + message.author + ">" + " Wait for a moment, the Wardens will be with you shortly");
                         }
                    
-                   if(message.content("Dead server"))
+                   if(message.content === "Dead server")
                    {
                        message.channel.send("<@" + message.author + ">" + " We don't talk about it here");
                    }
