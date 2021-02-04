@@ -29,7 +29,15 @@ client.on('message', message => {
                         .then(() => {
                             message.react('👎') });
                         }
-
+                
+                        var response = ['Nope','Not likely','Too hard to hell','Quite Possible','Definetly','Maybe','Fuckoff'];
+                        if(message.mentions.has(client.user)&& message.content.endsWith("?"))
+                        {
+                        var row = Math.floor(Math.random()*((response.length)-1)+1);
+                        message.channel.send("<@" + message.author + ">"+ response[row]);
+                        }
+                        
+                       
                 
             });
 
