@@ -197,7 +197,7 @@ message.react(x[0]);
                       )
                     }
                   })
-                  const baseFile = 'command2base.js'
+                  const baseFile = 'command2.js'
        const commandBase = require(`./commands/${baseFile}`)
 
            const readCommands = (dir) => {
@@ -208,7 +208,7 @@ message.react(x[0]);
         readCommands(path.join(dir, file))
       } else if (file !== baseFile) {
         const option = require(path.join(__dirname, dir, file))
-        commandBase(client, option)
+        command2(client, option)
       }
     }
   }
