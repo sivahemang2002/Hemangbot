@@ -63,10 +63,7 @@ message.react(x[0]);
                     var ping = Date.now() - message.createdTimestamp ;
                     message.channel.send("Your ping is `" + `${ping}` + " ms`");
                 }
-                if(message.content.startsWith("!userinfo"))
-                {
-                    user(message);
-                }
+               
                         
                 
             });
