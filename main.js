@@ -94,6 +94,19 @@ message.react(x[0]);
                  command(client, ['ping', 'test'], (message) => {
                     message.channel.send('Pong!')
                   })
+                  command(client, 'createtextchannel', (message) => {
+                    const name = message.content.replace('!createtextchannel ', '')
+                
+                    message.guild.channels
+                      .create(name, {
+                        type: 'text',
+                      })
+                      .then((channel) => {
+                        const categoryId = '807329713046814761'
+                        channel.setParent(categoryId)
+                      })
+                  })
+                
                   command(client, 'createvoicechannel', (message) => {
                     const name = message.content.replace('!createvoicechannel ', '')
                 
