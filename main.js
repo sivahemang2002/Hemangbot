@@ -94,6 +94,19 @@ message.react(x[0]);
                  command(client, ['ping', 'test'], (message) => {
                     message.channel.send('Pong!')
                   })
+                  command(client, 'createvoicechannel', (message) => {
+                    const name = message.content.replace('!createvoicechannel ', '')
+                
+                    message.guild.channels
+                      .create(name, {
+                        type: 'voice',
+                      })
+                      .then((channel) => {
+                        const categoryId = '807329713046814761'
+                        channel.setParent(categoryId)
+                        channel.setUserLimit(10)
+                      })
+                  })
                 
             });
              
