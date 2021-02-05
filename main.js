@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
-const user = require('./user');
+const user = require('./userstats');
+const userstats = require('./userstats');
 const client = new Discord.Client();
 
 
@@ -9,7 +10,7 @@ const client = new Discord.Client();
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
-    user(client)
+    userstats(client)
    
     
 
@@ -66,7 +67,7 @@ message.react(x[0]);
                 }
                 if(message.content.startsWith("!userinfo"))
                 {
-                    user(message);
+                    userstats(message);
                 }
                         
                 
