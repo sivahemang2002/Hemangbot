@@ -50,7 +50,7 @@ message.react(x[0]);
                         console.log(message.content);
                         let msg1 = message.content.substr(0);
                         let sentence1 = msg1.split(" ")
-                        if(sentence1.includes("<@&806585398335635456>"))
+                        if(sentence1.includes("<@&712286690764652584>"))
                         {
                             message.channel.send("<@" + message.author + ">" + " Wait for a moment, the Wardens will be with you shortly");
                         }
