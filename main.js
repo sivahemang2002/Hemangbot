@@ -70,7 +70,6 @@ message.react(x[0]);
                     } else {
                         user = message.member;
                     }
-                    console.log(member.roles);
                     const member = message.guild.member(user);
                     
                     const embed = new Discord.MessageEmbed()
@@ -83,7 +82,6 @@ message.react(x[0]);
                         .addField("In Server", message.guild.name, true)
                         .addField("Game:", `${user.presence.game ? user.presence.game.name : 'None'}`, true)
                         .addField("Bot:", `${user.bot}`, true)
-                        .addField('Roles:', member.roles.map(r => `${r}`).join(' | '), true)
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                     message.channel.send({embed});
                  }
