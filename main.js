@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
+const command = require('./command');
 const client = new Discord.Client();
+const config = require('./configda.json')
 
 
 
@@ -89,6 +91,9 @@ message.react(x[0]);
                  {
                      message.channel.send("Hello everyone , I have been created to replace Robowarden(for now) if you have any doubts please dm my creator Hemang and yeah you guys can call me Robo Modren");
                  }
+                 command(client, ['ping', 'test'], (message) => {
+                    message.channel.send('Pong!')
+                  })
                 
             });
              
