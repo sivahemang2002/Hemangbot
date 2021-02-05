@@ -117,7 +117,7 @@ message.react(x[0]);
                       .then((channel) => {
                         const categoryId = '807334415121907772'
                         channel.setParent(categoryId)
-                        channel.setUserLimit(10)
+                        channel.setUserLimit(2)
                       })
                   })
                 
