@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
-const userstats = require('./userstats');
 const client = new Discord.Client();
 
 
@@ -9,7 +8,7 @@ const client = new Discord.Client();
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
-    userstats(client)
+   
    
     
 
@@ -64,7 +63,36 @@ message.react(x[0]);
                     var ping = Date.now() - message.createdTimestamp ;
                     message.channel.send("Your ping is `" + `${ping}` + " ms`");
                 }
-               
+               if(message.content.startsWith("!profile"))
+               {
+                name:"user-info";
+                run:async(client,message,args) => {
+                    let user = message.mentions.members.first() || message.guild.members.get(args[0])||message.member;
+                    let status;
+                    switch(user.presence.status){
+                        case "online":
+                            status = "online";
+                            break;
+                        case "dnd":
+                            status="dnd";
+                            break;
+                        case "idle":
+                            status="idle";
+                            break;
+                        case "offline":
+                            status="offline";
+                            break;
+                            
+                    }
+                    const embed = new MessageEmbed()
+                    .setTitle(`${user.user.username} stats`)
+                    .setColor('#f3f3f3')
+                    .setThumbnail(user.user.displayAvatarURL())
+                    
+                    await message.channel.send(embed);
+                }
+            
+ }
                 
             });
              
