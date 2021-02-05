@@ -42,7 +42,7 @@ message.react(x[0]);
                         }
                 
                         var response = ['Nope','Not likely','Too hard to hell','Quite Possible','Definitely','Maybe','Fuckoff'];
-                        if(message.mentions.has(client.user)&& message.content.endsWith("?"))
+                        if(message.content.startsWith("Robo,") && message.content.endsWith("?"))
                         {
                         var row = Math.floor(Math.random()*((response.length)-1)+1);
                         message.channel.send("<@" + message.author + ">" + " " + response[row]);
@@ -87,7 +87,7 @@ message.react(x[0]);
                  }
                  if(message.content === "VA DA DEIIIIII")
                  {
-                     message.channel.send("Hello everyone , I have been created to replace Robowarden(for now) if you have any doubts please dm my creator Hemang and yeah you guys can call me Robo Morden");
+                     message.channel.send("Hello everyone , I have been created to replace Robowarden(for now) if you have any doubts please dm my creator Hemang and yeah you guys can call me Robo Modren");
                  }
                 
             });
