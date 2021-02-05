@@ -3,6 +3,8 @@ const welcome = require('./welcome');
 const command = require('./command');
 const client = new Discord.Client();
 const config = require('./configda.json')
+const path = require('path')
+const fs = require('fs')
 
 
 
@@ -198,7 +200,7 @@ message.react(x[0]);
                     }
                   })
                   const baseFile = 'command2.js'
-       const commandBase = require(`./commands/${baseFile}`)
+       const command2 = require(`./commands/${baseFile}`)
 
            const readCommands = (dir) => {
           const files = fs.readdirSync(path.join(__dirname, dir))
