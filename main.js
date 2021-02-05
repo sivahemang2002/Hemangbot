@@ -4,7 +4,6 @@ const command = require('./command');
 const client = new Discord.Client();
 const config = require('./configda.json')
 
-const emitter = new EventEmitter()
 emitter.setMaxListeners(100)
 
 client.once('ready', () => {
