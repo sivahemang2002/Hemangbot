@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
-
+const user = require('./user');
 const client = new Discord.Client();
 
 
@@ -9,6 +9,7 @@ const client = new Discord.Client();
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
+    user(client)
    
     
 
@@ -63,11 +64,14 @@ message.react(x[0]);
                     var ping = Date.now() - message.createdTimestamp ;
                     message.channel.send("Your ping is `" + `${ping}` + " ms`");
                 }
-               
+                if(message.content.startsWith("!userinfo"))
+                {
+                    user(message);
+                }
                         
                 
             });
-
+             
 
 
 

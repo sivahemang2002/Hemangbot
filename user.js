@@ -1,22 +1,31 @@
-const { MessageEmbed } = require('discord.js')
-const Commando = require('discord.js')
-module.exports = class UserInfoCommand extends Commando.Command{
-    constructor(client){
-        super(client,{
-            name:'userinfo',
-            group:'misc',
-            memberName: 'userinfo',
-            description: 'Displays information about a user'
-        })
-    }
-    run = async(message)=>{
-        const{guild,channel} = message
-        const user = message.mentions.users.first() || message.member.user
-        const member = guild.members.cache.get(user.id)
-        const embed = new MessageEmbed().setAuthor(
-            'User info for ${user.username}',
-            user.displayAvatarURL()
+const { MessageEmbed } = require('discord.js');
+module.exports = {
+    name:"user-info",
+    run:async(client,message,args) => {
+        let user = message.mentions.members.first() || message.guild.members.get(args[0])||message.member;
+        let status;
+        switch(user.presence.status){
+            case "online":
+                status = "online";
+                break;
+            case "dnd":
+                status="dnd";
+                break;
+            case "idle":
+                status="idle";
+                break;
+            case "offline":
+                status="offline";
+                break;
+                
+        }
+        const embed = new MessageEmbed()
+        .setTitle(`${user.user.username} stats`)
+        .setColor('#f3f3f3')
+        .setThumbnail(user.user.displayAvatarURL())
+        
+        await message.channel.send(embed)
 
-        )
     }
+
 }
