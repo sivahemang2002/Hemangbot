@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const command = require('./command');
 const welcome = require('./welcome');
 const client = new Discord.Client();
 
@@ -8,8 +9,8 @@ const client = new Discord.Client();
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
-    const baseFile = 'command-base.js'
-    const commandBase = require(`./commands/${baseFile}`)
+    const baseFile = 'command-base.js';
+
   
     const readCommands = (dir) => {
       const files = fs.readdirSync(path.join(__dirname, dir))
