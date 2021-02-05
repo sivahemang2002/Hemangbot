@@ -199,24 +199,7 @@ message.react(x[0]);
                       )
                     }
                   })
-                  const baseFile = 'command2.js'
-       const command2 = require(`./commands/${baseFile}`)
-
-           const readCommands = (dir) => {
-          const files = fs.readdirSync(path.join(__dirname, dir))
-          for (const file of files) {
-            const stat = fs.lstatSync(path.join(__dirname, dir, file))
-      if (stat.isDirectory()) {
-        readCommands(path.join(dir, file))
-      } else if (file !== baseFile) {
-        const option = require(path.join(__dirname, dir, file))
-        command2(client, option)
-      }
-    }
-  }
-
-  readCommands('commands')
-
+                  
                 
             });
              
