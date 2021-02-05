@@ -3,6 +3,8 @@ const command = require('./command');
 const welcome = require('./welcome');
 const client = new Discord.Client();
 
+const config = require('./config.json')
+
 
 
 
