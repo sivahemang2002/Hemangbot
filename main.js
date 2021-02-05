@@ -102,7 +102,7 @@ message.react(x[0]);
                         type: 'text',
                       })
                       .then((channel) => {
-                        const categoryId = '807329713046814761'
+                        const categoryId = '807334415121907772'
                         channel.setParent(categoryId)
                       })
                   })
@@ -115,7 +115,7 @@ message.react(x[0]);
                         type: 'voice',
                       })
                       .then((channel) => {
-                        const categoryId = '807329713046814761'
+                        const categoryId = '807334415121907772'
                         channel.setParent(categoryId)
                         channel.setUserLimit(10)
                       })
