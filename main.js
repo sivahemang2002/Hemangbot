@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
-const moment = require('moment');
 const client = new Discord.Client();
 
 
