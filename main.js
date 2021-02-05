@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
-const user = require('./userstats');
 const userstats = require('./userstats');
 const client = new Discord.Client();
 
