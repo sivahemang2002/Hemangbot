@@ -19,7 +19,7 @@ client.on('message', message => {
     if (sentence.includes("F")) {
         message.react('🇫');
     }
-        if (message.channel.id === "801025645743570946") {
+        if (message.channel.id === "712412653338886185") {
             let mes = message.content.substr(0);
 let sentence = mes.split("\n");
 for(var i=1;i<sentence.length;i++)
@@ -35,7 +35,7 @@ message.react(x[0]);
                 .then(() => {
                     message.react('🇧') });
                 }
-                if (message.channel.id === "") {
+                if (message.channel.id === "712640459473813574") {
                     message.react('👍')
                         .then(() => {
                             message.react('👎') });
@@ -50,7 +50,7 @@ message.react(x[0]);
                         console.log(message.content);
                         let msg1 = message.content.substr(0);
                         let sentence1 = msg1.split(" ")
-                        if(sentence1.includes("<@&790793425016061973>"))
+                        if(sentence1.includes("<@712286690764652584>"))
                         {
                             message.channel.send("<@" + message.author + ">" + " Wait for a moment, the Wardens will be with you shortly");
                         }
