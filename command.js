@@ -1,4 +1,3 @@
-const { prefix } = require('../config.js')
 
 const validatePermissions = (permissions) => {
   const validPermissions = [
