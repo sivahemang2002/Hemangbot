@@ -85,6 +85,10 @@ message.react(x[0]);
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                     message.channel.send({embed});
                  }
+                 if(message.content === "VA DA DEIIIIII")
+                 {
+                     message.send("Hello everyone , I have been created to replace Robowarden(for now) if you have any doubts please dm my creator Hemang and yeah you guys can call me Robo Morden");
+                 }
                 
             });
              
