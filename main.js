@@ -1,10 +1,14 @@
 const Discord = require('discord.js');
+const welcome = require('./welcome');
 
 const client = new Discord.Client();
+
+const userinfo = require('./welcome')
 
 
 client.once('ready', () => {
     console.log('PrisonBot is online');
+    welcome(client)
     
 
 });
