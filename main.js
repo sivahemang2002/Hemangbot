@@ -3,7 +3,7 @@ const welcome = require('./welcome');
 
 const client = new Discord.Client();
 
-const userinfo = require('./userinfo')
+
 
 
 client.once('ready', () => {
@@ -62,10 +62,7 @@ message.react(x[0]);
                     var ping = Date.now() - message.createdTimestamp ;
                     message.channel.send("Your ping is `" + `${ping}` + " ms`");
                 }
-                if(message.content.startsWith("!userinfo"))
-                {
-                    userinfo(message);
-                }
+                
                         
                 
             });
