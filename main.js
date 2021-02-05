@@ -14,7 +14,7 @@ client.on('message', message => {
     if (sentence.includes("F")) {
         message.react('🇫');
     }
-        if (message.channel.id === "806583846253494331") {
+        if (message.channel.id === "712412653338886185") {
             let mes = message.content.substr(0);
 let sentence = mes.split("\n");
 for(var i=1;i<sentence.length;i++)
@@ -30,7 +30,7 @@ message.react(x[0]);
                 .then(() => {
                     message.react('🇧') });
                 }
-                if (message.channel.id === "806583895402348596") {
+                if (message.channel.id === "712640459473813574") {
                     message.react('👍')
                         .then(() => {
                             message.react('👎') });
@@ -40,7 +40,7 @@ message.react(x[0]);
                         if(message.mentions.has(client.user)&& message.content.endsWith("?"))
                         {
                         var row = Math.floor(Math.random()*((response.length)-1)+1);
-                        message.channel.send("<@" + message.author + ">" + response[row]);
+                        message.channel.send("<@" + message.author + ">" + " " + response[row]);
                         }
                         console.log(message.content);
                         let msg1 = message.content.substr(0);
