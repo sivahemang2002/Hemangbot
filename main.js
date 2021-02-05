@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
-const user = require('./user')
+
 const client = new Discord.Client();
 
 
@@ -9,7 +9,7 @@ const client = new Discord.Client();
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
-    user(client)
+   
     
 
 });
