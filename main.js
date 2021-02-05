@@ -4,7 +4,7 @@ const command = require('./command');
 const client = new Discord.Client();
 const config = require('./configda.json')
 
-emitter.setMaxListeners(100)
+
 
 client.once('ready', () => {
     console.log('PrisonBot is online');
