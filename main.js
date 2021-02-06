@@ -95,7 +95,7 @@ message.react(x[0]);
                         .addField("Status:", `${user.presence.status}`, true)
                         .addField("In Server", message.guild.name, true)
                         .addField("Game:", `${user.presence.game ? user.presence.game.name : 'None'}`, true)
-            
+                        .addField("Roles:",message.guild.roles.cache.map(r => `${r}`).join('|'))
                         .addField("Bot:", `${user.bot}`, true)
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                     message.channel.send({embed});
@@ -208,7 +208,7 @@ message.react(x[0]);
                         `${tag} You do not have permission to use this command.`
                       )
                     }
-                    if(message.content.startsWith("!badges"))
+                    if(message.content.startsWith("!roles"))
                     {let user;
                        if (message.mentions.users.first()) {
                            user = message.mentions.users.first();
@@ -219,9 +219,10 @@ message.react(x[0]);
                        
                        const embed = new Discord.MessageEmbed()
                            .setColor("RANDOM")
-                        
+                           .setThumbnail(message.author.avatarURL)
                            
-                          .addField("Bot:", `${user.bot}`, true)
+                           .addField("Roles:",message.guild.roles.cache.map(r => `${r}`).join('|'))
+                        
                            .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                        message.channel.send({embed});
                     }
