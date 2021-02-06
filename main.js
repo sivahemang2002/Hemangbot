@@ -95,7 +95,7 @@ message.react(x[0]);
                         .addField("Status:", `${user.presence.status}`, true)
                         .addField("In Server", message.guild.name, true)
                         .addField("Game:", `${user.presence.game ? user.presence.game.name : 'None'}`, true)
-                      
+                        .addField("Roles:",message.guild.roles.cache.map(r => `${r}`).join('|'))
                         .addField("Bot:", `${user.bot}`, true)
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                     message.channel.send({embed});
