@@ -1,8 +1,7 @@
 module.exports = (client) => {
-    const channelIds = '712640459473813574';
+   
     
-  
-    const addReactions = (message) => {
+     const addReactions = (message) => {
       message.react('👍')
   
       setTimeout(() => {
