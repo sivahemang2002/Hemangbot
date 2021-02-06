@@ -29,6 +29,15 @@ let x = sentence[i].split(" ");
 message.react(x[0]);
 }
                 }
+                if (message.channel.id === "807647058869354547") {
+                  let mes = message.content.substr(0);
+      let sentence = mes.split("\n");
+      for(var i=1;i<sentence.length;i++)
+      {
+      let x = sentence[i].split(" ");
+      message.react(x[0]);
+      }
+                      }
                 
                 
         if (message.channel.id === "806566443385618504") {
