@@ -1,4 +1,4 @@
-module.exports = (client) => {
+module.exports = client => {
     const channelIds = [
       '806746337609646100' // testing
     ]
