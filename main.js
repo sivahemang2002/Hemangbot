@@ -2,7 +2,9 @@ const Discord = require('discord.js');
 const welcome = require('./welcome');
 const command = require('./command');
 const client = new Discord.Client();
-
+const config = require('./configda.json')
+const path = require('path')
+const fs = require('fs')
 
 
 
@@ -173,7 +175,6 @@ message.react(x[0]);
                       )
                     }
                   })
-                  if(message.content.startsWith('!kick'))
                 
                   command(client, 'kick', (message) => {
                     const { member, mentions } = message
