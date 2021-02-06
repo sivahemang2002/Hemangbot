@@ -4,7 +4,7 @@ module.exports = (client, aliases, callback) => {
   if (typeof aliases === 'string') {
     aliases = [aliases]
   }
-  console.log(callback)
+  
 
   client.once('message', (message) => {
     const { content } = message
