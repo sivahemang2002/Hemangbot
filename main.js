@@ -38,6 +38,10 @@ message.react(x[0]);
       message.react(x[0]);
       }
                       }
+          if(message.channel.id === "715255733666709554")
+          {
+            message.react('✅')
+          }
                 
                 
         if (message.channel.id === "806566443385618504") {
