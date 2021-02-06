@@ -96,7 +96,7 @@ message.react(x[0]);
                         .addField("In Server", message.guild.name, true)
                         .addField("Game:", `${user.presence.game ? user.presence.game.name : 'None'}`, true)
 
-                        .addField("Roles:",message.guild.roles.cache.map(r => `${r}`).join('|'))
+                        .addField("Roles:",message.member.roles.cache.map(r => `${r}`).join('|'))
                         
                         .addField("Bot:", `${user.bot}`, true)
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
