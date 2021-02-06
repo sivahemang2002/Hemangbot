@@ -5,16 +5,16 @@ module.exports = (client, aliases, callback) => {
     aliases = [aliases]
   }
 
-
-    const { content } = callback
+  client.once('message', (message) => {
+    const { content } = message
 
     aliases.forEach((alias) => {
       const command = `${prefix}${alias}`
 
       if (content.startsWith(`${command} `) || content === command) {
         console.log(`Running the command ${command}`)
-        callback(callback)
+        callback(message)
       }
     })
-  
+  })
 }
