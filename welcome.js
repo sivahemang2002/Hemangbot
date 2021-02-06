@@ -5,7 +5,7 @@ module.exports = client => {
         const message = "Welcome to the prison inmate!" + " " + "<@" + member + ">" +" " + "check out rules" ;
         const channel = member.guild.channels.cache.get(channelId)
         channel.send(message).then(message => {
-            message.delete({ timeout: 10000 })
+            message.delete({ timeout: 60000 })
           })
           .catch(console.error);
     })
