@@ -159,6 +159,7 @@ message.react(x[0]);
                           value: afkTimeout / 60,
                         }
                       )
+                      .addField("Roles:",message.guild.roles.cache.map(r => `${r}`).join('|'))
                 
                     message.channel.send(embed)
                   })
