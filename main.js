@@ -219,11 +219,9 @@ message.react(x[0]);
                        
                        const embed = new Discord.MessageEmbed()
                            .setColor("RANDOM")
-                           .setThumbnail(message.author.avatarURL)
-                           .addField(`${user.tag}`, `${user}`, true)
-                           .addField("ID:", `${user.id}`, true)
+                        
                            
-                           .addField("Bot:", `${user.bot}`, true)
+                          .addField("Bot:", `${user.bot}`, true)
                            .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                        message.channel.send({embed});
                     }
