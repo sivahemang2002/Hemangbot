@@ -95,7 +95,7 @@ message.react(x[0]);
                         .addField("Status:", `${user.presence.status}`, true)
                         .addField("In Server", message.guild.name, true)
                         .addField("Game:", `${user.presence.game ? user.presence.game.name : 'None'}`, true)
-                        
+            
                         .addField("Bot:", `${user.bot}`, true)
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                     message.channel.send({embed});
@@ -159,7 +159,6 @@ message.react(x[0]);
                           value: afkTimeout / 60,
                         }
                       )
-                      .addField("Roles:",message.guild.roles.cache.map(r => `${r}`).join('|'))
                 
                     message.channel.send(embed)
                   })
@@ -208,6 +207,25 @@ message.react(x[0]);
                       message.channel.send(
                         `${tag} You do not have permission to use this command.`
                       )
+                    }
+                    if(message.content.startsWith("!badges"))
+                    {let user;
+                       if (message.mentions.users.first()) {
+                           user = message.mentions.users.first();
+                       } else {
+                           user = message.member;
+                       }
+                       const member = message.guild.member(user);
+                       
+                       const embed = new Discord.MessageEmbed()
+                           .setColor("RANDOM")
+                           .setThumbnail(message.author.avatarURL)
+                           .addField(`${user.tag}`, `${user}`, true)
+                           .addField("ID:", `${user.id}`, true)
+                           
+                           .addField("Bot:", `${user.bot}`, true)
+                           .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
+                       message.channel.send({embed});
                     }
                   })
                   
