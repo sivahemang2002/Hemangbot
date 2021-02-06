@@ -45,7 +45,7 @@ message.react(x[0]);
                             message.react('👎') });
                         }
                 
-                        var response = ['Nope','Not likely','Too hard to tell','Quite Possible','Definitely','Maybe','Fuckoff'];
+                        var response = ['Ghanta','Not likely','Too hard to tell','Quite Possible','Definitely','Maybe','Yes'];
                         if(message.content.startsWith("Robo,") && message.content.endsWith("?"))
                         {
                         var row = Math.floor(Math.random()*((response.length)-1)+1);
@@ -93,9 +93,7 @@ message.react(x[0]);
                  {
                      message.channel.send("Hello everyone , I have been created to replace Robowarden(for now) if you have any doubts please dm my creator Hemang and yeah you guys can call me Robo Modren");
                  }
-                 command(client, ['ping', 'test'], (message) => {
-                    message.channel.send('Pong!')
-                  })
+                 
                   command(client, 'createtextchannel', (message) => {
                     const name = message.content.replace('!createtextchannel ', '')
                 
@@ -104,7 +102,7 @@ message.react(x[0]);
                         type: 'text',
                       })
                       .then((channel) => {
-                        const categoryId = '712678821035507774'
+                        const categoryId = '807329713046814761'
                         channel.setParent(categoryId)
                       })
                   })
@@ -117,7 +115,7 @@ message.react(x[0]);
                         type: 'voice',
                       })
                       .then((channel) => {
-                        const categoryId = '712678821035507774'
+                        const categoryId = '807329713046814761'
                         channel.setParent(categoryId)
                         channel.setUserLimit(2)
                       })
