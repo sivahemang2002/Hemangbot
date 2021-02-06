@@ -165,7 +165,7 @@ message.react(x[0]);
                       if (target) {
                         const targetMember = message.guild.members.cache.get(target.id)
                         targetMember.ban()
-                        message.channel.send(`${tag} That user has been`)
+                        message.channel.send(`${tag} That user has been banned`)
                       } else {
                         message.channel.send(`${tag} Please specify someone to ban.`)
                       }
@@ -189,7 +189,7 @@ message.react(x[0]);
                       if (target) {
                         const targetMember = message.guild.members.cache.get(target.id)
                         targetMember.kick()
-                        message.channel.send(`${tag} That user has kicked`)
+                        message.channel.send(`${tag} That user has been kicked out of the server`)
                       } else {
                         message.channel.send(`${tag} Please specify someone to kick.`)
                       }
