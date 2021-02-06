@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const config = require('./configda.json')
 const path = require('path')
 const fs = require('fs')
-const poll = require('./poll')
+const poll = require('./poll');
 
 
 client.once('ready', () => {
