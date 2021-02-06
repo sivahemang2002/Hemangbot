@@ -5,7 +5,7 @@ module.exports = (client, aliases, callback) => {
     aliases = [aliases]
   }
 
-  client.on('message', (message) => {
+
     const { content } = message
 
     aliases.forEach((alias) => {
@@ -16,5 +16,5 @@ module.exports = (client, aliases, callback) => {
         callback(message)
       }
     })
-  })
+  
 }
