@@ -9,7 +9,7 @@ const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe')
-const logger = require("discordjs-logger");
+
 
 
 
@@ -25,7 +25,7 @@ new TicTacToe({
   language: 'en',
   command: '!ttt'
 }, client);
-logger.all(client);
+
 
 client.on('message', async message => {
     let msg = message.content.substr(0);
