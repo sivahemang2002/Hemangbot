@@ -21,7 +21,7 @@ client.once('ready', () => {
    
 });
 new TicTacToe({
-  language: 'fr',
+  language: 'en',
   command: '!ttt'
 }, client);
 client.on('message', async message => {
