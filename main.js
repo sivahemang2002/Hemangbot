@@ -229,6 +229,11 @@ message.react(x[0]);
                        message.channel.send({embed});
                     }
                   })
+                  if(message.content.startsWith("Group Breakfast Club"))
+                  {
+                       message.channel.send("<@516993440920240128>","<@106797161403924480>")
+
+                  }
                   
                 
          
