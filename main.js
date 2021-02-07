@@ -8,7 +8,7 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
-const TicTacToe = require('discord-tictactoe')
+
 
 
 
@@ -21,10 +21,7 @@ client.once('ready', () => {
     poll(client)
    
 });
-new TicTacToe({
-  language: 'en',
-  command: '!ttt'
-}, client);
+
 
 
 client.on('message', async message => {
