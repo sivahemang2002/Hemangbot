@@ -127,7 +127,7 @@ message.react(x[0]);
 
                  const args = message.content.substring(0).split(" ")
 
-                 if (message.content.startsWith(`!urban`)) {		
+                 if (message.content.startsWith(`!udict`)) {		
                    const searchString = querystring.stringify({ term: args.slice(1).join(" ") })
                
                        if (!args.slice(1).join(" ")) return message.channel.send(new Discord.MessageEmbed()
