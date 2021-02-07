@@ -123,7 +123,7 @@ message.react(x[0]);
                  {
                    message.channel.send("ThisisUs:<@427427280482992128><@!427714149607538688><@724871282877005846><@!729784244204732458><@!728829310558928897><@701364406486827089><@516993440920240128><@!728868019438354432>")
                  }
-                 const args = message.content.substring(prefix.length).split(" ")
+                 const args = message.content.substring(length).split(" ")
 
                  if (message.content.startsWith(`!urban`)) {		
                    const searchString = querystring.stringify({ term: args.slice(1).join(" ") })
