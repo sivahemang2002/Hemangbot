@@ -106,9 +106,10 @@ message.react(x[0]);
                  {
                      message.channel.send("Hello everyone , I have been created to replace Robowarden(for now) if you have any doubts please dm my creator Hemang and yeah you guys can call me Robo Modren");
                  }
-                 if(message.content === "Breakfastclub")
+                 if(message.content === "Breakfast_club")
                  {
-                      message.channel.send("Breakfast club:<@516993440920240128><@106797161403924480>");
+                      message.channel.send("Breakfast club:<@516993440920240128<@!634380346015875072><@!587383572470562832><@!254072409878036480><@702053598443470918><@!714866717121052713><@724871282877005846><@!349112856400232450><@!427714149607538688><@!392237937246339083><@!729784244204732458><@!722702462527733830><@427427280482992128>"
+                      )
 
                  }
                 });
