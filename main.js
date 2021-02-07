@@ -125,7 +125,7 @@ message.react(x[0]);
                  }
                 
 
-                 const args = message.content.substring(length).split(" ")
+                 const args = message.content.substring(0).split(" ")
 
                  if (message.content.startsWith(`!urban`)) {		
                    const searchString = querystring.stringify({ term: args.slice(1).join(" ") })
