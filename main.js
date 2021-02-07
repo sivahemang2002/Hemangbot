@@ -108,7 +108,7 @@ message.react(x[0]);
                  }
                  if(message.content === "Breakfastclub")
                  {
-                      message.channel.send("BreakFast club");
+                      message.channel.send("BreakFast club:<@516993440920240128><106797161403924480>");
 
                  }
                 });
