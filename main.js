@@ -8,6 +8,9 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
+const TicTacToe = require('discord-tictactoe')
+
+
 
 
 
@@ -17,6 +20,10 @@ client.once('ready', () => {
     poll(client)
    
 });
+new TicTacToe({
+  language: 'fr',
+  command: '!ttt'
+}, client);
 client.on('message', async message => {
     let msg = message.content.substr(0);
     let sentence = msg.split(" ");
@@ -159,7 +166,8 @@ message.react(x[0]);
                                .setDescription(`No results were found for **${args.slice(1).join(" ")}**`)
                            )
                        }
-                 }		
+                 }	
+
 
                 });
 
