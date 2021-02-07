@@ -6,6 +6,8 @@ const client = new Discord.Client();
 const config = require('./configda.json')
 const path = require('path')
 const fs = require('fs')
+const fetch = require('node-fetch')
+const querystring = require('querystring')
 
 
 
@@ -121,6 +123,42 @@ message.react(x[0]);
                  {
                    message.channel.send("ThisisUs:<@427427280482992128><@!427714149607538688><@724871282877005846><@!729784244204732458><@!728829310558928897><@701364406486827089><@516993440920240128><@!728868019438354432>")
                  }
+                 const args = message.content.substring(prefix.length).split(" ")
+
+                 if (message.content.startsWith(`${prefix}urban`)) {		
+                   const searchString = querystring.stringify({ term: args.slice(1).join(" ") })
+               
+                       if (!args.slice(1).join(" ")) return message.channel.send(new MessageEmbed()
+                           .setColor("BLUE")
+                           .setDescription(`You need to specify something you want to search the urban dictionary`)
+                       )
+               
+                       const { list } = await fetch(`https://api.urbandictionary.com/v0/define?${searchString}`).then(response => response.json())
+               
+                       try {
+                           const [answer] = list
+               
+                           const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str)
+               
+                           const embed = new Discord.MessageEmbed()
+                               .setColor("BLUE")
+                               .setTitle(answer.word)
+                               .setURL(answer.permalink)
+                               .addFields(
+                                   { name: 'Definition', value: trim(answer.definition, 1024) },
+                                   { name: 'Example', value: trim(answer.example, 1024) },
+                                   { name: 'Rating', value: `${answer.thumbs_up} 👍. ${answer.thumbs_down} 👎.` },
+                               )
+                           message.channel.send(embed)
+                       } catch (error) {
+                           console.log(error)
+                           return message.channel.send(new Discord.MessageEmbed()
+                               .setColor("BLUE")
+                               .setDescription(`No results were found for **${args.slice(1).join(" ")}**`)
+                           )
+                       }
+                 }		
+
                 });
 
                   command(client, 'createtextchannel', (message) => {
