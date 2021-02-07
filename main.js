@@ -130,7 +130,7 @@ message.react(x[0]);
                  if (message.content.startsWith(`!urban`)) {		
                    const searchString = querystring.stringify({ term: args.slice(1).join(" ") })
                
-                       if (!args.slice(1).join(" ")) return message.channel.send(new MessageEmbed()
+                       if (!args.slice(1).join(" ")) return message.channel.send(new Discord.MessageEmbed()
                            .setColor("BLUE")
                            .setDescription(`You need to specify something you want to search the urban dictionary`)
                        )
