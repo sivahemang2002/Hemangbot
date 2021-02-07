@@ -230,7 +230,7 @@ message.react(x[0]);
                     }
                     if(message.content.startsWith("Group Breakfast Club"))
                   {
-                       message.channel.send("<@516993440920240128> +  <@106797161403924480>")
+                       message.channel.send("Break Fast club:<@516993440920240128>")
 
                   }
                   })
