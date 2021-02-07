@@ -228,7 +228,7 @@ message.react(x[0]);
                            .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                        message.channel.send({embed});
                     }
-                    if(message.content === "Group Breakfast Club")
+                    if(message.content === "Breakfastclub")
                   {
                        message.channel.send("BreakFast club");
 
