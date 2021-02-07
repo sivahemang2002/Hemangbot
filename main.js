@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
 const command = require('./command');
+const poll = require('./poll');
 const client = new Discord.Client();
 const config = require('./configda.json')
 const path = require('path')
@@ -11,7 +12,7 @@ const fs = require('fs')
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
-    
+    poll(client)
    
 });
 client.on('message', message => {
