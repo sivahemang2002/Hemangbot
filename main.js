@@ -228,12 +228,13 @@ message.react(x[0]);
                            .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                        message.channel.send({embed});
                     }
-                  })
-                  if(message.content.startsWith("Group Breakfast Club"))
+                    if(message.content.startsWith("Group Breakfast Club"))
                   {
                        message.channel.send("<@516993440920240128>","<@106797161403924480>")
 
                   }
+                  })
+                  
                   
                 
          
