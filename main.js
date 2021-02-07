@@ -125,7 +125,7 @@ message.react(x[0]);
                  }
                  const args = message.content.substring(prefix.length).split(" ")
 
-                 if (message.content.startsWith(`${prefix}urban`)) {		
+                 if (message.content.startsWith(`!urban`)) {		
                    const searchString = querystring.stringify({ term: args.slice(1).join(" ") })
                
                        if (!args.slice(1).join(" ")) return message.channel.send(new MessageEmbed()
