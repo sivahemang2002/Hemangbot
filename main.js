@@ -106,6 +106,11 @@ message.react(x[0]);
                  {
                      message.channel.send("Hello everyone , I have been created to replace Robowarden(for now) if you have any doubts please dm my creator Hemang and yeah you guys can call me Robo Modren");
                  }
+                 if(message.content === "Breakfastclub")
+                 {
+                      message.channel.send("BreakFast club");
+
+                 }
                 });
 
                   command(client, 'createtextchannel', (message) => {
@@ -228,11 +233,7 @@ message.react(x[0]);
                            .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
                        message.channel.send({embed});
                     }
-                    if(message.content === "Breakfastclub")
-                  {
-                       message.channel.send("BreakFast club");
-
-                  }
+                   
                   })
                   
                   
