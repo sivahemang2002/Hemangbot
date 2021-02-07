@@ -58,7 +58,10 @@ message.react(x[0]);
           {
             message.react('✅')
           }
-                
+            if(message.content === "Please come da Shardul")  
+            {
+              message.channel.send("Shardul Unmute pls")
+            }
                 
         if (message.channel.id === "806566443385618504") {
             message.react('🇦')
