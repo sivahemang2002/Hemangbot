@@ -33,24 +33,7 @@ client.on('message', async message => {
     if (sentence.includes("F")) {
         message.react('🇫');
     }
-    if(message.author.bot || message.channel.type === "dm") return;
-
-    const messageArray = message.content.split(' ');
-	const cmd = messageArray[0];
-	const args = messageArray.slice(1);
-
-    if (cmd === '-poll'){
-        let pollChannel = message.mentions.channels.first();
-        let pollDescription = args.slice(1).join(' ');
-
-        let embedPoll = new Discord.MessageEmbed()
-        .setTitle('Whats your opinion')
-        .setDescription(pollDescription)
-        .setColor('YELLOW')
-        let msgEmbed = await pollChannel.send(embedPoll);
-        await msgEmbed.react('👍')
-        await msgEmbed.react('👎')
-    }
+    
 
 
 
