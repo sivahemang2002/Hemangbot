@@ -17,7 +17,7 @@ client.once('ready', () => {
     poll(client)
    
 });
-client.on('message', message => {
+client.on('message', async message => {
     let msg = message.content.substr(0);
     let sentence = msg.split(" ");
     if (sentence.includes("F")) {
