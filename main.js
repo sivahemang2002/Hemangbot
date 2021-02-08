@@ -44,6 +44,10 @@ for(var i=1;i<sentence.length;i++)
 let x = sentence[i].split(" ");
 message.react(x[0]);
 }
+if(message.content === "It's Marination Monday guys")
+{
+  message.channel.send("Happy Marination Monday prison")
+}
                 }
                 if (message.channel.id === "807647058869354547") {
                   let mes = message.content.substr(0);
