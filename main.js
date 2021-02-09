@@ -32,7 +32,8 @@ client.on('messageUpdate',(oldmessage, newmessage ) => {
 client.on("messageDelete", (messageDelete) => {
   if(logID !=messageDelete.channel.id )
   {
-  let log = `The message : "${messageDelete.content}" by ${messageDelete.author.tag} was deleted.`;
+  let log = `**This message by ${messageDelete.author.tag} was deleted**.
+             "${messageDelete.content}"`;
   logs(messageDelete,log)}
  });
 
