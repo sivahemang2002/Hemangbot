@@ -33,7 +33,7 @@ client.on("messageDelete", (messageDelete) => {
   if(logID !=messageDelete.channel.id )
   {
   let log = `**This message by ${messageDelete.author.tag} was deleted**.
-             "${messageDelete.content}"`;
+             ${messageDelete.content}`;
   logs(messageDelete,log)}
  });
 
