@@ -13,7 +13,6 @@ function logs(message,args){
   const embed = new Discord.MessageEmbed()
                         .setColor("BLUE")
                         .setThumbnail(message.author.avatarURL)
-                  
                         .addField("ID:", `${message.author}`, true)
                         .addField("Nickname:", `${member.nickname !== null ? `${member.nickname}` : 'None'}`, true)
                         .addField("Log:",args)
