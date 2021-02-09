@@ -8,7 +8,25 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
+const logID = "808708681259548712"
+function logs(message,args){
+  const embed = new Discord.MessageEmbed()
+                        .setColor("BLUE")
+                        .setThumbnail(message.author.avatarURL)
+                        .addField(`${user.tag}`, `${user}`, true)
+                        .addField("ID:", `${user.id}`, true)
+                        .addField("Nickname:", `${member.nickname !== null ? `${member.nickname}` : 'None'}`, true)
+                        .addField("Log:",args)
+                        .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
+  client.channels.get(logID).send(embed)
 
+}
+client.on('channelCreate',(oldmessage, newmessage ) => {
+  let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content;
+  logs(newmessage,log)
+      
+
+})
 
 
 
@@ -140,6 +158,7 @@ message.react(x[0]);
                  {
                    message.channel.send("ThisisUs:<@427427280482992128><@!427714149607538688><@724871282877005846><@!729784244204732458><@!728829310558928897><@701364406486827089><@516993440920240128><@!728868019438354432>")
                  }
+                 
                 
 
                  const args = message.content.substring(0).split(" ")
