@@ -13,8 +13,8 @@ function logs(message,args){
   const embed = new Discord.MessageEmbed()
                         .setColor("BLUE")
                         .setThumbnail(message.author.avatarURL)
-                        .addField(`${user.tag}`, `${user}`, true)
-                        .addField("ID:", `${user.id}`, true)
+                  
+                        .addField("ID:", `${message.author}`, true)
                         .addField("Nickname:", `${member.nickname !== null ? `${member.nickname}` : 'None'}`, true)
                         .addField("Log:",args)
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
