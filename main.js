@@ -14,7 +14,7 @@ function logs(message,args){
                         .setColor("BLUE")
                         .setThumbnail(message.author.avatarURL)
                         .addField("ID:", `${message.author}`, true)
-                        .addField("Nickname:", `${message.author.nickname !== null ? `${message.author.nickname}` : 'None'}`, true)
+                        .addField("Username:", `${message.author.username !== null ? `${message.author.username}` : 'None'}`, true)
                         .addField("Log:",args)
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
   client.channels.get(logID).send(embed)
