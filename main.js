@@ -17,7 +17,7 @@ function logs(message,args){
                         .addField("Username:", `${message.author.username !== null ? `${message.author.username}` : 'None'}`, true)
                         .addField("Log:",args)
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
-  client.channel.get(logID).send(embed)
+  client.channels.cache.get(logID).send(embed)
 
 }
 client.on('messageUpdate',(oldmessage, newmessage ) => {
