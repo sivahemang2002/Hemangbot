@@ -22,23 +22,21 @@ function logs(message,args){
 }
 
 client.on('messageUpdate',(oldmessage, newmessage ) => {
-  if(message.guild.id = '806542035052920893')
-  {
+
   if(logID != newmessage.channel.id)
   {
-  let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content;
+  let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content ;
   logs(newmessage,log)}
-  }
+  
 
 })
 client.on("messageDelete", (messageDelete) => {
-  if(message.guild.id = '806542035052920893')
-  {
+  
   if(logID !=messageDelete.channel.id )
   {
   let log = `**This message by ${messageDelete.author.tag} was deleted**.
              ${messageDelete.content}`;
-  logs(messageDelete,log)}}
+  logs(messageDelete,log)}
  });
 
 
