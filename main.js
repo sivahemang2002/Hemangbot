@@ -20,9 +20,12 @@ function logs(message,args){
   client.channels.cache.get(logID).send(embed)
 
 }
+
 client.on('messageUpdate',(oldmessage, newmessage ) => {
+  if(logID == newmessage.channel.id)
+  {
   let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content;
-  logs(newmessage,log)
+  logs(newmessage,log)}
       
 
 })
