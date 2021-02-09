@@ -8,7 +8,7 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
-const logID = "718779866710933615"
+const logID = "808708681259548712"
 function logs(message,args){
   const embed = new Discord.MessageEmbed()
                         .setColor("BLUE")
