@@ -21,7 +21,7 @@ function logs(message,args){
   client.channels.get(logID).send(embed)
 
 }
-client.on('channelCreate',(oldmessage, newmessage ) => {
+client.on('messageUpdate',(oldmessage, newmessage ) => {
   let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content;
   logs(newmessage,log)
       
