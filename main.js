@@ -20,6 +20,15 @@ function logs(message,args){
   client.channels.cache.get(logID).send(embed)
 
 }
+const hangman = new HangmanGame({
+  title: 'Hangman', // Title of the embed while displaying the game. Default: Hangman
+  color: 'RANDOM', // Color of the embed. Default: RANDOM
+  lang: 'en', // Custom the language for the embeds. Default: en
+  overTitle: 'Game Over', // Custom text for the embed title of the game over embed. Default: 'Game Over'
+  wins: "You Wins", // Custom text of the message when the chat wins
+  losses: "You losses", // Custom text of the message when the chat losses
+  words: ["word1", "word2"] // Custom words. Default: our word list
+});
 
 client.on('messageUpdate',(oldmessage, newmessage ) => {
 
@@ -78,6 +87,10 @@ message.react(x[0]);
 {
   message.channel.send("Happy Marination Monday prison")
 }
+if (message.content.toLowerCase() === '!hangman') {
+  hangman.newGame(message);
+}
+
                 if (message.channel.id === "807647058869354547") {
                   let mes = message.content.substr(0);
       let sentence = mes.split("\n");
