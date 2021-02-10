@@ -9,7 +9,7 @@ const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
 
-
+let memberlog = "809152418163327049"
 const logID = "808708681259548712"
 function logs(message,args){
   const embed = new Discord.MessageEmbed()
@@ -41,9 +41,9 @@ client.on("messageDelete", (messageDelete) => {
   logs(messageDelete,log)}
  });
 client.on("guildMemberAdd",member => {
-   var role = "809152646467813506"
-   member.guild.roles.find(role)
-   member.addRole()
+   if(member.guild.id !== "806542035052920893") return;
+   client.channels.cache.get(memberlog).send('Welcome to the **${member.guild.name}**,<@!${member.user.id}>!!!');
+   members.roles.add("806542035052920893");
 })
 
 
