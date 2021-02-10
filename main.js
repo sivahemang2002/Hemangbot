@@ -8,6 +8,7 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
+const role = require('./role')
 
 let memberlog = "809152418163327049"
 const logID = "808708681259548712"
@@ -48,7 +49,7 @@ client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
     poll(client)
-   
+   role(client)
 });
 
 
