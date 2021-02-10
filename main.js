@@ -40,10 +40,6 @@ client.on("messageDelete", (messageDelete) => {
              ${messageDelete.content}`;
   logs(messageDelete,log)}
  });
-client.on("guildMemberAdd",member => {
-   member.roles.add("806542035052920893");
-})
-
 
 
 
@@ -319,26 +315,12 @@ message.react(x[0]);
                         `${tag} You do not have permission to use this command.`
                       )
                     }
-                    if(message.content.startsWith("!roles"))
-                    {let user;
-                       if (message.mentions.users.first()) {
-                           user = message.mentions.users.first();
-                       } else {
-                           user = message.member;
-                       }
-                       const member = message.guild.member(user);
-                       
-                       const embed = new Discord.MessageEmbed()
-                           .setColor("RANDOM")
-                           .setThumbnail(message.author.avatarURL)
-                           
-                           .addField("Roles:",message.guild.roles.cache.map(r => `${r}`).join('|'))
-                        
-                           .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
-                       message.channel.send({embed});
-                    }
+                    
+                   
                    
                   })
+                  
+                 
                   
                   
                 
