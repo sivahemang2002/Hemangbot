@@ -43,7 +43,7 @@ client.on("messageDelete", (messageDelete) => {
 client.on("guildMemberAdd",member => {
    if(member.guild.id !== "806542035052920893") return;
    client.channels.cache.get(memberlog).send('Welcome to the **${member.guild.name}**,<@!${member.user.id}>!!!');
-   members.roles.add("806542035052920893");
+   member.roles.add("806542035052920893");
 })
 
 
