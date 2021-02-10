@@ -41,7 +41,8 @@ client.on("messageDelete", (messageDelete) => {
   logs(messageDelete,log)}
  });
 client.on("guildMemberAdd",member => {
-   var role = member.guild.roles.find("id","809152646467813506")
+   var role = "809152646467813506"
+   member.guild.roles.find(role)
    member.addRole()
 })
 
