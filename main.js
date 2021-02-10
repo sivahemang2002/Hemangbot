@@ -8,6 +8,8 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
+const HangmanGame = require('discordjs-hangman');
+
 const logID = "808708681259548712"
 function logs(message,args){
   const embed = new Discord.MessageEmbed()
