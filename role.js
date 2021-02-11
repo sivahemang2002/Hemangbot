@@ -5,5 +5,8 @@ module.exports = client => {
        
     client.on('guildMemberAdd',(member)=>{
         if(message.content === "!permit"){
-        member.roles.add("809152646467813506")}})
+             message.guild.members.cache.get(message.author.id).roles.add("809152646467813506")
+
+        }
+    })
     }
