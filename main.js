@@ -63,7 +63,7 @@ client.on('message', async message => {
     if(message.content === "!permit"){
       let mention = message.mentions.users.first()
       if(mention ){
-      message.guild.members.cache.get(mention.id).roles.add("809152646467813506")
+      message.guild.members.cache.get(mention.user.id).roles.add("809152646467813506")
       }
  }
     
