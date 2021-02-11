@@ -8,7 +8,7 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
-const role = require('./role')
+
 
 let memberlog = "809152418163327049"
 const logID = "808708681259548712"
@@ -48,7 +48,7 @@ client.on("messageDelete", (messageDelete) => {
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
-    poll(client)
+    
    role(client)
 });
 
@@ -60,6 +60,12 @@ client.on('message', async message => {
     if (sentence.includes("F")) {
         message.react('🇫');
     }
+    if(message.content === "!permit"){
+      let mention = message.mentions.users.first()
+      if(mention ){
+      message.guild.members.cache.get(mention.id).roles.add("809152646467813506")
+      }
+ }
     
 
 
