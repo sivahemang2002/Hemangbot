@@ -61,6 +61,7 @@ client.on('message', async message => {
         message.react('🇫');
     }
     if(message.content === "!permit"){
+      console.log("Command Acknowleged")
       let mention = message.mentions.users.first()
       if(mention){
         console.log("Trying to add role")
