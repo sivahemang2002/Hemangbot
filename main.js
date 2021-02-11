@@ -8,7 +8,11 @@ const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
-
+const TicTacToe = require('discord-tictactoe');
+new TicTacToe({
+  language: 'fr',
+  command: '!ttt'
+}, client);
 
 let memberlog = "809152418163327049"
 const logID = "808708681259548712"
