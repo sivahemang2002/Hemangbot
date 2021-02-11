@@ -65,7 +65,7 @@ client.on('message', async message => {
       let mention = message.mentions.users.first()
       if(mention){
         console.log("Trying to add role")
-      message.guild.members.cache.get(mention.user.id).roles.add("809152646467813506")
+      message.guild.members.cache.get(mention.users.id).roles.add("809152646467813506")
       }
  }
     
