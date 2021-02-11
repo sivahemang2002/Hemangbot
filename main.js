@@ -49,7 +49,7 @@ client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
     
-   role(client)
+   
 });
 
 
