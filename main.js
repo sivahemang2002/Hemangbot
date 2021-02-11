@@ -10,7 +10,7 @@ const fetch = require('node-fetch')
 const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
 new TicTacToe({
-  language: 'fr',
+  language: 'en',
   command: '!ttt'
 }, client);
 
