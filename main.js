@@ -62,10 +62,10 @@ client.on('message', async message => {
     }
     if(message.content.startsWith("!permit")){
       console.log("Command Acknowleged")
-      let mention = message.mentions.users.first()
+      let mention = message.mentions.members.first()
       if(mention){
         console.log("Trying to add role")
-      message.guild.members.cache.get(mention.users.id).roles.add("809152646467813506")
+      message.guild.members.cache.get(mention.id).roles.add("809152646467813506")
       }
  }
     
