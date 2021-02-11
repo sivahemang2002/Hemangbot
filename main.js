@@ -60,7 +60,7 @@ client.on('message', async message => {
     if (sentence.includes("F")) {
         message.react('🇫');
     }
-    if(message.content === "!permit"){
+    if(message.startsWith("!permit")){
       console.log("Command Acknowleged")
       let mention = message.mentions.users.first()
       if(mention){
