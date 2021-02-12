@@ -9,6 +9,7 @@ const fs = require('fs')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
+const scaling = require('./scaling');
 new TicTacToe({
   language: 'en',
   command: '!ttt'
@@ -52,6 +53,8 @@ client.on("messageDelete", (messageDelete) => {
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
+    poll(client)
+    scaling(client)
     
    
 });
