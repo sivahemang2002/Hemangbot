@@ -124,7 +124,7 @@ message.react(x[0]);
                             message.react('👎') });
                         }
                 
-                        var response = ['Ghanta','Not likely','Too hard to tell','Quite Possible','Definitely','Maybe','Yes'];
+                        var response = ['Ghanta','Not likely','Too hard to tell','Quite Possible','Definitely','Maybe','Yes','Ghanta'];
                         if(message.content.startsWith("Robo,") && message.content.endsWith("?"))
                         {
                         var row = Math.floor(Math.random()*((response.length)-1)+1);
