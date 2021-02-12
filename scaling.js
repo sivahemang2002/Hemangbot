@@ -1,4 +1,4 @@
-const channelName = '🎤 Inmates C-Block '
+const channelName = '🎤 Inmates C-Block'
 
 const getVoiceChannels = (guild) => {
   return guild.channels.cache.filter((channel) => {
