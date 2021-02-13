@@ -10,6 +10,7 @@ const fetch = require('node-fetch')
 const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
 const scaling = require('./scaling');
+const bye = require('./bye');
 new TicTacToe({
   language: 'en',
   command: '!ttt'
@@ -57,7 +58,7 @@ client.once('ready', () => {
     welcome(client)
     poll(client)
     scaling(client)
-    
+    bye(client)
    
 });
 
