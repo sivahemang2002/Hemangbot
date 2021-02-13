@@ -60,7 +60,7 @@ client.once('ready', () => {
     poll(client)
     scaling(client)
     bye(client)
-   
+   welcome2(client)
 });
 
 
