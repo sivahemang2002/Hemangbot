@@ -79,7 +79,8 @@ client.on('message', async message => {
       }
  }
     if(message.content === "!archive")
-      {
+      { 
+        message.react('👍')
         message.channel.setParent("810080526152237087")
       }
 
