@@ -78,8 +78,10 @@ client.on('message', async message => {
       message.guild.members.cache.get(mention.id).roles.add("712289127948877844")
       }
  }
-    
-
+    if(message.content === "!archive")
+      {
+        message.channel.setParent("810080526152237087")
+      }
 
 
 
