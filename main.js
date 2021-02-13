@@ -11,7 +11,6 @@ const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
 const scaling = require('./scaling');
 const bye = require('./bye');
-const welcome2 = require('./welcome2');
 new TicTacToe({
   language: 'en',
   command: '!ttt'
@@ -60,7 +59,7 @@ client.once('ready', () => {
     poll(client)
     scaling(client)
     bye(client)
-   welcome2(client)
+
 });
 
 
