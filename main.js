@@ -86,13 +86,8 @@ client.on('message', async message => {
       }
       var nickname = message.content.split (" ").slice (1).join (" ");
   if (message.content.startsWith ('setNickname')) {
-    if(message.member.roles.has("810610356325842984"))
-
-
-    {
-    
-  
-    message.member.setNickname (nickname);}
+  {
+     message.member.setNickname (nickname);}
   }
 
     
