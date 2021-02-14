@@ -86,7 +86,9 @@ client.on('message', async message => {
       }
       var nickname = message.content.split (" ").slice (1).join (" ");
   if (message.content.startsWith ('setNickname')) {
-    if(message.guild.roles.find(role => role.name === "VIP"))
+    if(message.member.roles.has("810610356325842984"))
+
+
     {
     
   
