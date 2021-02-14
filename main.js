@@ -86,13 +86,14 @@ client.on('message', async message => {
       }
       var nickname = message.content.split (" ").slice (1).join (" ");
   if (message.content.startsWith ('setNickname')) {
-    message.member.setNickname (message.author.username(nickname));
+    if(message.guild.roles.find(role => role.name === "VIP"))
+    {
+    
+  
+    message.member.setNickname (nickname);}
   }
 
     
-
-
-
         if (message.channel.id === "712412653338886185") {
             let mes = message.content.substr(0);
 let sentence = mes.split("\n");
