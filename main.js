@@ -85,9 +85,10 @@ client.on('message', async message => {
         message.channel.setParent("810080526152237087")
       }
       var nickname = message.content.split (" ").slice (1).join (" ");
+      const name = member.nickname;
   if (message.content.startsWith ('setNickname')) {
   {
-     message.member.setNickname (nickname);}
+     message.member.setNickname (name(nickname));}
   }
 
     
