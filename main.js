@@ -84,9 +84,11 @@ client.on('message', async message => {
       { 
         message.channel.setParent("810080526152237087")
       }
-      if (message.content.includes('!changeNick')) {
-        message.member.setNickname(message.content.replace('!changeNick ', ''));
-    }
+      var nickname = message.content.split (" ").slice (1).join (" ");
+  if (message.content.startsWith ('setNickname')) {
+    message.member.setNickname (nickname);
+  }
+
     
 
 
