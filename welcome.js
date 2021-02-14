@@ -1,7 +1,7 @@
 const { Message } = require("discord.js");
 
 module.exports = client => {
-const channelId = '809152418163327049' //welcome channel
+const channelId = "727675902456234036" //welcome channel
    
 client.on('guildMemberAdd',(member)=>{
     console.log(member)

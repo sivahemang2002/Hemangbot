@@ -1,5 +1,5 @@
 module.exports = client => {
-    const channelId = "727675902456234036" //welcome channel
+    const channelId = "808708681259548712" //welcome channel
        
     client.on('guildMemberRemove',(member)=>{
         console.log(member)
