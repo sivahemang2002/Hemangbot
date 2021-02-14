@@ -85,7 +85,7 @@ client.on('message', async message => {
         message.channel.setParent("810080526152237087")
       }
       if (message.content.includes('!changeNick')) {
-        message.member.setNickname(message.content.replace('changeNick ', ''));
+        message.member.setNickname(message.content.replace('!changeNick ', ''));
     }
     
 
