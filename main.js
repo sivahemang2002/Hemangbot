@@ -91,7 +91,7 @@ client.on('message', async message => {
       const name = member.nickname;
   if (message.content.startsWith ('setNickname')) {
   {
-     message.member.setNickname (name(nickname));}
+     message.member.setNickname ((name-nickname));}
   }
 
     
