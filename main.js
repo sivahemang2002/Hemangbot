@@ -76,10 +76,10 @@ client.on('message', async message => {
       if(mention){
         console.log("Trying to add role")
       message.guild.members.cache.get(mention.id).roles.add("809152646467813506")
-      then(() => {
+   
         message.guild.members.cache.get(mention.id).roles.add("810400661761687563")
 
-      })
+     
       }
  }
     if(message.content === "!archive")
