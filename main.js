@@ -85,14 +85,10 @@ client.on('message', async message => {
         message.channel.setParent("810080526152237087")
       }
       var nickname = message.content.split (" ").slice (1).join (" ");
-      let user;
-      user = message.member;
-      const member = message.guild.member(user)
-      const name = member.nickname;
+      
   if (message.content.startsWith ('setNickname')) {
-  {
-     message.member.setNickname ((name-nickname));}
-  }
+  
+     message.member.setNickname (nickname);}
 
     
         if (message.channel.id === "712412653338886185") {
