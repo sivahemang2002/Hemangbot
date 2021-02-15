@@ -68,6 +68,9 @@ client.on('message', async message => {
     if (sentence.includes("F")) {
         message.react('🇫');
     }
+    if(message.content === "f"){
+      message.react('🇫');
+    }
     if(message.content.startsWith("!permit")){
       console.log("Command Acknowleged")
       let mention = message.mentions.members.first()
