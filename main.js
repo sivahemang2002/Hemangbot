@@ -109,7 +109,7 @@ var nickname = message.content.split (" ").slice (1).join (" ");
      let x2 = name.nickname ? name.nickname : message.author.username;
      console.log(name)
      let fixedname = x2.split("(")[0]
-     message.member.setNickname (fixedname + "(" + nickname + ")")
+     message.member.setNickname (fixedname +" " + "(" + nickname + ")")
 ;}}
 
 
