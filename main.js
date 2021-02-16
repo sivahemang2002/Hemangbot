@@ -115,6 +115,16 @@ message.react(x[0]);
       message.react(x[0]);
       }
                       }
+                      
+                if (message.channel.id === "811148120670076959") {
+                  let mes = message.content.substr(0);
+      let sentence = mes.split("\n");
+      for(var i=1;i<sentence.length;i++)
+      {
+      let x = sentence[i].split(" ");
+      message.react(x[0]);
+      }
+                      }
           if(message.channel.id === "715255733666709554")
           {
             message.react('✅')
