@@ -88,6 +88,9 @@ client.on('message', async message => {
         message.channel.setParent("810080526152237087")
       }
       var nickname = message.content.split (" ").slice (1).join (" ");
+      const roleName = message.member.roles.cache.find(r => r.name === "LI")
+      if(roleName)
+{
       
   if (message.content.startsWith ('setNickname')) {
      let name = message.guild.member(message.author);
@@ -95,7 +98,11 @@ client.on('message', async message => {
      console.log(name)
      let fixedname = x1.split("(")[0]
      message.member.setNickname (fixedname + "(" + nickname + ")")
-;}
+;}}
+else
+{
+  message.reply("You need to have LI to use this command.")
+}
 
     
         if (message.channel.id === "712412653338886185") {
