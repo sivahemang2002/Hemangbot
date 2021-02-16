@@ -88,7 +88,7 @@ client.on('message', async message => {
         message.channel.setParent("810080526152237087")
       }
       var nickname = message.content.split (" ").slice (1).join (" ");
-      const roleName = message.member.roles.cache.find(r => r.id === "811204818433081365")
+      const roleName = message.member.roles.cache.find(r => r.id === "725008517362089998")
       if(roleName)
 {
       
