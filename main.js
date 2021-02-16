@@ -90,8 +90,10 @@ client.on('message', async message => {
       var nickname = message.content.split (" ").slice (1).join (" ");
       
   if (message.content.startsWith ('setNickname')) {
-  
-     message.member.setNickname (nickname);}
+     let name = message.author.username;
+     let fixedname = name.split("(")[0]
+     message.member.setNickname (fixedname + "(" + nickname + ")")
+;}
 
     
         if (message.channel.id === "712412653338886185") {
