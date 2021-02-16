@@ -90,7 +90,7 @@ client.on('message', async message => {
       var nickname = message.content.split (" ").slice (1).join (" ");
       
   if (message.content.startsWith ('setNickname')) {
-     let name = message.author.username;
+     let name = message.author ? message.author.nickname : message.author.username;
      let fixedname = name.split("(")[0]
      message.member.setNickname (fixedname + "(" + nickname + ")")
 ;}
