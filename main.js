@@ -99,10 +99,8 @@ client.on('message', async message => {
      let fixedname = x1.split("(")[0]
      message.member.setNickname (fixedname + "(" + nickname + ")")
 ;}}
-else
-{
-  message.channel.send("You don't have LI to use this command")
-}
+
+
 
     
         if (message.channel.id === "712412653338886185") {
