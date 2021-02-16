@@ -91,7 +91,7 @@ client.on('message', async message => {
       
   if (message.content.startsWith ('setNickname')) {
      let name = message.guild.member(message.author);
-     let x1 = name ? name.nickname : message.author.username;
+     let x1 = name.nickname ? name.nickname : message.author.username;
      console.log(name)
      let fixedname = x1.split("(")[0]
      message.member.setNickname (fixedname + "(" + nickname + ")")
