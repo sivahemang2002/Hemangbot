@@ -273,9 +273,7 @@ message.react(x[0]);
 
 
                 });
-                client.on('guildMemberAdd', (member) => {
-                  member.guild.channels.get('807260246271721483').send("Welcome"); 
-              });
+               
               
 
                   command(client, 'createtextchannel', (message) => {
