@@ -5,8 +5,9 @@ module.exports = client => {
         console.log(member)
         const message =  "<@" + member + ">" + " " + "just left the server.";
         const channel = member.guild.channels.cache.get(channelId)
+        if(channel){
         channel.send(message)
-        
+        }
     
             
     
