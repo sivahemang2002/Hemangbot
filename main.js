@@ -284,7 +284,7 @@ message.react(x[0]);
                         type: 'text',
                       })
                       .then((channel) => {
-                        const categoryId = '811148588863586315'
+                        const categoryId = '728559757513850941'
                         channel.setParent(categoryId)
                       })
                   })
