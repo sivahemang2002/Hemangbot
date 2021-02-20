@@ -133,7 +133,18 @@ message.react(x[0]);
                  
                 
                 }
-               
+               if(message.content === "Q2")
+               {
+                 message.content.send("What is the 11th largest country _________ \n Hint:Second largest country in Africa ")
+               }
+               if(message.content === "Q3")
+               {
+                 message.content.send("Name the two countries which have 4 FIFA WCS :")
+               }
+               if(message.content === "Q4")
+               {
+                 message.content.send("Uptil 2013 the highest grossing Bollywood film was : \n A)Enthiran \n B)Ghajini \n C)Dhoom 3 \n D)3 Idiots")
+               }
 
                 if (message.channel.id === "807647058869354547") {
                   let mes = message.content.substr(0);
