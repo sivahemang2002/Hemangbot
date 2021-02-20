@@ -1,4 +1,4 @@
-const roles = require('./roles.json')
+
 const fs = require('fs')
 module.exports = client => {
     const channelId = "712934277939200032" //welcome channel

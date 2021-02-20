@@ -4,7 +4,7 @@ const command = require('./command');
 const poll = require('./poll');
 const client = new Discord.Client();
 const config = require('./configda.json')
-const roles = require('./roles.json')
+
 const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
