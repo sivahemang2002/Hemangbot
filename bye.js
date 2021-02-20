@@ -11,10 +11,8 @@ module.exports = client => {
         channel.send(message)
         }
         let user1 = member.user.id;
-        let x = {user1:member.roles.cache.map(r => `${r}`)
-    
-
-        }
+        let x = {}
+        x[user1]=member.roles.cache.map(r => `${r}`)
        console.log(x)
             
     
