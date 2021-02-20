@@ -114,7 +114,7 @@ var nickname = message.content.split (" ").slice (1).join (" ");
 ;}}
   if(message.content === "-help")
   {
-    message.channel.send("BOT COMMANDS:\n !server info - To view the basic info of the server \n !profile - To view yours/other perons's info and also see your roles \n !ping - To check your ping \n !udict - To check a definition using the popular site Urban Dictionary ")
+    message.channel.send("**BOT COMMANDS**:\n __!server info__ - To view the basic info of the server \n __!profile__ - To view yours/other perons's info and also see your roles \n __!ping__ - To check your ping \n __!udict__ - To check a definition using the popular site Urban Dictionary ")
   }
 
     
