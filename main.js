@@ -112,7 +112,10 @@ var nickname = message.content.split (" ").slice (1).join (" ");
      let fixedname = x2.split("(")[0]
      message.member.setNickname (fixedname +" " + "(" + nickname + ")")
 ;}}
-
+  if(message.content === "-help")
+  {
+    message.channel.send("BOT COMMANDS:\n !server info - To view the basic info of the server \n !profile - To view yours/other perons's info and also see your roles \n !ping - To check your ping \n !udict - To check a definition using the popular site Urban Dictionary ")
+  }
 
     
         if (message.channel.id === "712412653338886185") {
