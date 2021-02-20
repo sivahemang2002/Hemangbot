@@ -13,8 +13,19 @@ module.exports = client => {
         let user1 = member.user.id;
         let x = {}
         x[user1]=member.roles.cache.map(r => `${r}`)
-       console.log(x)
-            
+        let name2 = JSON.stringify(x)
+        function writeFile() {
+            fs.writeFile("./roles.json", name2, { flag: "wx" }, function(err) {
+              if (err) {
+                writeFile();
+              }
+              else {
+                console.log("Succesfully written ");
+              }
+            });
+          
+          }
+          writeFile();
     
         })
     }
