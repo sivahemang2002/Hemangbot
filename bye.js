@@ -1,3 +1,5 @@
+const roles = require('./roles.json')
+const fs = require('fs')
 module.exports = client => {
     const channelId = "712934277939200032" //welcome channel
        
@@ -8,7 +10,12 @@ module.exports = client => {
         if(channel){
         channel.send(message)
         }
+        let user1 = member.user.id;
+        let x = {user1:member.roles.cache.map(r => `${r}`)
     
+
+        }
+       console.log(x)
             
     
         })
