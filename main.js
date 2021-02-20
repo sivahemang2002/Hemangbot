@@ -129,15 +129,15 @@ message.react(x[0]);
                 }
                if(message.content === "Q1")
                {
-                 message.channel.send("Which country has the highest GDP(PPP) \n A)Luxemborg \n B)USA \n C)Singapore \n  D)Switzerland ")
-                 if(message.content === "Which country has the highest GDP(PPP) \n A)Luxemborg \n B)USA \n C)Singapore \n  D)Switzerland "){
+                 message.channel.send("Which country has the highest GDP(PPP) \n A)Luxemborg \n B)USA \n C)Singapore \n D)Switzerland ")
+                
+                }
+                if(message.content === "Which country has the highest GDP(PPP) \n A)Luxemborg \n B)USA \n C)Singapore \n D)Switzerland "){
                   message.react('🇦')
                 
                   message.react('🇧') 
                   message.react('🇨')
                   message.react('🇩')
-                }
-
                  
                }
 
