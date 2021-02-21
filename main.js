@@ -160,7 +160,7 @@ message.react(x[0]);
                         let mention = message.mentions.members.first()
                         if(mention){
                           console.log("Trying to add role")
-                        message.guild.members.cache.get(mention.id).roles.add("810400661761687563")}}
+                        message.guild.members.cache.get(mention.id).roles.add("811204818433081365")}}
                       
                 if (message.channel.id === "811148120670076959") {
                   let mes = message.content.substr(0);
