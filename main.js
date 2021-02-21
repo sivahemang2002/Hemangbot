@@ -90,9 +90,9 @@ client.on('message', async message => {
         message.channel.setParent("712678821035507774")
       }
 
-      if(message.content === "Happy Birthday da dei <!@587383572470562832>")
+      if(message.content === "Happy Birthday da dei <@!587383572470562832>")
       {
-        message.channel.send("**OMG! Today is <!@587383572470562832>'s Birthday**")
+        message.channel.send("**OMG! Today is <@!587383572470562832>'s Birthday**")
       }
       var nickname = message.content.split (" ").slice (1).join (" ");
       const roleName = message.member.roles.cache.find(r => r.id === "725008517362089998")
