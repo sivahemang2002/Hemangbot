@@ -124,7 +124,7 @@ var nickname = message.content.split (" ").slice (1).join (" ");
     const Embed1 = new Discord.MessageEmbed()
     .setColor(0XFFC300)
     .setTitle("Commands")
-    .setDescription("**BOT COMMANDS**:\n __!server info__ - To view the basic info of the server \n __!profile__ - To view yours/other perons's info and also see your roles \n __!ping__ - To check your ping \n __!udict__ - To check a definition using the popular site Urban Dictionary ")
+    .setDescription("**BOT COMMANDS**:\n __!server info__ - To view the basic info of the server \n __!profile__ - To view yours/other perons's info and also see your roles \n __!ping__ - To check your ping \n __!udict__ - To check a definition using the popular site Urban Dictionary \n \n **OTHER FEATURES** \n 1. Robo,[content]? - To ask a question to the bot \n 2.Asking a Poll - Please head over to the Polls channels and ask a question and Robo itself will give a reaction \n ")
     message.channel.send(Embed1);
   }
 
