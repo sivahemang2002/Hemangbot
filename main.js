@@ -188,7 +188,7 @@ message.react(x[0]);
 
               console.log("Trying to add role")
               try{
-           message.guild.members.cache.get(mention.id).roles.remove("809152646467813506")} 
+           message.guild.members.cache.get(mention.id).roles.remove("737446459967799447")} 
           catch(err){}}}
 
                 
@@ -216,6 +216,7 @@ message.react(x[0]);
                         {
                             message.channel.send("<@" + message.author + ">" + " Wait for a moment, the Wardens will be with you shortly");
                         }
+              
                    
                    if(message.content.includes ( "Dead server"))
                    {
