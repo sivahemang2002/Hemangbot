@@ -312,12 +312,7 @@ message.react(x[0]);
                            )
                        }
                  }	
-                 const channel = client.channels.cache.find(channel => channel.id === "813694021372477460")
-                 if(message.content.startsWith("!quote"))
-                 {
-                   channel.send(message)
-                     
-                 }
+                 
 
                 });
                
