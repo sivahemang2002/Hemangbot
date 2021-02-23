@@ -327,9 +327,10 @@ message.react(x[0]);
 
                         }
                         let mesArgs = args1.slice(1).join(" ")
-                        message.channel.send(mesArgs).then(messageReaction => {
+                        message.channel.send("**" + mesArgs + "**").then(messageReaction => {
                             messageReaction.react("👍")
                             messageReaction.react("👎")
+                            message.delete(3000).catch(console.error)
                         })
                     }
                 
