@@ -330,7 +330,7 @@ message.react(x[0]);
                         message.channel.send("**" + mesArgs + "**").then(messageReaction => {
                             messageReaction.react("👍")
                             messageReaction.react("👎")
-                            message.delete(3000)
+                            message.delete({timeout :3000})
                         })
                     }
                 
