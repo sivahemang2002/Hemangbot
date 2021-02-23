@@ -181,7 +181,16 @@ message.react(x[0]);
           {
             message.react('✅')
           }
-           
+          if(message.content.startsWith("!remove")){
+            console.log("Command Acknowleged")
+            let mention = message.mentions.members.first()
+            if(mention){
+
+              console.log("Trying to add role")
+              try{
+           message.guild.members.cache.get(mention.id).roles.remove("809152646467813506")} 
+          catch(err){}}}
+
                 
         if (message.channel.id === "806566443385618504") {
             message.react('🇦')
