@@ -216,6 +216,7 @@ message.react(x[0]);
                         {
                             message.channel.send("<@" + message.author + ">" + " Wait for a moment, the Wardens will be with you shortly");
                         }
+                        var response1 = [',looks like my favorite person is here','its a beautiful day right','how are you','I am a bit busy now will ttyl','hope you are doing good','looks like my favorite person is here','have a nice day']
                         if(message.mentions.has(client.user)&& message.content.includes("Hello")||message.content.includes("hello")){
                          
                          var row1 = Math.floor(Math.random()*((response1.length)-1)+1);
