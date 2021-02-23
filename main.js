@@ -125,7 +125,7 @@ var nickname = message.content.split (" ").slice (1).join (" ");
     .setColor(0XFFC300)
     .setTitle("Commands")
     .setDescription("**BOT COMMANDS**:\n __!server info__ - To view the basic info of the server \n __!profile__ - To view yours/other perons's info and also see your roles \n __!ping__ - To check your ping \n __!udict__ - To check a definition using the popular site Urban Dictionary ")
-    message.channel.send({Embed1})
+    message.channel.send(Embed1);
   }
 
     
