@@ -313,6 +313,25 @@ message.react(x[0]);
                            )
                        }
                  }	
+                 let args = message.content.substring(PREFIX.length).split(" ");
+                    switch(args[0])
+                    {
+                      case "poll":
+                        const Embed = new Discord.MessageEmbed()
+                        .setColor(0XFFC300)
+                        .setTitle("Initiate Poll")
+                        .setDescription("!poll to initiate a simple yes or no poll")
+                        if(!args[1])
+                        {
+                          message.channel.send(Embed);
+
+                        }
+                        let mesArgs = args.slice(1).join(" ")
+                        message.channel.send(mesArgs).then(messageReaction => {
+                            messageReaction.react("👍")
+                            messageReaction.react("👎")
+                        })
+                    }
                 
 
                 });
@@ -421,25 +440,7 @@ message.react(x[0]);
                         `${tag} You do not have permission to use this command.`
                       )
                     }
-                    let args = message.content.substring(PREFIX.length).split(" ");
-                    switch(args[0])
-                    {
-                      case "poll":
-                        const Embed = new Discord.MessageEmbed()
-                        .setColor(0XFFC300)
-                        .setTitle("Initiate Poll")
-                        .setDescription("!poll to initiate a simple yes or no poll")
-                        if(!args[1])
-                        {
-                          message.channel.send(Embed);
-
-                        }
-                        let mesArgs = args.slice(1).join(" ")
-                        message.channel.send(mesArgs).then(messageReaction => {
-                            messageReaction.react("👍")
-                            messageReaction.react("👎")
-                        })
-                    }
+                    
                    
                    
                   })
