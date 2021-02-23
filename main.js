@@ -217,7 +217,7 @@ message.react(x[0]);
                             message.channel.send("<@" + message.author + ">" + " Wait for a moment, the Wardens will be with you shortly");
                         }
                         if(message.mentions.has(client.user)&& message.content.includes("Hello")||message.content.includes("hello")){
-                           message.channel.send("Hey" + " " +"<@" + message.author + ">" + "how are you")
+                           message.channel.send("Hey" + " " +"<@" + message.author + ">" + " " + "how are you")
                         }
                    
                    if(message.content.includes ( "Dead server"))
