@@ -12,6 +12,7 @@ const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
 const scaling = require('./scaling');
 const bye = require('./bye');
+const PREFIX = "!"
 new TicTacToe({
   language: 'en',
   command: '!ttt'
@@ -312,7 +313,7 @@ message.react(x[0]);
                            )
                        }
                  }	
-                 
+                
 
                 });
                
@@ -420,7 +421,25 @@ message.react(x[0]);
                         `${tag} You do not have permission to use this command.`
                       )
                     }
-                    
+                    let args = message.content.substring(PREFIX.length).split(" ");
+                    switch(args[0])
+                    {
+                      case "poll":
+                        const Embed = new Discord.MessageEmbed()
+                        .setColor(0XFFC300)
+                        .setTitle("Initiate Poll")
+                        .setDescription("!poll to initiate a simple yes or no poll")
+                        if(!args[1])
+                        {
+                          message.channel.send(Embed);
+
+                        }
+                        let mesArgs = args.slice(1).join(" ")
+                        message.channel.send(msgArgs).then(messageReaction => {
+                            messageReaction.react("👍")
+                            messageReaction.react("👎")
+                        })
+                    }
                    
                    
                   })
