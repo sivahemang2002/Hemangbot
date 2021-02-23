@@ -330,7 +330,7 @@ message.react(x[0]);
                         message.channel.send("**" + mesArgs + "**").then(messageReaction => {
                             messageReaction.react("👍")
                             messageReaction.react("👎")
-                            message.delete(3000).catch(console.error)
+                            message.delete(3000)
                         })
                     }
                 
