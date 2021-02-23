@@ -221,11 +221,7 @@ message.react(x[0]);
                          
                          var row1 = Math.floor(Math.random()*((response1.length)-1)+1);
                           message.channel.send("Hey" + " " +"<@" + message.author + ">" + " " + response1[row1])}
-                        if(message.content.startsWith("!quote"))
-                        {
-                          const channel = client.channels.cache.find(channel => channel.id === "813694021372477460")
-                           channel.send(message)
-                        }
+                        
                    
                    if(message.content.includes ( "Dead server"))
                    {
@@ -316,7 +312,12 @@ message.react(x[0]);
                            )
                        }
                  }	
-
+                 const channel = client.channels.cache.find(channel => channel.id === "813694021372477460")
+                 if(message.content.startsWith("!quote"))
+                 {
+                   channel.send(message)
+                     
+                 }
 
                 });
                
