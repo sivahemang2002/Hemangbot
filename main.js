@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
 const command = require('./command');
-const poll = require('./poll');
+
 const client = new Discord.Client();
 const config = require('./configda.json')
 
@@ -56,7 +56,7 @@ client.on("messageDelete", (messageDelete) => {
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
-    poll(client)
+    
     scaling(client)
     bye(client)
 
