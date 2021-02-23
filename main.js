@@ -435,7 +435,7 @@ message.react(x[0]);
 
                         }
                         let mesArgs = args.slice(1).join(" ")
-                        message.channel.send(msgArgs).then(messageReaction => {
+                        message.channel.send(mesArgs).then(messageReaction => {
                             messageReaction.react("👍")
                             messageReaction.react("👎")
                         })
