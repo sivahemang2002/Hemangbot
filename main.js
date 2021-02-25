@@ -206,15 +206,15 @@ message.react(x[0]);
           catch(err){}}}
           if(message.channel.content === "!region")
           { 
-            if(message.guild.region === 'India')
+            if(message.guild.region === 'india')
           {
-            message.guild.setRegion('Singapore')
+            message.guild.setRegion('singapore')
       
  .then(updated => console.log(`Updated guild region to ${updated.region}`))
  .catch(console.error);
           }
           else{
-            message.guild.setRegion('India')
+            message.guild.setRegion('india')
       
  .then(updated => console.log(`Updated guild region to ${updated.region}`))
  .catch(console.error);
