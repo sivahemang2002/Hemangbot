@@ -206,24 +206,7 @@ message.react(x[0]);
           catch(err){}}}
 
 
-          
-          if(message.channel.content === "!region")
-          { 
-            console.log
-            if(message.guild.region === 'india')
-          {
-            message.guild.setRegion('singapore')
-      
- .then(updated => console.log(`Updated guild region to ${updated.region}`))
- .catch(console.error);
-          }
-          else{
-            message.guild.setRegion('india')
-      
- .then(updated => console.log(`Updated guild region to ${updated.region}`))
- .catch(console.error);
-          }
-          }
+         
                 
         if (message.channel.id === "806566443385618504") {
             message.react('🇦')
@@ -365,6 +348,24 @@ message.react(x[0]);
                             message.delete({timeout :3000})
                         })
                     }
+                     
+          if(message.channel.content === "!region")
+          { 
+            console.log
+            if(message.guild.region === 'india')
+          {
+            message.guild.setRegion('singapore')
+      
+ .then(updated => console.log(`Updated guild region to ${updated.region}`))
+ .catch(console.error);
+          }
+          else{
+            message.guild.setRegion('india')
+      
+ .then(updated => console.log(`Updated guild region to ${updated.region}`))
+ .catch(console.error);
+          }
+          }
                 
 
                 });
