@@ -65,6 +65,26 @@ client.once('ready', () => {
 
 
 client.on('message', async message => {
+  if(message.content === "!region")
+  { 
+    console.log
+    if(message.guild.region === 'india')
+  {
+    message.guild.setRegion('singapore')
+
+.then(updated => console.log(`Updated guild region to ${updated.region}`))
+.catch(console.error);
+  }
+  else{
+    message.guild.setRegion('india')
+
+.then(updated => console.log(`Updated guild region to ${updated.region}`))
+.catch(console.error);
+  }
+  }
+
+
+
     let msg = message.content.substr(0);
     let sentence = msg.split(" ");
     if (sentence.includes("F")) {
@@ -349,23 +369,7 @@ message.react(x[0]);
                         })
                     }
                      
-          if(message.channel.content === "!region")
-          { 
-            console.log
-            if(message.guild.region === 'india')
-          {
-            message.guild.setRegion('singapore')
-      
- .then(updated => console.log(`Updated guild region to ${updated.region}`))
- .catch(console.error);
-          }
-          else{
-            message.guild.setRegion('india')
-      
- .then(updated => console.log(`Updated guild region to ${updated.region}`))
- .catch(console.error);
-          }
-          }
+         
                 
 
                 });
