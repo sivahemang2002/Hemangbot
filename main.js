@@ -204,8 +204,12 @@ message.react(x[0]);
               try{
            message.guild.members.cache.get(mention.id).roles.remove("712754991521333319")} 
           catch(err){}}}
+
+
+          
           if(message.channel.content === "!region")
           { 
+            console.log
             if(message.guild.region === 'india')
           {
             message.guild.setRegion('singapore')
