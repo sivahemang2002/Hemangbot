@@ -204,7 +204,22 @@ message.react(x[0]);
               try{
            message.guild.members.cache.get(mention.id).roles.remove("712754991521333319")} 
           catch(err){}}}
-          
+          if(message.channel.content === "!region")
+          { 
+            if(guild.region === 'India')
+          {
+            guild.setRegion('Singapore')
+      
+ .then(updated => console.log(`Updated guild region to ${updated.region}`))
+ .catch(console.error);
+          }
+          else{
+            guild.setRegion('India')
+      
+ .then(updated => console.log(`Updated guild region to ${updated.region}`))
+ .catch(console.error);
+          }
+          }
                 
         if (message.channel.id === "806566443385618504") {
             message.react('🇦')
