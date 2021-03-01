@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const welcome = require('./welcome');
 const command = require('./command');
-
+const {Client} = require('pg')
 const client = new Discord.Client();
 const config = require('./configda.json')
 
@@ -17,7 +17,22 @@ new TicTacToe({
   language: 'en',
   command: '!ttt'
 }, client);
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
 
+client.connect();
+
+client.query('SELECT table_schema,table_name FROM information_schema.tables;', (err, res) => {
+  if (err) throw err;
+  for (let row of res.rows) {
+    console.log(JSON.stringify(row));
+  }
+  client.end();
+});
 let memberlog = "809152418163327049"
 const logID = "808708681259548712"
 function logs(message,args){
