@@ -19,13 +19,7 @@ new TicTacToe({
 }, client);
 
 
-client.query('SELECT table_schema,table_name FROM information_schema.tables;', (err, res) => {
-  if (err) throw err;
-  for (let row of res.rows) {
-    console.log(JSON.stringify(row));
-  }
-  client.end();
-});
+
 let memberlog = "809152418163327049"
 const logID = "808708681259548712"
 function logs(message,args){
