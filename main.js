@@ -21,7 +21,7 @@ new TicTacToe({
 
 
 let memberlog = "809152418163327049"
-const logID = "808708681259548712"
+const logID = "816277958276284437"
 function logs(message,args){
   const embed = new Discord.MessageEmbed()
                         .setColor("BLUE")
