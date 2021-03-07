@@ -84,7 +84,14 @@ client.on('message', async message => {
 .catch(console.error);
   }
   }
-
+ if(message.content.startsWith("!sh"))
+ {
+  console.log("Command Acknowleged")
+  let mention = message.mentions.members.first()
+  if(mention){
+    console.log("Trying to ban the user") 
+    message.delete();
+ }}
 
 
     let msg = message.content.substr(0);
@@ -490,11 +497,4 @@ message.react(x[0]);
                   
                  
                   
-                  
-                
-         
-             
-
-
-
-                  client.login(process.env.token);
+              client.login(process.env.token);
