@@ -72,7 +72,7 @@ client.once('ready', () => {
 
 
 client.on('message', async message => {
-  if(muted[muted.findIndex(message.author)])
+  if(muted[muted.indexOf(message.author)])
   {
     message.delete()
   }
@@ -101,7 +101,7 @@ client.on('message', async message => {
      setTimeout(function() {
       let mention = message.mentions.members.first()
       muted.push(mention)
-      muted.splice(muted.findIndex(mention),1)
+      muted.splice(muted.indexOf(mention),1)
     }, 10000)
  }
 
