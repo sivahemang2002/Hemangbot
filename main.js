@@ -72,6 +72,10 @@ client.once('ready', () => {
 
 
 client.on('message', async message => {
+  if(muted.find(message.author))
+  {
+    message.delete()
+  }
   if(message.content === "!region")
   { 
     console.log
@@ -91,11 +95,14 @@ client.on('message', async message => {
   }
  if(message.content.startsWith("!sh"))
  {
+
   console.log("Command Acknowleged")
-  let mention = message.mentions.members.first()
  
-   muted.push(mention)
-   console.log(muted)
+     setTimeout(function() {
+      let mention = message.mentions.members.first()
+      muted.push(mention)
+      muted.splice(muted.findIndex(mention),1)
+    }, 10000)
  }
 
 
