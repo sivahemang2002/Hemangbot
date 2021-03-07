@@ -102,7 +102,7 @@ client.on('message', async message => {
      setTimeout(function() {
       
       muted.splice(muted.indexOf(mention.id),1)
-    }, 10000)
+    }, 30000)
  }
 
 
