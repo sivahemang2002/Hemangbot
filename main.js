@@ -72,7 +72,7 @@ client.once('ready', () => {
 
 
 client.on('message', async message => {
-  if(muted.find(message.author))
+  if(muted[muted.findIndex(message.author)])
   {
     message.delete()
   }
