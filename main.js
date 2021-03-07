@@ -88,7 +88,7 @@ client.on('message', async message => {
  {
   console.log("Command Acknowleged")
   let mention = message.mentions.members.first()
-  if(mention){
+  if(message.includes(mention)){
     console.log("Trying to ban the user") 
     message.delete();
  }}
