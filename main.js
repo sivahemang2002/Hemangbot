@@ -18,6 +18,11 @@ new TicTacToe({
   command: '!ttt'
 }, client);
 
+let muted = [
+
+
+]
+
 
 
 let memberlog = "809152418163327049"
@@ -88,10 +93,10 @@ client.on('message', async message => {
  {
   console.log("Command Acknowleged")
   let mention = message.mentions.members.first()
-  if(message.author.id === mention){
-    console.log("Trying to ban the user") 
-    message.delete();
- }}
+ 
+   muted.push(mention)
+   console.log(muted)
+ }
 
 
     let msg = message.content.substr(0);
