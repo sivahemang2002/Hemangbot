@@ -97,10 +97,10 @@ client.on('message', async message => {
  {
 
   console.log("Command Acknowleged")
- 
+  let mention = message.mentions.members.first()
+  muted.push(mention)
      setTimeout(function() {
-      let mention = message.mentions.members.first()
-      muted.push(mention)
+      
       muted.splice(muted.indexOf(mention),1)
     }, 10000)
  }
