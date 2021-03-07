@@ -72,7 +72,7 @@ client.once('ready', () => {
 
 
 client.on('message', async message => {
-  if(muted[muted.indexOf(message.author)])
+  if(muted[muted.indexOf(message.author.id)])
   {
     message.delete()
   }
@@ -98,10 +98,10 @@ client.on('message', async message => {
 
   console.log("Command Acknowleged")
   let mention = message.mentions.members.first()
-  muted.push(mention)
+  muted.push(mention.id)
      setTimeout(function() {
       
-      muted.splice(muted.indexOf(mention),1)
+      muted.splice(muted.indexOf(mention.id),1)
     }, 10000)
  }
 
