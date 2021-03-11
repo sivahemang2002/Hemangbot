@@ -245,6 +245,12 @@ message.react(x[0]);
               try{
            message.guild.members.cache.get(mention.id).roles.remove("712754991521333319")} 
           catch(err){}}}
+          if(message.content.startsWith("!giveLI")){
+            console.log("Command Acknowleged")
+            let mention = message.mentions.members.first()
+            if(mention){
+              console.log("Trying to add role")
+            message.guild.members.cache.get(mention.id).roles.add("")}}
 
 
          
