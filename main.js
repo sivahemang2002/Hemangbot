@@ -384,6 +384,9 @@ message.react(x[0]);
                        }
                  }	
                  let args1 = message.content.substring(PREFIX.length).split(" ");
+                 const roleName2 = message.member.roles.cache.find(r => r.id === "712754991521333319")
+                 if(roleName2)
+                 {
                     switch(args1[0])
                     {
                       case "poll":
@@ -402,7 +405,7 @@ message.react(x[0]);
                             messageReaction.react("👎")
                             message.delete({timeout :3000})
                         })
-                    }
+                    }}
                      
          
                 
