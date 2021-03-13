@@ -345,6 +345,9 @@ message.react(x[0]);
                  if (message.content === "join group_gamenight") {
                   message.react('👍')
                  }
+                 if(message.content === "group_gamenight"){
+                   message.channel.send("Gamenight :<@!427714149607538688><@702053598443470918><@!729784244204732458><@724871282877005846>")
+                 }
                  const args = message.content.substring(0).split(" ")
 
                  if (message.content.startsWith(`!udict`)) {		
