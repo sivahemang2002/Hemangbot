@@ -406,8 +406,33 @@ message.react(x[0]);
                             message.delete({timeout :3000})
                         })
                     }}
-                     
-         
+                    const roleName3 = message.member.roles.cache.find(r => r.id === "811822746937065503")
+                    if(roleName3)
+                    {
+                      {
+                        switch(args1[0])
+                        {
+                          case "poll":
+                            const Embed = new Discord.MessageEmbed()
+                            .setColor(0XFFC300)
+                            .setTitle("Initiate Poll")
+                            .setDescription("!poll to initiate a simple yes or no poll")
+                            if(!args1[1])
+                            {
+                              message.channel.send(Embed);
+    
+                            }
+                            let mesArgs = args1.slice(1).join(" ")
+                            message.channel.send("**" + mesArgs + "**").then(messageReaction => {
+                                messageReaction.react("👍")
+                                messageReaction.react("👎")
+                                message.delete({timeout :3000})
+                            })
+                        }}
+
+
+
+                    }
                 
 
                 });
