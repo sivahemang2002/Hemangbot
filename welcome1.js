@@ -12,6 +12,6 @@ client.on('guildMemberAdd',(member)=>{
     
 
         
-n
+
     })
 }
