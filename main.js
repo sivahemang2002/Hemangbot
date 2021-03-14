@@ -4,7 +4,7 @@ const command = require('./command');
 const {Client} = require('pg')
 const client = new Discord.Client();
 const config = require('./configda.json')
-
+const welcome1 = require('./welcome1');
 const path = require('path')
 const fs = require('fs')
 const fetch = require('node-fetch')
@@ -63,7 +63,7 @@ client.on("messageDelete", (messageDelete) => {
 client.once('ready', () => {
     console.log('PrisonBot is online');
     welcome(client)
-    
+    welcome1(client)
     scaling(client)
     bye(client)
 
@@ -245,12 +245,8 @@ message.react(x[0]);
               try{
            message.guild.members.cache.get(mention.id).roles.remove("712754991521333319")} 
           catch(err){}}}
-          if(message.content.startsWith("!giveLI")){
-            console.log("Command Acknowleged")
-            let mention = message.mentions.members.first()
-            if(mention){
-              console.log("Trying to add role")
-            message.guild.members.cache.get(mention.id).roles.add("")}}
+          
+         
             if(message.content.startsWith("!LI")){
               console.log("Command Acknowleged")
               let mention = message.mentions.members.first()
