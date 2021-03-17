@@ -7,8 +7,8 @@ module.exports = (client) => {
     client.emojis.cache.find((emoji) => emoji.name == emojiName)
 
   const emojis = {
-    "pg":'Red',
-    "amber":'Yellow'
+    '🌰':'Red',
+    '🧒🏻':'Yellow'
 
 
   }
@@ -19,7 +19,7 @@ module.exports = (client) => {
   for (const key in emojis) {
     const emoji = getEmoji(key)
     console.log(key)
-    reactions.push(emoji)
+    reactions.push(key)
     console.log(emoji)
 
     const role = emojis[key]
