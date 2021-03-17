@@ -7,6 +7,7 @@ const config = require('./configda.json')
 const welcome1 = require('./welcome1');
 const path = require('path')
 const fs = require('fs')
+const firstmessage = require('./firstmessage')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
@@ -66,7 +67,7 @@ client.once('ready', () => {
     welcome1(client)
     scaling(client)
     bye(client)
-
+    firstMessage(client, '821771709208068098', 'hello world!!!', ['🔥', '🍉'])
 });
 
 
