@@ -13,6 +13,7 @@ const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
 const scaling = require('./scaling');
 const bye = require('./bye');
+const roleclaim = require('./roleclaim');
 const PREFIX = "!"
 new TicTacToe({
   language: 'en',
@@ -67,7 +68,7 @@ client.once('ready', () => {
     welcome1(client)
     scaling(client)
     bye(client)
-    firstmessage(client, '821771709208068098', 'hello world!!!', ['🔥', '🍉'])
+    roleclaim(client)
 });
 
 
