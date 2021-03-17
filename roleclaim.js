@@ -17,13 +17,12 @@ module.exports = (client) => {
 
   let emojiText = 'Add a reaction to claim a role\n\n'
   for (const key in emojis) {
-    const emoji = getEmoji(key)
-    console.log(key)
+    
     reactions.push(key)
-    console.log(emoji)
+    
 
     const role = emojis[key]
-    emojiText += `${emoji.name} = ${role}\n`
+    emojiText += `${key.name} = ${role}\n`
   }
 
   firstmessage(client, channelId, emojiText, reactions)
