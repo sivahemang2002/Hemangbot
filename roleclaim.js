@@ -22,7 +22,7 @@ module.exports = (client) => {
     emojiText += `${emoji} = ${role}\n`
   }
 
-  firstMessage(client, channelId, emojiText, reactions)
+  firstmessage(client, channelId, emojiText, reactions)
 
   const handleReaction = (reaction, user, add) => {
     if (user.id === '806539885778829312') {
