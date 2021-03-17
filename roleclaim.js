@@ -19,6 +19,7 @@ module.exports = (client) => {
   for (const key in emojis) {
     const emoji = getEmoji(key)
     reactions.push(emoji)
+    console.log(emoji)
 
     const role = emojis[key]
     emojiText += `${emoji} = ${role}\n`
