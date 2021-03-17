@@ -4,7 +4,7 @@ module.exports = (client) => {
   const channelId = '821771709208068098'
 
   const getEmoji = (emojiName) =>
-    client.emojis.find((emoji) => emoji.name === emojiName)
+    client.emojis.cache.find((emoji) => emoji.name === emojiName)
 
   const emojis = {
     "middle_finger":'Red',
