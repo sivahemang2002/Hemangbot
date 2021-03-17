@@ -67,7 +67,7 @@ client.once('ready', () => {
     welcome1(client)
     scaling(client)
     bye(client)
-    firstMessage(client, '821771709208068098', 'hello world!!!', ['🔥', '🍉'])
+    firstmessage(client, '821771709208068098', 'hello world!!!', ['🔥', '🍉'])
 });
 
 
