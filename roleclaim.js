@@ -4,7 +4,7 @@ module.exports = (client) => {
   const channelId = '821771709208068098'
 
   const getEmoji = (emojiName) =>
-    client.emojis.cache.find((emoji) => emoji.name === emojiName)
+    client.emojis.cache.find((emoji) => emoji.name == emojiName)
 
   const emojis = {
     "middle_finger":'Red',
@@ -18,6 +18,7 @@ module.exports = (client) => {
   let emojiText = 'Add a reaction to claim a role\n\n'
   for (const key in emojis) {
     const emoji = getEmoji(key)
+    console.log(key)
     reactions.push(emoji)
     console.log(emoji)
 
