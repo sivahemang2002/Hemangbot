@@ -7,8 +7,8 @@ module.exports = (client) => {
     client.emojis.cache.find((emoji) => emoji.name == emojiName)
 
   const emojis = {
-    ":middle_finger:":'Red',
-    ":heart:":'Yellow'
+    "pg":'Red',
+    "amber":'Yellow'
 
 
   }
