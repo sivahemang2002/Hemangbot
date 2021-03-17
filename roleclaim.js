@@ -22,7 +22,7 @@ module.exports = (client) => {
     
 
     const role = emojis[key]
-    emojiText += `key = ${role}\n`
+    emojiText += `${key} = ${role}\n`
   }
 
   firstmessage(client, channelId, emojiText, reactions)
