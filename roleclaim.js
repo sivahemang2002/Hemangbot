@@ -7,9 +7,16 @@ module.exports = (client) => {
     client.emojis.cache.find((emoji) => emoji.name == emojiName)
 
   const emojis = {
-    '🔴':'Red',
-    '💛':'Yellow',
-    
+    '📀':'Canary Yellow',
+    '💛':'Electric Yellow',
+    '🟣':'Iris Purple',
+    '🟡':'Lime Yellow',
+    '🍏':'Spring Green',
+    '🎀':'Ultra Pink',
+    '🟢':'Chartreuse Green',
+    '🦩':'Flamingo Red',
+    '🔴':'Bubblegum Pink',
+    '🔵':'Baby Blue' 
 
 
   }
