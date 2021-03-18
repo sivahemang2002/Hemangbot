@@ -8,7 +8,7 @@ module.exports = (client) => {
 
   const emojis = {
     '🔴':'Red',
-    '🟡':'Yellow'
+    ':ffcb5c:':'Yellow'
 
 
   }
