@@ -10,7 +10,7 @@ module.exports = (client) => {
     '📀':'Canary Yellow',
     '💛':'Electric Yellow',
     '🟣':'Iris Purple',
-    '🟡':'Lime Yellow',
+    '🟡':'Lime Green',
     '🍏':'Spring Green',
     '🎀':'Ultra Pink',
     '🟢':'Chartreuse Green',
@@ -23,7 +23,7 @@ module.exports = (client) => {
 
   const reactions = []
 
-  let emojiText = 'As a Server Booster, you get a chance to pick a colour for chat.See the above colours in the image below and selected the colour here.\n\n'
+  let emojiText = 'As a Server Booster, you get a chance to pick a colour for chat.See the above colours in the image below and select the colour here.\n\n'
   for (const key in emojis) {
     
     reactions.push(key)
