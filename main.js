@@ -158,8 +158,12 @@ client.on('message', async message => {
      let fixedname = x1.split("(")[0]
      message.member.setNickname (fixedname + "(" + nickname + ")")
 ;}}
-var nickname = message.content.split (" ").slice (1).join (" ");
-      const roleName1 = message.member.roles.cache.find(r => r.id === "811822746937065503")
+var nickname = " "
+const roleName1 = " "
+      try{
+         nickname = message.content.split (" ").slice (1).join (" ");
+         roleName1 = message.member.roles.cache.find(r => r.id === "811822746937065503")
+      }catch(err){}
       if(roleName1)
 {
       
