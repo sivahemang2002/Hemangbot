@@ -70,8 +70,8 @@ client.once('ready', () => {
     scaling(client)
     bye(client)
     roleclaim(client)
-    client.users.fetch('106797161403924480').then((user) => {
-      user.send('Monke' )})
+    client.users.fetch('729784244204732458').then((user) => {
+      user.send('Hey Muskan' )})
 });
 
 
