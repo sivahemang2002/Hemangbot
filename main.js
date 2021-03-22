@@ -14,6 +14,7 @@ const TicTacToe = require('discord-tictactoe');
 const scaling = require('./scaling');
 const bye = require('./bye');
 const roleclaim = require('./roleclaim');
+const private = require('./private');
 const PREFIX = "!"
 new TicTacToe({
   language: 'en',
