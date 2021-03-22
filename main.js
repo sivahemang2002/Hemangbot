@@ -141,39 +141,31 @@ client.on('message', async message => {
       {
         message.channel.send("**OMG! Today is <@!587383572470562832>'s Birthday**")
       }
-      var nickname = " "
-      const roleName = " "
-      try{
-         nickname = message.content.split (" ").slice (1).join (" ");
-         roleName = message.member.roles.cache.find(r => r.id === "725008517362089998")
-      }catch(err){}
-      if(roleName)
-{
-    
-      
+
+      if (message.content.startsWith ('setNickname')) {
+         let nickname = message.content.split (" ").slice (1).join (" ");
+         const roleName = message.member.roles.cache.find(r => r.id === "725008517362089998")
+         if(roleName){
+          let name = message.guild.member(message.author);
+          let x1 = name.nickname ? name.nickname : message.author.username;
+          console.log(name)
+          let fixedname = x1.split("(")[0]
+          message.member.setNickname (fixedname + "(" + nickname + ")")
+         }
+    ;}
+
+
   if (message.content.startsWith ('setNickname')) {
-     let name = message.guild.member(message.author);
-     let x1 = name.nickname ? name.nickname : message.author.username;
-     console.log(name)
-     let fixedname = x1.split("(")[0]
-     message.member.setNickname (fixedname + "(" + nickname + ")")
-;}}
-var nickname = " "
-const roleName1 = " "
-      try{
-         nickname = message.content.split (" ").slice (1).join (" ");
-         roleName1 = message.member.roles.cache.find(r => r.id === "811822746937065503")
-      }catch(err){}
-      if(roleName1)
-{
-      
-  if (message.content.startsWith ('setNickname')) {
-     let name = message.guild.member(message.author);
+    let nickname = message.content.split (" ").slice (1).join (" ");
+    const roleName1 = message.member.roles.cache.find(r => r.id === "811822746937065503")
+    if(roleName1){
+      let name = message.guild.member(message.author);
      let x2 = name.nickname ? name.nickname : message.author.username;
      console.log(name)
      let fixedname = x2.split("(")[0]
      message.member.setNickname (fixedname +" " + "(" + nickname + ")")
-;}}
+    }
+  ;}
   if(message.content === "-help")
   { 
     const Embed1 = new Discord.MessageEmbed()
@@ -186,10 +178,10 @@ const roleName1 = " "
     
         if (message.channel.id === "712412653338886185") {
             let mes = message.content.substr(0);
-let sentence = mes.split("\n");
-for(var i=1;i<sentence.length;i++)
-{
-let x = sentence[i].split(" ");
+            let sentence = mes.split("\n");
+            for(var i=1;i<sentence.length;i++)
+            {
+            let x = sentence[i].split(" ");
 message.react(x[0]);
 }
                 }
@@ -401,18 +393,14 @@ message.react(x[0]);
                  }
                  
                  
-                 let args1 = " "
-                  const roleName2 = " "
-                 try{
-                   args1 = message.content.substring(PREFIX.length).split(" ");
-                   roleName2 = message.member.roles.cache.find(r => r.id === "712754991521333319")
-                 }catch(err){}
-                 if(roleName2)
-                 {
+                 let args1 = message.content.substring(PREFIX.length).split(" ");
                     switch(args1[0])
                     {
                       case "poll":
-                        const Embed = new Discord.MessageEmbed()
+                        let args1 = message.content.substring(PREFIX.length).split(" ");
+                        const roleName2 = message.member.roles.cache.find(r => r.id === "712754991521333319" || r.id === "811822746937065503")
+                        if(roleName2){
+                          const Embed = new Discord.MessageEmbed()
                         .setColor(0XFFC300)
                         .setTitle("Initiate Poll")
                         .setDescription("!poll to initiate a simple yes or no poll")
@@ -427,43 +415,9 @@ message.react(x[0]);
                             messageReaction.react("👎")
                             message.delete({timeout :3000})
                         })
-                    }}
-                    const roleName3 = " "
-                    try{
-                       roleName3 = message.member.roles.cache.find(r => r.id === "811822746937065503")
-                    }catch(err){}
-                    if(roleName3)
-                    {
-                      {
-                        switch(args1[0])
-                        {
-                          case "poll":
-                            const Embed = new Discord.MessageEmbed()
-                            .setColor(0XFFC300)
-                            .setTitle("Initiate Poll")
-                            .setDescription("!poll to initiate a simple yes or no poll")
-                            if(!args1[1])
-                            {
-                              message.channel.send(Embed);
-    
-                            }
-                            let mesArgs = args1.slice(1).join(" ")
-                            message.channel.send("**" + mesArgs + "**").then(messageReaction => {
-                                messageReaction.react("👍")
-                                messageReaction.react("👎")
-                                message.delete({timeout :3000})
-                            })
-                        }}
-
-
-
+                        }
                     }
-                
-
                 });
-               
-              
-
                   command(client, 'createtextchannel', (message) => {
                     const name = message.content.replace('!createtextchannel ', '')
                 
