@@ -398,9 +398,15 @@ message.react(x[0]);
                                .setDescription(`No results were found for **${args.slice(1).join(" ")}**`)
                            )
                        }
-                 }	
-                 let args1 = message.content.substring(PREFIX.length).split(" ");
-                 const roleName2 = message.member.roles.cache.find(r => r.id === "712754991521333319")
+                 }
+                 
+                 
+                 let args1 = " "
+                  const roleName2 = " "
+                 try{
+                   args1 = message.content.substring(PREFIX.length).split(" ");
+                   roleName2 = message.member.roles.cache.find(r => r.id === "712754991521333319")
+                 }catch(err){}
                  if(roleName2)
                  {
                     switch(args1[0])
@@ -422,7 +428,10 @@ message.react(x[0]);
                             message.delete({timeout :3000})
                         })
                     }}
-                    const roleName3 = message.member.roles.cache.find(r => r.id === "811822746937065503")
+                    const roleName3 = " "
+                    try{
+                       roleName3 = message.member.roles.cache.find(r => r.id === "811822746937065503")
+                    }catch(err){}
                     if(roleName3)
                     {
                       {
