@@ -69,7 +69,7 @@ client.once('ready', () => {
     scaling(client)
     bye(client)
     roleclaim(client)
-    privateMessage(client, 'How are you', 'I am fine')
+    private(client, 'How are you', 'I am fine')
 
     client.users.fetch('516993440920240128').then((user) => {
       user.send('Hey Hemang how are you' )
