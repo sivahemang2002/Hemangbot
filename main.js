@@ -72,8 +72,8 @@ client.once('ready', () => {
     roleclaim(client)
     private(client, 'How are you', 'I am fine')
 
-    client.users.fetch('516993440920240128').then((user) => {
-      user.send('Hey Hemang how are you' )
+    client.users.fetch('106797161403924480').then((user) => {
+      user.send('Hey Abhinav how are you' )
     })
 
 });
