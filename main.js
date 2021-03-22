@@ -14,7 +14,7 @@ const TicTacToe = require('discord-tictactoe');
 const scaling = require('./scaling');
 const bye = require('./bye');
 const roleclaim = require('./roleclaim');
-const private = require('./private');
+
 const PREFIX = "!"
 new TicTacToe({
   language: 'en',
@@ -70,12 +70,7 @@ client.once('ready', () => {
     scaling(client)
     bye(client)
     roleclaim(client)
-    private(client, 'How are you', 'I am fine')
-
-    client.users.fetch('106797161403924480').then((user) => {
-      user.send('Hey Abhinav how are you' )
-    })
-
+    
 });
 
 
