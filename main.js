@@ -141,10 +141,15 @@ client.on('message', async message => {
       {
         message.channel.send("**OMG! Today is <@!587383572470562832>'s Birthday**")
       }
-      var nickname = message.content.split (" ").slice (1).join (" ");
-      const roleName = message.member.roles.cache.find(r => r.id === "725008517362089998")
+      var nickname = " "
+      const roleName = " "
+      try{
+         nickname = message.content.split (" ").slice (1).join (" ");
+         roleName = message.member.roles.cache.find(r => r.id === "725008517362089998")
+      }catch(err){}
       if(roleName)
 {
+    
       
   if (message.content.startsWith ('setNickname')) {
      let name = message.guild.member(message.author);
