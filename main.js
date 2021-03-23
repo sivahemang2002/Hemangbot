@@ -37,7 +37,7 @@ function logs(message,args){
                         .addField("ID:", `${message.author}`, true)
                         .addField("Username:", `${message.author.username !== null ? `${message.author.username}` : 'None'}`, true)
                         .addField("Log:",args)
-                        .addField(`Channel ID: <#${message.channel.id}>`)
+                        .addField("Channel ID:",`${message.channel}`)
                         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
   client.channels.cache.get(logID).send(embed)
 
