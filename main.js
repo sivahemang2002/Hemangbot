@@ -44,7 +44,7 @@ function logs(message,args){
 }
 
 client.on('messageUpdate',(oldmessage, newmessage ) => {
-  if( message.channel.guild.id = '806542035052920893'){
+  if(oldmessage.channel.guild.id = '806542035052920893'){
   if(logID != newmessage.channel.id && oldmessage.member.bot == false)
   {
   let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content ;
@@ -53,7 +53,7 @@ client.on('messageUpdate',(oldmessage, newmessage ) => {
 
 })
 client.on("messageDelete", (messageDelete) => {
-  if(message.channel.guild.id = '806542035052920893'){
+  if(messageDelete.channel.guild.id = '806542035052920893'){
   if(logID !=messageDelete.channel.id)
   {
   let log = `**This message by ${messageDelete.author.tag} was deleted**.
