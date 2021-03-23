@@ -45,7 +45,7 @@ function logs(message,args){
 
 client.on('messageUpdate',(oldmessage, newmessage ) => {
   
-  if(logID != newmessage.channel.id && oldmessage.author.user.bot == false)
+  if(logID != newmessage.channel.id && oldmessage.member.bot == false)
   {
   let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content ;
   logs(newmessage,log)}
