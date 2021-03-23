@@ -45,7 +45,7 @@ function logs(message,args){
 
 client.on('messageUpdate',(oldmessage, newmessage ) => {
   
-  if(logID != newmessage.channel.id)
+  if(logID != newmessage.channel.id && oldmessage.author.user.bot == false)
   {
   let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content ;
   logs(newmessage,log)}
@@ -54,7 +54,7 @@ client.on('messageUpdate',(oldmessage, newmessage ) => {
 })
 client.on("messageDelete", (messageDelete) => {
   
-  if(logID !=messageDelete.channel.id )
+  if(logID !=messageDelete.channel.id)
   {
   let log = `**This message by ${messageDelete.author.tag} was deleted**.
              ${messageDelete.content}`;
