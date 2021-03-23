@@ -29,7 +29,7 @@ let muted = [
 
 
 let memberlog = "809152418163327049"
-const logID = "808708681259548712"
+const logID = "718779866710933615"
 function logs(message,args){
   const embed = new Discord.MessageEmbed()
                         .setColor("BLUE")
@@ -44,7 +44,7 @@ function logs(message,args){
 }
 
 client.on('messageUpdate',(oldmessage, newmessage ) => {
-  if(oldmessage.channel.guild.id == '806542035052920893'){
+  if(oldmessage.channel.guild.id == '711634547770654791'){
   if(logID != newmessage.channel.id && oldmessage.member.bot == false)
   {
   let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content ;
@@ -53,7 +53,7 @@ client.on('messageUpdate',(oldmessage, newmessage ) => {
 
 })
 client.on("messageDelete", (messageDelete) => {
-  if(messageDelete.channel.guild.id == '806542035052920893'){
+  if(messageDelete.channel.guild.id == '711634547770654791'){
   if(logID !=messageDelete.channel.id)
   {
   let log = `**This message by ${messageDelete.author.tag} was deleted**.
