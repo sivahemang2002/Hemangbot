@@ -45,8 +45,8 @@ function logs(message,args){
 
 client.on('messageUpdate',(oldmessage, newmessage ) => {
   if(oldmessage.channel.guild.id == '711634547770654791'){
-    
-  if(logID != newmessage.channel.id && oldmessage.member.bot == false)
+    console.log(newmessage.member.bot)
+  if(logID != newmessage.channel.id && newmessage.member.bot == false)
   {
     console.log("messageupdate")
   let log = "Old message: " + oldmessage.content + "\nNew Message: " + newmessage.content ;
