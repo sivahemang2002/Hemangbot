@@ -14,6 +14,7 @@ const TicTacToe = require('discord-tictactoe');
 const scaling = require('./scaling');
 const bye = require('./bye');
 const roleclaim = require('./roleclaim');
+const bye1 = require('./bye1');
 
 const PREFIX = "!"
 new TicTacToe({
@@ -72,6 +73,7 @@ client.once('ready', () => {
     welcome1(client)
     scaling(client)
     bye(client)
+    bye1(client)
     roleclaim(client)
    
 });
