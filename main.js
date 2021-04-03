@@ -137,72 +137,7 @@ client.on('message', async message => {
  }
  if(message.content === "-birthdaylist")
  {
-   message.channel.send("● Jan-01: 335439318141239297 Nazrani#9974 - Nickname: Allen \n ● Jan-01: 690594833806393414 Annabie#3105 - Nickname: Anika \n● Jan-14: 245483264502923265 SNM#2408 - Nickname: Shardul👑"
-   ● Jan-17: 392743437683654656 shashank#2021 - Nickname: Shashank(6ix9ine)(fake engineer)
-   ● Jan-20: 254072409878036480 ShadowDragon#4636 - Nickname: Vishnu
-   ● Feb-15: 106797161403924480 DeltaRager#8271 - Nickname: Abhinav
-   ● Feb-23: 587383572470562832 addu#4093 - Nickname: addu 🍗
-   ● Feb-27: 587940568210866226 dhvanisutaria#9299 - Nickname: Dhvani
-   ● Mar-15: 591516801423245312 waffles#7080 - Nickname: Pallavi
-   ● Mar-16: 745239329273544785 harsh002#7845 - Nickname: Harsh
-   ● Mar-19: 349112856400232450 arjun#1064 - Nickname: Arjun ⚕
-   ● Mar-21: 690689563093368922 Iamafancycandle#9962 - Nickname: Sakshi
-   ● Mar-28: 690910552297308190 CARSTAIRS#6008 - Nickname: Medha
-   ● Mar-31: 755027725185450026 sputnik#6325 - Nickname: Janhavi
-   ● Apr-10: 392237937246339083 tndurinites#0839 - Nickname: Thani MAA (Tandoori Thanima)
-   ● Apr-21: 714913977649463347 sana#6617 - Nickname: Sana
-   ● Apr-24: 697454804364034129 priyansh#8894
-   ● Apr-25: 724871282877005846 Shreekaar#4654
-   ● Apr-26: 739107898067517550 Divii#3476 - Nickname: Divyansh
-   ● Apr-27: 731868476360359997 fanil#5040
-   ● Apr-27: 773875543690707015 janki#7740 - Nickname: Janki
-   ● May-15: 504366626787950621 rebreellion#3248 - Nickname: Bree
-   ● May-21: 714866717121052713 sanjana#6625 - Nickname: Sanjana
-   ● May-24: 260480747582783488 Anshieboi#8940 - Nickname: Ansh
-   ● May-26: 691615842001092679 gangsta#6877 - Nickname: Vaishnavi
-   ● May-30: 702053598443470918 yaquta#5829
-   ● May-31: 362845029498355714 aaradhanb#0629 - Nickname: Aaradhan
-   ● Jun-08: 697854182060720320 Mayank#2967 - Nickname: Mayank
-   ● Jun-17: 429921815922475009 Ansh Gupta#0939 - Nickname: Ansh (Joel Dsouza)
-   ● Jul-25: 687023647281381438 Madhu#8006
-   ● Jul-28: 689545994207101065 sinhasaheb#1240 - Nickname: Pratyush (Don Praty)
-   ● Jul-30: 728868019438354432 Jill#8164 - Nickname: Jill ✨
-   ● Aug-02: 780289435019378728 Devesh#4418
-   ● Aug-02: 716270411733794877 muhsinaaa#8104 - Nickname: Muhsina
-   ● Aug-04: 721348341203599451 akshitbindal#1263 - Nickname: Akshit
-   ● Aug-13: 540950441215787010 shreya#9003 - Nickname: Shreya Tatke
-   ● Aug-14: 722702462527733830 shivaaanay#2452 - Nickname: Shiva
-   ● Aug-14: 634380346015875072 sacchinbhg#1018 - Nickname: Sacchin
-   ● Aug-16: 718454218410819626 cynerra#8750 - Nickname: cynu
-   ● Aug-21: 792383816630140948 dopecoffee#7707 - Nickname: Atharva
-   ● Sep-04: 516993440920240128 Hemang#2267
-   ● Sep-10: 714874002585419817 Titiksha#0534
-   ● Sep-26: 724742262554230784 Megha#1776 - Nickname: Megha (Megs)
-   ● Sep-30: 417312380108931092 cacisama#6539 - Nickname: Akshara
-   ● Oct-03: 759126265977765891 Rose Jose#9595
-   ● Oct-04: 608268975264235531 kunal#3720 - Nickname: Kunal
-   ● Oct-13: 728829310558928897 Samhitha#4795 - Nickname: Sam
-   ● Oct-23: 728681649059004579 Shreya#4638 - Nickname: Shreya (Mod nahi Mood)
-   ● Oct-24: 685544149814214786 oblatecordon#9792 - Nickname: nora (🌚)
-   ● Oct-26: 694123367694991382 Shweta#3407
-   ● Oct-29: 792450977403895829 sid 29_2000#9323 - Nickname: Siddhi
-   ● Nov-11: 729784244204732458 Muskan#6974 - Nickname: Muskan (Rosy)
-   ● Nov-12: 499212732143239168 _Fireball_Rex_#7048 - Nickname: Awais
-   ● Nov-13: 316968936988082188 Neil#4123
-   ● Nov-14: 427714149607538688 ajinkya#5270 - Nickname: Ajinkya (Not an impostor)
-   ● Nov-17: 689834555489910803 Bunyip#0142 - Nickname: Anubhav
-   ● Nov-18: 767164882386157608 Nihari Reddy#4579
-   ● Nov-18: 274284574555766786 prasanth#0001
-   ● Nov-22: 710780800143982622 TheAhuzaBoi#6242 - Nickname: Mohit Ahuja
-   ● Nov-25: 649185443002449926 Mansi#5265
-   ● Dec-03: 569188372191641611 ashville#6669 - Nickname: Anoushka
-   ● Dec-04: 622837658850295858 Lekhika#5312 - Nickname: Lekhika
-   ● Dec-08: 427427280482992128 Ankit#2000
-   ● Dec-14: 713300475444985897 Momo🥟#1164
-   ● Dec-15: 742035662563442730 Simran#2185
-   ● Dec-17: 731818289717575770 Ritika#8145 - Nickname: Ritika
-   ● Dec-26: 697905350988398695 pleasebanmayonnaise#1263 - Nickname: Manvi (gillette)
-   ● Dec-26: 701364406486827089 kanchan#9204 )
+   message.channel.send("● Jan-01: 335439318141239297 Nazrani#9974 - Nickname: Allen \n ● Jan-01: 690594833806393414 Annabie#3105 - Nickname: Anika \n● Jan-14: 245483264502923265 SNM#2408 - Nickname: Shardul👑");
  }
  
     if(message.content === "!archive")
