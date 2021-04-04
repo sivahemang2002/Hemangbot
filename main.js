@@ -392,7 +392,7 @@ message.react(x[0]);
                  }
                  if(message.content === "group_Shreya")
                  {
-                  message.channel.send("Shreya's Assemble :<@!540950441215787010> <@!804323493533581322><@!728681649059004579>")
+                  message.channel.send("Shreya's Assemble :<@!540950441215787010> <@!804323493533581322> <@!728681649059004579>")
                  }
                  const args = message.content.substring(0).split(" ")
 
