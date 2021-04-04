@@ -137,7 +137,7 @@ client.on('message', async message => {
  }
  if(message.content === "-birthdaylist")
  {
-   message.channel.send("● Jan-01: 335439318141239297 Nazrani#9974 - Nickname: Allen \n ● Jan-01: 690594833806393414 Annabie#3105 - Nickname: Anika \n● Jan-14: 245483264502923265 SNM#2408 - Nickname: Shardul👑");
+   message.channel.send("● Jan-01: 335439318141239297 Nazrani#9974 - Nickname: Allen \n● Jan-01: 690594833806393414 Annabie#3105 - Nickname: Anika \n● Jan-14: 245483264502923265 SNM#2408 - Nickname: Shardul👑");
  }
  
     if(message.content === "!archive")
@@ -389,6 +389,10 @@ message.react(x[0]);
                  }
                  if(message.content === "group_gamenight"){
                    message.channel.send("Gamenight : <@!427714149607538688> <@702053598443470918> <@!729784244204732458> <@724871282877005846> <@516993440920240128> <@!728681649059004579> <@!755027725185450026> <@!714866717121052713>")
+                 }
+                 if(message.content === "group_Shreya")
+                 {
+                  message.channel.send("Shreya's Assemble :<@!540950441215787010> <@!804323493533581322><@!728681649059004579>")
                  }
                  const args = message.content.substring(0).split(" ")
 
