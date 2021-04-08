@@ -397,6 +397,10 @@ message.react(x[0]);
                  {
                   message.channel.send("Shreya's Assemble :<@!540950441215787010> <@!804323493533581322> <@!728681649059004579>")
                  }
+                 if(message.content === "group_IPL")
+                 {
+                   message.channel.send("IPL : <@516993440920240128>")
+                 }
                  const args = message.content.substring(0).split(" ")
 
                  if (message.content.startsWith(`!udict`)) {		
