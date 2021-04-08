@@ -387,6 +387,9 @@ message.react(x[0]);
                  if (message.content === "join group_gamenight") {
                   message.react('👍')
                  }
+                 if (message.content === "join group_IPL") {
+                  message.react('👍')
+                 }
                  if(message.content === "group_gamenight"){
                    message.channel.send("Gamenight : <@!427714149607538688> <@702053598443470918> <@!729784244204732458> <@724871282877005846> <@516993440920240128> <@!728681649059004579> <@!755027725185450026> <@!714866717121052713>")
                  }
