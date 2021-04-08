@@ -399,7 +399,7 @@ message.react(x[0]);
                  }
                  if(message.content === "group_IPL")
                  {
-                   message.channel.send("IPL : <@516993440920240128>")
+                   message.channel.send("IPL : <@516993440920240128> <@!245483264502923265> <@!690910552297308190>")
                  }
                  const args = message.content.substring(0).split(" ")
 
