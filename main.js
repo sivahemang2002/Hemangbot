@@ -8,12 +8,14 @@ const welcome1 = require('./welcome1');
 const path = require('path')
 const fs = require('fs')
 const firstmessage = require('./firstmessage')
+const firstmessage1 = require('./firstmessage1')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
 const scaling = require('./scaling');
 const bye = require('./bye');
 const roleclaim = require('./roleclaim');
+const roleclaim1 = require('./roleclaim1');
 const bye1 = require('./bye1');
 
 const PREFIX = "!"
@@ -75,6 +77,7 @@ client.once('ready', () => {
     bye(client)
     bye1(client)
     roleclaim(client)
+    roleclaim1(client)
    
 });
 
