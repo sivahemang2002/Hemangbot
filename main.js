@@ -399,8 +399,8 @@ message.react(x[0]);
                  }
                  if(message.content === "group_IPL")
                  {
-                   message.channel.send("IPL : <@516993440920240128> <@!245483264502923265> <@!690910552297308190>")
-                 }
+                   message.channel.send("IPL : <@516993440920240128> <@!245483264502923265> <@!690910552297308190> <@!697854182060720320> <@724871282877005846> ")
+                 } 
                  const args = message.content.substring(0).split(" ")
 
                  if (message.content.startsWith(`!udict`)) {		
