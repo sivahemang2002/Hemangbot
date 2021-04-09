@@ -22,7 +22,7 @@ module.exports = (client) => {
 
   const reactions = []
 
-  let emojiText = 'As a Server Booster, you get a chance to pick a colour for chat.See the above colours in the image below and select the colour here.\n\n'
+  let emojiText = 'IPL Season is back!!!! Select the team which you support.\n\n'
   for (const key in emojis) {
     
     reactions.push(key)
