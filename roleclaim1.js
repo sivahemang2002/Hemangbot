@@ -1,16 +1,21 @@
 const firstmessage1 = require('./firstmessage1.js')
-const firstmessage = require('./firstmessage1.js')
+
 
 module.exports = (client) => {
-  const channelId = '821771709208068098'
+  const channelId = '829967221815246884'
 
   const getEmoji = (emojiName) =>
     client.emojis.cache.find((emoji) => emoji.name == emojiName)
 
   const emojis = {
-    '📀':'Yellow',
-    '🔴':'Red',
-     
+    '📀':'CSK Fan',
+    '🔵':'DC Fan',
+    '🟣':'KKR Fan',
+    '💙':'MI Fan',
+    '🟥':'PK Fan',
+    '🔴':'RCB Fan',
+    '🟠':'SRH Fan',
+    '🎀':'RR Fan'
 
 
   }
