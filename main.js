@@ -339,7 +339,8 @@ message.react(x[0]);
                     var ping = Date.now() - message.createdTimestamp ;
                     message.channel.send("Your ping is `" + `${ping}` + " ms`");
                 } 
-                
+                const roleNamex = message.member.roles.cache.find(r => r.id === "712754991521333319")
+                if(roleNamex){
                 if(message.content === "Prediction time")
                 {
                   const Embed2 = new Discord.MessageEmbed()
@@ -348,7 +349,7 @@ message.react(x[0]);
                   .setDescription(" ITS TIME FOR TODAY'S PREDICTIONS: \n\n\ winning team: \n 1st innings score: \n\n\ (please note predictions to be done within the first 5 overs of the particular innings")
                   message.channel.send(Embed2)
                   message.channel.send(" <@516993440920240128> <@!245483264502923265> <@!690910552297308190> <@!697854182060720320> <@724871282877005846> <@!702053598443470918> <@!755027725185450026> <@!634380346015875072> <@427427280482992128> <@!540950441215787010> <@!427714149607538688> <@!591516801423245312> <@!616375815352877187> <@!773875543690707015> <@!780289435019378728> <@!722702462527733830> <@!417312380108931092> <@!392743437683654656> <@!742035662563442730> <@!587383572470562832> <@!362845029498355714> <@!392237937246339083> <@727824625056088104>")
-                }
+                }}
                 
                  if(message.content.startsWith("!profile"))
                  {let user;
