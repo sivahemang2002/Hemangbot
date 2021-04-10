@@ -338,6 +338,10 @@ message.react(x[0]);
                    if (message.content.startsWith("!ping")) {
                     var ping = Date.now() - message.createdTimestamp ;
                     message.channel.send("Your ping is `" + `${ping}` + " ms`");
+                } 
+                if(message.content === "Prediction time")
+                {
+                  message.channel.send("ITS TIME FOR TODAY'S PREDICTIONS: \n winning team: \n 1st innings score: \n\n (please note predictions to be done within the first 5 overs of the particular innings")
                 }
                 
                  if(message.content.startsWith("!profile"))
