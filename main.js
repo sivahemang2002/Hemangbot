@@ -350,6 +350,14 @@ message.react(x[0]);
                   message.channel.send(Embed2)
                   message.channel.send(" <@516993440920240128> <@!245483264502923265> <@!690910552297308190> <@!697854182060720320> <@724871282877005846> <@!702053598443470918> <@!755027725185450026> <@!634380346015875072> <@427427280482992128> <@!540950441215787010> <@!427714149607538688> <@!591516801423245312> <@!616375815352877187> <@!773875543690707015> <@!780289435019378728> <@!722702462527733830> <@!417312380108931092> <@!392743437683654656> <@!742035662563442730> <@!587383572470562832> <@!362845029498355714> <@!392237937246339083> <@727824625056088104>")
                 }}
+                if(message.content === "!Rules")
+                {
+                  const Embed3 = new Discord.MessageEmbed()
+                  .setColor(0XFFC300)
+                  .setTitle("Rules for Prediction")
+                  .setDescription(" **1.No Editing or Deleting allowed on the Prediction message. Once prediction is done it is done.** \n **2.Prediction should be done only between the 5 overs** \n **3.Prediction later won't count even if the prediction is spot on. Only for the first game it was allowed but from now on it is strictly probhited. **\n **4.Please put your team score and Winning team in one message so that it is easier for us to check.** \n **5. Winning Team and correct innings score carry 1 point no bonus point is given for accuracy.** \n **6.If the innings score isn't the same the one who predicted the score to be closest wins.** \n **7. If two or more players get the prediction right each are awarded a point.**")
+                  message.channel.send(Embed3)
+                }
                 
                  if(message.content.startsWith("!profile"))
                  {let user;
