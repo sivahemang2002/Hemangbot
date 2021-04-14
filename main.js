@@ -199,7 +199,7 @@ client.on('message', async message => {
   if(message.content === "!Leaderboard")
   { 
     const Embed4 = new Discord.MessageEmbed()
-    .setColor(0XFFC300)
+    .setColor(0XC27C0E)
     .setTitle("Prediction Leaderboard")
     .setThumbnail("https://imgur.com/6YwVbMB.png")
     .setDescription("**1.Shreekaar -8** \n\n **2.Shardul -4** \n\n **3.Addu -3** \n\n **3.Mayank -3** \n\n **5.Hemang -2** \n\n **5.Yaquta -2** \n\n **5.Ajinkya -2** \n\n **5.Aaradhan -2** \n\n **5.Shreya Tatke -2 \n\n **9.Devesh -1** \n\n **9.Pallavi -1** \n\n **9.Akshara -1**")
