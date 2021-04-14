@@ -201,8 +201,7 @@ client.on('message', async message => {
     const Embed4 = new Discord.MessageEmbed()
     .setColor(0XFFC300)
     .setTitle("Prediction Leaderboard")
-    .setThumbnail("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.insidesport.co%2Fipl-2021-squad-updates-check-full-squad-of-all-8-ipl-teams-ipl-salary-remaining-purse-and-available-slot-ahead-of-ipl-2021-auctions%2F&psig=AOvVaw0juesxM1rSEZk1JazEaVfE&ust=1618496906137000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJipwOv4_e8CFQAAAAAdAAAAABAJ")
-    .setDescription("Shreekar -8 \n\n ")
+    .setThumbnail("https://imgur.com/6YwVbMB.png")
     message.channel.send(Embed4)
   }
 
