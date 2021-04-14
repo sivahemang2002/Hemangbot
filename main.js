@@ -196,6 +196,15 @@ client.on('message', async message => {
     .setDescription("**BOT COMMANDS**:\n __!server info__ - To view the basic info of the server \n __!profile__ - To view yours/other perons's info and also see your roles \n __!ping__ - To check your ping \n __!udict__ - To check a definition using the popular site Urban Dictionary \n __setNickname__ - This feature is only applicable for **LI** members.It allows you to change the name of the user.(Note : Nickname will only appear in brackets and your original nickname will still appear before the brackets! )\n Breakfast_club - To tag the all the breakfast gang. \n group_Hydrohomies - To remind your inmates to stay hydrated. \n group_thisisus - For the this is us fans. \n group_amongus - Tag people to play a game of among us \n group_gamenight - tag people for gamenight  \n \n **OTHER FEATURES** \n 1. Robo,[content]? - To ask a question to the bot \n 2.Asking a Poll - Please head over to the Polls channels and ask a question and Robo itself will give a reaction \n  ")
     message.channel.send(Embed1);
   }
+  if(message.content === "!Leaderboard")
+  { 
+    const Embed4 = new Discord.MessageEmbed()
+    .setColor(0XFFC300)
+    .setTitle("Prediction Leaderboard")
+    .setThumbnail("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.insidesport.co%2Fipl-2021-squad-updates-check-full-squad-of-all-8-ipl-teams-ipl-salary-remaining-purse-and-available-slot-ahead-of-ipl-2021-auctions%2F&psig=AOvVaw0juesxM1rSEZk1JazEaVfE&ust=1618496906137000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJipwOv4_e8CFQAAAAAdAAAAABAJ")
+    .setDescription("Shreekar -8 \n\n ")
+    message.channel.send(Embed4)
+  }
 
     
         if (message.channel.id === "712412653338886185") {
