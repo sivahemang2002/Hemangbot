@@ -71,6 +71,7 @@ client.on("messageDelete", (messageDelete) => {
 
 client.once('ready', () => {
     console.log('PrisonBot is online');
+    client.user.setActivity("Sharing their screen")
     welcome(client)
     welcome1(client)
     scaling(client)
