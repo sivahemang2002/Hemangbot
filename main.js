@@ -118,12 +118,22 @@ client.on('message', async message => {
       muted.splice(muted.indexOf(mention.id),1)
     }, 30000)
  }
- let scheduledMessage = new cron.CronJob('00 20 23 * * *', () => {
-  
-  let channel = yourGuild.channels.get('821771709208068098');
-  channel.send('Hello');
-});
-scheduledMessage.start()
+  var day = new Date();
+    var hr = day.getHours();
+    var min = day.getMinutes();
+    var sec = day.getSeconds();
+
+    if (hr == 15) {
+    if (min == 25){
+        if (sec == 0) {
+
+            client.channels.fetch("704015571531857950").then((channel) => {
+               channel.send("Hello")})
+
+}
+}
+}
+
 
 
 
