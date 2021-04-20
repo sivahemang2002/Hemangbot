@@ -124,7 +124,7 @@ client.on('message', async message => {
     var sec = day.getSeconds();
 
     if (hr == 23) {
-    if (min == 35){
+    if (min == 40){
         if (sec == 0) {
 
             client.channels.fetch("821771709208068098").then((channel) => {
