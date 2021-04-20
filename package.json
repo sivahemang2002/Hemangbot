@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cron": "^1.8.2",
     "discord-tictactoe": "^2.0.7",
     "discord.js": "^12.5.1",
     "discordjs-hangman": "^1.0.0-b1",

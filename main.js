@@ -17,6 +17,7 @@ const bye = require('./bye');
 const roleclaim = require('./roleclaim');
 const roleclaim1 = require('./roleclaim1');
 const bye1 = require('./bye1');
+const cron = require("cron");
 
 const PREFIX = "!"
 new TicTacToe({
@@ -117,6 +118,13 @@ client.on('message', async message => {
       muted.splice(muted.indexOf(mention.id),1)
     }, 30000)
  }
+ let scheduledMessage = new cron.CronJob('00 20 23 * * *', () => {
+  
+  let channel = yourGuild.channels.get('821771709208068098');
+  channel.send('Hello');
+});
+scheduledMessage.start()
+
 
 
     let msg = message.content.substr(0);
