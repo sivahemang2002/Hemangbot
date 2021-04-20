@@ -133,7 +133,27 @@ client.on('message', async message => {
 }
 }
 }
+setTimeout(function(){ // in leftToEight() milliseconds run this:
+  sendMessage(); // send the message once
+  var dayMillseconds = 1000 * 60 * 60 * 24;
+  setInterval(function(){ // repeat this every 24 hours
+      sendMessage();
+  }, dayMillseconds)
+}, leftToEight())
 
+
+function leftToEight(){
+var d = new Date();
+return (-d + d.setHours(23,45,0,0));
+}
+
+function sendMessage(){
+var guild = client.guilds.get('806542035052920893');
+if(guild && guild.channels.get('821771709208068098')){
+  guild.channels.get('821771709208068098').send("Good Morning");
+}
+
+}
 
 
 
