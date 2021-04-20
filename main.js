@@ -123,11 +123,11 @@ client.on('message', async message => {
     var min = day.getMinutes();
     var sec = day.getSeconds();
 
-    if (hr == 15) {
-    if (min == 25){
+    if (hr == 23) {
+    if (min == 35){
         if (sec == 0) {
 
-            client.channels.fetch("704015571531857950").then((channel) => {
+            client.channels.fetch("821771709208068098").then((channel) => {
                channel.send("Hello")})
 
 }
