@@ -75,20 +75,21 @@ function logreact() {
   const myChannel1 = server.channels.cache.get('808708681259548712')
   let msg = "React to view the channel"
   let x = ""
-  await myChannel.messages.fetch({ limit: 1 }).then(messages => {
+  myChannel.messages.fetch({ limit: 1 }).then(messages => {
     x = messages.first()
+    if (x != msg) {
+      myChannel.send(msg).then(function (m) {
+        m.react("✅")
+        
+        
+      })
+    }
 
   }).catch(err => {
     console.error(err)
   })
   console.log(x)
-  if (x != msg) {
-    myChannel.send(msg).then(function (m) {
-      m.react("✅")
-      
-      
-    })
-  }
+  
   client.on('messageReactionAdd', (reaction, user) => {
     if (reaction.emoji.name === "✅" && reaction.message.channel.id == myChannel) {
       console.log(reaction.users);
