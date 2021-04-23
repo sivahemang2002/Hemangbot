@@ -133,10 +133,10 @@ client.on('message', async message => {
 }
 }
 }
-setTimeout(function(){ // in leftToEight() milliseconds run this:
-  sendMessage(); // send the message once
+setTimeout(function(){ 
+  sendMessage(); 
   var dayMillseconds = 1000 * 60 * 60 * 24;
-  setInterval(function(){ // repeat this every 24 hours
+  setInterval(function(){ 
       sendMessage();
   }, dayMillseconds)
 }, leftToEight())
@@ -154,6 +154,23 @@ if(guild && guild.channels.get('821771709208068098')){
 }
 
 }
+const myChannel = message.guild.channels.cache.get('808708681259548712');
+if(message.content === "React to view the channel")
+{
+  message.react('✅')
+}
+client.on('messageReactionAdd', (reaction, user) => {
+  if(reaction.emoji.name === "✅") {
+      console.log(reaction.users);
+      myChannel.updateOverwrite(message.users,{
+        SEND_MESSAGES: true,
+        VIEW_CHANNEL: true
+      
+      })
+  }
+});
+  
+
 
 
 
