@@ -67,10 +67,50 @@ client.on("messageDelete", (messageDelete) => {
   logs(messageDelete,log)}}
  });
 
-
+function logreact()
+{
+  const myChannel = message.guild.channels.cache.get('806542035527270443')
+  const myChannel1 = message.guild.channels.cache.get('808708681259548712')
+  let msg = "React to view the channel"
+  let x = ""
+  message.channel.fetchMessages({ limit: 1 }).then(messages => {
+     x = messages.first()
+    
+  }).catch(err => {
+    console.error(err)
+  })
+  if(x != msg){
+    myChannel.send(msg).then(function(m){
+      m.react("")
+    })
+  }
+  client.on('messageReactionAdd', (reaction, user) => {
+    if(reaction.emoji.name === "✅" && reaction.channel.id == myChannel) {
+        console.log(reaction.users);
+        if(user.bot)return;
+        myChannel1.updateOverwrite(user.id,{
+          SEND_MESSAGES: true,
+          VIEW_CHANNEL: true
+       
+        })
+    }
+  });
+  client.on('messageReactionRemove', (reaction, user) => {
+    if(reaction.emoji.name === "✅" && reaction.channel.id == myChannel) {
+        console.log(reaction.users);
+        if(user.bot)return;
+        myChannel1.updateOverwrite(user.id,{
+          SEND_MESSAGES: false,
+          VIEW_CHANNEL: false
+       
+        })
+    }
+  });
+}
 
 
 client.once('ready', () => {
+    
     console.log('PrisonBot is online');
     client.user.setActivity("IPL Predictions")
     welcome(client)
@@ -80,6 +120,8 @@ client.once('ready', () => {
     bye1(client)
     roleclaim(client)
     roleclaim1(client)
+    
+    let msg = "React to view the channel"
    
 });
 
@@ -154,23 +196,8 @@ if(guild && guild.channels.get('821771709208068098')){
 }
 
 }
-const myChannel = message.guild.channels.cache.get('808708681259548712');
-if(message.content === "React to view the channel")
-{
-  message.react('✅')
 
-}
-client.on('messageReactionAdd', (reaction, user) => {
-  if(reaction.emoji.name === "✅") {
-      console.log(reaction.users);
-      if(user.bot)return;
-      myChannel.updateOverwrite(user.id,{
-        SEND_MESSAGES: true,
-        VIEW_CHANNEL: true
-     
-      })
-  }
-});
+
   
 
 
