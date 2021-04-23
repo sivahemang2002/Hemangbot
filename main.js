@@ -77,6 +77,8 @@ function logreact() {
   let x = ""
   myChannel.messages.fetch({ limit: 1 }).then(messages => {
     x = messages.first()
+    console.log("This is x")
+  console.log(x)
     if (x != msg) {
       myChannel.send(msg).then(function (m) {
         m.react("✅")
@@ -88,8 +90,7 @@ function logreact() {
   }).catch(err => {
     console.error(err)
   })
-  console.log("This is x")
-  console.log(x)
+  
   
   client.on('messageReactionAdd', (reaction, user) => {
     if (reaction.emoji.name === "✅" && reaction.message.channel.id == myChannel) {
