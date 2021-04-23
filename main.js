@@ -79,7 +79,7 @@ function logreact() {
     x = messages.first()
     console.log("This is x")
   console.log(x)
-    if (x != msg) {
+    if (x.content != msg) {
       myChannel.send(msg).then(function (m) {
         m.react("✅")
         
