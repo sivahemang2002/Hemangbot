@@ -158,6 +158,7 @@ const myChannel = message.guild.channels.cache.get('808708681259548712');
 if(message.content === "React to view the channel")
 {
   message.react('✅')
+
 }
 client.on('messageReactionAdd', (reaction, user) => {
   if(reaction.emoji.name === "✅") {
