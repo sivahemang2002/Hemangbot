@@ -82,7 +82,7 @@ function logreact()
   })
   if(x != msg){
     myChannel.send(msg).then(function(m){
-      m.react("")
+      m.react("✅")
     })
   }
   client.on('messageReactionAdd', (reaction, user) => {
