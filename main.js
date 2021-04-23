@@ -81,9 +81,11 @@ function logreact() {
   }).catch(err => {
     console.error(err)
   })
+  console.log(x)
   if (x.content != msg) {
     myChannel.send(msg).then(function (m) {
       m.react("✅")
+      
       
     })
   }
