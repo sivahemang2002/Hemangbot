@@ -88,6 +88,7 @@ function logreact() {
   }).catch(err => {
     console.error(err)
   })
+  console.log("This is x")
   console.log(x)
   
   client.on('messageReactionAdd', (reaction, user) => {
