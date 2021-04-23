@@ -120,8 +120,9 @@ client.once('ready', () => {
     bye1(client)
     roleclaim(client)
     roleclaim1(client)
+    logreact()
     
-    let msg = "React to view the channel"
+  
    
 });
 
