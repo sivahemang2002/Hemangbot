@@ -74,7 +74,7 @@ function logreact()
   const myChannel1 = server.channels.cache.get('808708681259548712')
   let msg = "React to view the channel"
   let x = ""
-  myChannel.fetchMessages({ limit: 1 }).then(messages => {
+  myChannel.messages.fetch({ limit: 1 }).then(messages => {
      x = messages.first()
     
   }).catch(err => {
