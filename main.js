@@ -97,7 +97,7 @@ function logreact()
     }
   });
   client.on('messageReactionRemove', (reaction, user) => {
-    if(reaction.emoji.name === "✅" && reaction.message.channelchannel.id == myChannel) {
+    if(reaction.emoji.name === "✅" && reaction.message.channel.id == myChannel) {
         console.log(reaction.users);
         if(user.bot)return;
         myChannel1.updateOverwrite(user.id,{
