@@ -164,7 +164,7 @@ client.on('messageReactionAdd', (reaction, user) => {
   if(reaction.emoji.name === "✅") {
       console.log(reaction.users);
       if(user.bot)return;
-      myChannel.createOverwrite(user.id,{
+      myChannel.updateOverwrite(user.id,{
         SEND_MESSAGES: true,
         VIEW_CHANNEL: true
      
