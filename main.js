@@ -234,7 +234,7 @@ client.on('message', async message => {
   }
 
   if (message.content === "!archive") {
-    message.channel.setParent("712678821035507774")
+    message.channel.setParent("728559757513850941")
   }
 
   if (message.content === "Happy Birthday da dei <@!587383572470562832>") {
