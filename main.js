@@ -155,6 +155,8 @@ client.on('message', async message => {
         .catch(console.error);
     }
   }
+  const roleNamei = message.member.roles.cache.find(r => r.id === "712754991521333319" || r.id === "811822746937065503")
+      if (roleNamei) {
   if (message.content.startsWith("!sh")) {
 
     console.log("Command Acknowleged")
@@ -164,7 +166,7 @@ client.on('message', async message => {
 
       muted.splice(muted.indexOf(mention.id), 1)
     }, 30000)
-  }
+  }}
   var day = new Date();
   var hr = day.getHours();
   var min = day.getMinutes();
