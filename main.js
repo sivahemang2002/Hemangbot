@@ -163,7 +163,7 @@ client.on('message', async message => {
     setTimeout(function () {
 
       muted.splice(muted.indexOf(mention.id), 1)
-    }, 30000)
+    }, 1200000)
   }
   var day = new Date();
   var hr = day.getHours();
