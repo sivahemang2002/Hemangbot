@@ -291,8 +291,8 @@ client.on('message', async message => {
       .setColor(0XC27C0E)
       .setTitle("Prediction Leaderboard")
       .setThumbnail("https://imgur.com/6YwVbMB.png")
-      .setDescription("**1.Shreekaar -8** \n\n **2.Shardul -4** \n\n **3.Addu -3** \n\n **3.Mayank -3** \n\n **5.Hemang -2** \n\n **5.Yaquta -2** \n\n **5.Ajinkya -2** \n\n **5.Aaradhan -2** \n\n **5.Shreya Tatke -2** \n\n **9.Devesh -1** \n\n **9.Pallavi -1** \n\n **9.Akshara -1**")
-      .setFooter("Last Updated at 8:10 PM 14/04/2021")
+      .setDescription("**1.Shreekaar -25** \n\n **2.Addu -18** \n\n **3.Aaradhan -17** \n\n **4.Hemang -16** \n\n **4.Shardul -16** \n\n **6.Ajinkya -13** \n\n **6.Mayank -13** \n\n **6.Shreya Tatke -13** \n\n **9.Jahnavi -11** \n\n **10.Sacchin -10** \n\n **11.Akshara -9** \n\n **12.Yaquta -8** \n\n **13.Ankit -4** \n\n **14.Devesh -3** \n\n **15.Shashank -2** \n\n **15.Muskan -2** \n\n **17.Pallavi -1** \n\n **17.Sanjana -1**")
+      .setFooter("Last Updated at 2:10 PM 05/05/2021")
     message.channel.send(Embed4)
   }
 
