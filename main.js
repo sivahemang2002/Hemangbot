@@ -120,7 +120,7 @@ function logreact() {
 client.once('ready', () => {
 
   console.log('PrisonBot is online');
-  client.user.setActivity("IPL Predictions")
+
   welcome(client)
   welcome1(client)
   scaling(client)
