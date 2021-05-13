@@ -407,11 +407,11 @@ if(messageid)
     }
   }
 
- if(message.id === "842340728134959174")
- {
-   message.react('👍')
- }
-
+  message.client.channels.fetch("channelID").then(channel => {
+    channel.messages.fetch("messageID").then(message => {
+        message.react("emoji");
+    })
+  } )
 
 
   if (message.channel.id === "806566443385618504") {
