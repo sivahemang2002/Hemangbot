@@ -407,7 +407,10 @@ if(messageid)
     }
   }
 
-
+ if(message.id === "842340728134959174")
+ {
+   message.react('👍')
+ }
 
 
 
