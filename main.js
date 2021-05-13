@@ -409,7 +409,7 @@ if(messageid)
 
   message.client.channels.fetch("806542035527270443").then(channel => {
     channel.messages.fetch("842346852740497448").then(message => {
-        message.react('✅');
+        message.react('👍');
     })
   } )
 
