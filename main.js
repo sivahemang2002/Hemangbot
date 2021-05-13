@@ -407,9 +407,9 @@ if(messageid)
     }
   }
 
-  message.client.channels.fetch("channelID").then(channel => {
-    channel.messages.fetch("messageID").then(message => {
-        message.react("emoji");
+  message.client.channels.fetch("806542035527270443").then(channel => {
+    channel.messages.fetch("842340728134959174").then(message => {
+        message.react("👍");
     })
   } )
 
