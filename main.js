@@ -374,7 +374,11 @@ client.on('message', async message => {
       catch (err) { }
     }
   }
-
+const messageid = "842340728134959174"
+if(messageid)
+{
+  messageid.react
+}
 
   if (message.content.startsWith("!addbackwwhiash")) {
     console.log("Command Acknowleged")
