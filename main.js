@@ -71,7 +71,7 @@ client.on("messageDelete", (messageDelete) => {
 
 function logreact() {
   const server = client.guilds.cache.get('806542035052920893')
-  const myChannel = server.channels.cache.get('806542035052920893')
+  const myChannel = server.channels.cache.get('806542035527270443')
   const myChannel1 = server.channels.cache.get('821771709208068098')
   let msg = "React to view the channel"
   let x = ""
