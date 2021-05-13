@@ -70,9 +70,9 @@ client.on("messageDelete", (messageDelete) => {
 });
 
 function logreact() {
-  const server = client.guilds.cache.get('711634547770654791')
-  const myChannel = server.channels.cache.get('727132751299346533')
-  const myChannel1 = server.channels.cache.get('835437624671207434')
+  const server = client.guilds.cache.get('806542035052920893')
+  const myChannel = server.channels.cache.get('806542035052920893')
+  const myChannel1 = server.channels.cache.get('806542035527270443')
   let msg = "React to view the channel"
   let x = ""
   myChannel.messages.fetch({ limit: 1 }).then(messages => {
@@ -526,11 +526,7 @@ client.on('message', async message => {
   {
 
   }
-  const messageid = "842340728134959174"
-  if(messageid)
- {
-   message.react("👍")
- }
+ 
   if (message.content.startsWith(`!udict`)) {
     const searchString = querystring.stringify({ term: args.slice(1).join(" ") })
 
