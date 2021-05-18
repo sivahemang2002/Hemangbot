@@ -297,7 +297,7 @@ client.on('message', async message => {
       .setFooter("Last Updated at 2:10 PM 05/05/2021")
     message.channel.send(Embed4)
   }
-  if (message.content === "Hello") {
+  if (message.content === "!Hello") {
     const Embed4 = new Discord.MessageEmbed()
       .setColor(0XC27C0E)
       .setTitle("**PRISON ONE YEAR ANNIVERSARY**")
