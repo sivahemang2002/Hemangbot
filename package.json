@@ -13,6 +13,8 @@
     "discord-tictactoe": "^2.0.7",
     "discord.js": "^12.5.1",
     "discordjs-hangman": "^1.0.0-b1",
+    "google": "^2.1.0",
+    "i": "^0.3.6",
     "mongoose": "^5.11.18",
     "pg": "^8.5.1",
     "reconlx": "^1.0.8"
