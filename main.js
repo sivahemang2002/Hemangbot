@@ -302,7 +302,7 @@ client.on('message', async message => {
       .setColor(0XC27C0E)
       .setTitle("**PRISON ONE YEAR ANNIVERSARY**")
       .setThumbnail("https://imgur.com/zqeOLZC.png")
-      .setDescription("**Dear <@712289127948877844>** \n\n **IT'S BEEN A YEAR!** \n\n\n **The server celebrates its one year birthday on the 20th of May. Like every first birthday this was too is special. In order to relive all the memories made here, and spend some time together we'll be hosting a GAME NIGHT of the 20th at 10:30pm IST. This server would have never have meant so much had it not been for all of you. So bring along some food and drinks and let's party together!**")
+      .setDescription("**Dear <@&712289127948877844>** \n\n **IT'S BEEN A YEAR!** \n\n\n **The server celebrates its one year birthday on the 20th of May. Like every first birthday this was too is special. In order to relive all the memories made here, and spend some time together we'll be hosting a GAME NIGHT of the 20th at 10:30pm IST. This server would have never have meant so much had it not been for all of you. So bring along some food and drinks and let's party together!**")
       .setFooter("Only on Yaquta's Prison")
     message.channel.send(Embed4)
   }
