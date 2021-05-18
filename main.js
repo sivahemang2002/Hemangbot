@@ -576,11 +576,7 @@ if(messageid)
       )
     }
   }
- if(message.content === "!Hello")
-{
-  
-  f
-}
+ 
   let args1 = message.content.substring(PREFIX.length).split(" ");
   switch (args1[0]) {
     case "poll":
