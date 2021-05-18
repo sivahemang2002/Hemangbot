@@ -297,7 +297,15 @@ client.on('message', async message => {
       .setFooter("Last Updated at 2:10 PM 05/05/2021")
     message.channel.send(Embed4)
   }
-
+  if (message.content === "Hello") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**PRISON ONE YEAR ANNIVERSARY**")
+      .setThumbnail("https://imgur.com/zqeOLZC.png")
+      .setDescription("**Dear <@712289127948877844>** \n\n **IT'S BEEN A YEAR!** \n\n\n **The server celebrates its one year birthday on the 20th of May. Like every first birthday this was too is special. In order to relive all the memories made here, and spend some time together we'll be hosting a GAME NIGHT of the 20th at 10:30pm IST. This server would have never have meant so much had it not been for all of you. So bring along some food and drinks and let's party together!**")
+      .setFooter("Only on Yaquta's Prison")
+    message.channel.send(Embed4)
+  }
 
   if (message.channel.id === "712412653338886185") {
     let mes = message.content.substr(0);
@@ -567,8 +575,11 @@ if(messageid)
       )
     }
   }
-
-
+ if(message.content === "!Hello")
+{
+  
+  f
+}
   let args1 = message.content.substring(PREFIX.length).split(" ");
   switch (args1[0]) {
     case "poll":
