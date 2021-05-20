@@ -364,6 +364,27 @@ client.on('message', async message => {
         message.react('🇩')
       })
   }
+  if (message.content === "Q7") {
+    message.channel.send("PPL started because Hemang **allegedly** stole Vishnu's girl. Name that girl")
+  }
+  if (message.content === "Q8") {
+    message.channel.send("Out of the below options who was the only person who didn't write a message in #matchtestmonials\n A)Faarish \n B)Ridhi MAA \n C)Ansh\n D)Ajinkya").then(message =>
+      {
+        message.react('🇦');
+        message.react('🇧');
+        message.react('🇨');
+        message.react('🇩')
+      })
+  }
+  if (message.content === "Q9") {
+    message.channel.send("Who was the first person to boost the server\n A)Hemang \n B)Arjun \n C)Yaquta\n D)Sacchin").then(message =>
+      {
+        message.react('🇦');
+        message.react('🇧');
+        message.react('🇨');
+        message.react('🇩')
+      })
+  }
   
   
   if (message.channel.id === "807647058869354547") {
