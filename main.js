@@ -307,7 +307,7 @@ client.on('message', async message => {
       .setFooter("Only on Yaquta's Prison")
     message.channel.send(Embed4)
   }
-  google.resultsPerPage = 5;
+
 
   
   if (message.channel.id === "712412653338886185") {
