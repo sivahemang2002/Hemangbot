@@ -385,7 +385,15 @@ client.on('message', async message => {
         message.react('🇩')
       })
   }
-  
+  if (message.content === "Q10") {
+    message.channel.send("When his addu's birthday \n A)March 19 \n B)Feb 23 \n C)Jan 19 \n D)Feb 27").then(message =>
+      {
+        message.react('🇦');
+        message.react('🇧');
+        message.react('🇨');
+        message.react('🇩')
+      })
+  }
   
   if (message.channel.id === "807647058869354547") {
     let mes = message.content.substr(0);
