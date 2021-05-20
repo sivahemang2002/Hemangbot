@@ -319,7 +319,15 @@ client.on('message', async message => {
     }
   }
   if (message.content === "Q1") {
-    message.channel.send("Which country has the highest GDP(PPP) \n A)Luxemborg \n B)USA \n C)Singapore \n D)Switzerland ")
+    message.channel.send("Which country has the highest GDP(PPP) \n A)Luxemborg \n B)USA \n C)Singapore \n D)Switzerland ").then(message =>
+      {
+        message.react('🇦');
+        message.react('🇧');
+        message.react('C');
+        message.react('🇩')
+      })
+
+
 
 
   }
