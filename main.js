@@ -323,7 +323,7 @@ client.on('message', async message => {
       {
         message.react('🇦');
         message.react('🇧');
-        message.react('C');
+        message.react('🇨');
         message.react('🇩')
       })
 
