@@ -319,7 +319,7 @@ client.on('message', async message => {
     }
   }
   if (message.content === "Q1") {
-    message.channel.send("Which country has the highest GDP(PPP) \n A)Luxemborg \n B)USA \n C)Singapore \n D)Switzerland ").then(message =>
+    message.channel.send("Who was the second person to write a message in #chat\n A)Affan \n B)Sacchin \n C)Shardul \n D)Faarish").then(message =>
       {
         message.react('🇦');
         message.react('🇧');
@@ -327,18 +327,24 @@ client.on('message', async message => {
         message.react('🇩')
       })
 
-
+  
 
 
   }
   if (message.content === "Q2") {
-    message.channel.send("What is the 11th largest country _________ \n Hint:Second largest country in Africa ")
+    message.channel.send("What was the intial capacity of B block when the server was first created")
   }
   if (message.content === "Q3") {
-    message.channel.send("Name the two countries which have 4 FIFA WCS :")
+    message.channel.send("'Arey just because you are a muslim doesn’t mean they will advertise AK 47 to you' who said this quote?\n A)Shardul \n B)Sacchin \n C)Vishnu\n D)Kunal").then(message =>
+      {
+        message.react('🇦');
+        message.react('🇧');
+        message.react('🇨');
+        message.react('🇩')
+      })
   }
   if (message.content === "Q4") {
-    message.channel.send("Uptil 2013 the highest grossing Bollywood film was : \n A)Enthiran \n B)Ghajini \n C)Dhoom 3 \n D)3 Idiots")
+    message.channel.send("Name two of the three people who had the first meetup in the server on June 20 2020")
   }
 
   if (message.channel.id === "807647058869354547") {
