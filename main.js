@@ -346,7 +346,26 @@ client.on('message', async message => {
   if (message.content === "Q4") {
     message.channel.send("Name two of the three people who had the first meetup in the server on June 20 2020")
   }
-
+  if (message.content === "Q5") {
+    message.channel.send("Who got the @Designer Chess 🎖️ badge?\n A)Neil \n B)Shardul \n C)Saurav\n D)Mansi").then(message =>
+      {
+        message.react('🇦');
+        message.react('🇧');
+        message.react('🇨');
+        message.react('🇩')
+      })
+  }
+  if (message.content === "Q6") {
+    message.channel.send("Whose number is this +91 9739585144?\n A)Faarish \n B)Arjun \n C)Pranay\n D)Yaquta").then(message =>
+      {
+        message.react('🇦');
+        message.react('🇧');
+        message.react('🇨');
+        message.react('🇩')
+      })
+  }
+  
+  
   if (message.channel.id === "807647058869354547") {
     let mes = message.content.substr(0);
     let sentence = mes.split("\n");
