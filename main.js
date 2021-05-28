@@ -117,9 +117,9 @@ function logreact() {
 }
 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
-  let newUserChannel = newMember.channelID;
-       let oldUserChannel = oldMember.channelID;
-   
+  let newUserChannel = newMember.VoiceChannel.id;
+       let oldUserChannel = oldMember.VoiceChannel.id;
+
 
   
      const server = client.guilds.cache.get('806542035052920893')
@@ -136,7 +136,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
          console.log("Left vc");
       textChannel.overwritePermissions(newMember, {
         
-        SEND_MESSAGES: null
+        SEND_MESSAGES: false
       }).catch(console.error);
     }
   
