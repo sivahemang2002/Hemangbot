@@ -128,7 +128,8 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
 
     const vcID = "847860425223176272";
 
-    if (oldID !== vcID && newID === vcID) {          // Joined the voice channel.
+    if (oldID !== vcID && newID === vcID) {   
+      console.log(newMember)       // Joined the voice channel.
       textChannel.overwritePermissions(newMember, {
         
         SEND_MESSAGES: true
