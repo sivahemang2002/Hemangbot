@@ -31,6 +31,7 @@ let muted = [
 ]
 
 
+
 let memberlog = "809152418163327049"
 const logID = "718779866710933615"
 function logs(message, args) {
@@ -117,31 +118,21 @@ function logreact() {
 
 
 
-client.on('voiceStateUpdate', (oldMember, newMember) => {
-  let oldID;
-  let newID;
-  if (oldMember.voiceChannel) oldID = oldMember.voiceChannel.id;
-  if (newMember.voiceChannel) newID = newMember.voiceChannel.id;
-
-  
-    const textChannel = "847860475219935242";
-    
-
-    const vcID = "847860425223176272";
-
-    if (oldID !== vcID && newID === vcID) {          // Joined the voice channel.
-      textChannel.overwritePermissions(newMember, {
-        
-        SEND_MESSAGES: true
-      }).catch(console.error);
-    } else if (oldID === vcID && newID !== vcID) {   // Left the voice channel.
-      textChannel.overwritePermissions(newMember, {
-        
-        SEND_MESSAGES: null
-      }).catch(console.error);
-    }
-  
+client.on("voiceStateUpdate", function(oldMember, newMember){
+    console.log(`a user changes voice state`);
+  // Here we can just check if newMember is in the channel that we want. Bam.
+  if(newMember.voiceChannel.name == 'productivity-chat') {
+    // DO SOMETHING.
+    myVoiceChannel.overwritePermissions(newMember, {
+      SEND_MESSAGES: true
+    });
+  } else {
+    myVoiceChannel.overwritePermissions(newMember, {
+      SEND_MESSAGES: null
+    });
+  }
 });
+ 
 client.once('ready', () => {
 
   console.log('PrisonBot is online');
