@@ -126,12 +126,9 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
   if (oldMember.voiceChannel) oldID = oldMember.voiceChannel.id;
   if (newMember.voiceChannel) newID = newMember.voiceChannel.id;
 
-  for (let i = 0; i < pairs.length; i++) {
-    const textChannel = newMember.guild.channels.cache.get("847860475219935242");
-    if (!textChannel) {
-      console.log('Invalid text channel ID in json.');
-      continue;
-    }
+  
+    const textChannel = "847860475219935242";
+    
 
     const vcID = "847860425223176272";
 
