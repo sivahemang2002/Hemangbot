@@ -8,7 +8,7 @@ const welcome1 = require('./welcome1');
 const path = require('path')
 const fs = require('fs')
 const firstmessage = require('./firstmessage')
-
+const pairs = require('./vc.json')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
@@ -30,7 +30,7 @@ let muted = [
 
 ]
 let pairs = [
-  {"voice":"847860425223176272","text":"847860475219935242"}
+  
 ]
 
 
@@ -127,13 +127,13 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
   if (newMember.voiceChannel) newID = newMember.voiceChannel.id;
 
   for (let i = 0; i < pairs.length; i++) {
-    const textChannel = newMember.guild.channels.cache.get(pairs[i].text);
+    const textChannel = newMember.guild.channels.cache.get("847860475219935242");
     if (!textChannel) {
       console.log('Invalid text channel ID in json.');
       continue;
     }
 
-    const vcID = pairs[i].voice;
+    const vcID = "847860425223176272";
 
     if (oldID !== vcID && newID === vcID) {          // Joined the voice channel.
       textChannel.overwritePermissions(newMember, {
