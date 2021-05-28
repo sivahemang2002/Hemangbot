@@ -117,9 +117,10 @@ function logreact() {
 }
 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
-  let newUserChannel = newMember.VoiceChannel.id;
-       let oldUserChannel = oldMember.VoiceChannel.id;
-
+  console.log(newMember)
+  let newUserChannel = newMember.voiceChannel.id;
+       let oldUserChannel = oldMember.voiceChannel.id;
+ 
 
   
      const server = client.guilds.cache.get('806542035052920893')
