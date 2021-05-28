@@ -119,7 +119,7 @@ function logreact() {
 
 
 client.on("voiceStateUpdate", function(oldMember, newMember){
-  const voiceChannelID = member.voiceChannelID
+  const voiceChannelID = newMember.voiceChannelID
     console.log(`a user changes voice state`);
   // Here we can just check if newMember is in the channel that we want. Bam.
   if(voiceChannelID === '847860425223176272') {
