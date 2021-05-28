@@ -127,6 +127,7 @@ client.on("voiceStateUpdate", function(oldMember, newMember){
   // Here we can just check if newMember is in the channel that we want. Bam.
   if(voiceChannelID === '847860425223176272') {
     // DO SOMETHING.
+    console.log(newMember)
     myVoiceChannel.overwritePermissions(newMember, {
       SEND_MESSAGES: true
     });
