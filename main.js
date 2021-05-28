@@ -8,7 +8,7 @@ const welcome1 = require('./welcome1');
 const path = require('path')
 const fs = require('fs')
 const firstmessage = require('./firstmessage')
-const pairs = require('./vc.json')
+
 const fetch = require('node-fetch')
 const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
@@ -29,7 +29,9 @@ let muted = [
 
 
 ]
-
+let pairs = [
+  {"voice":"847860425223176272","text":"847860475219935242"}
+]
 
 
 let memberlog = "809152418163327049"
