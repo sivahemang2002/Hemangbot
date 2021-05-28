@@ -116,26 +116,32 @@ function logreact() {
   });
 }
 
+client.on('voiceStateUpdate', (oldMember, newMember) => {
+  let oldID;
+  let newID;
+  if (oldMember.voiceChannel) oldID = oldMember.voiceChannel.id;
+  if (newMember.voiceChannel) newID = newMember.voiceChannel.id;
 
-
-client.on("voiceStateUpdate", function(oldMember, newMember){
-  const voiceChannelID = newMember.voiceChannelID
-  const server = client.guilds.cache.get('806542035052920893')
-  const myTexChannel = server.channels.cache.get('847860475219935242')
   
-    console.log(`a user changes voice state`);
-  // Here we can just check if newMember is in the channel that we want. Bam.
-  if(voiceChannelID === '847860425223176272') {
-    // DO SOMETHING.
-    console.log(newMember)
-   myTexChannel.overwritePermissions(newMember, {
-      SEND_MESSAGES: true
-    });
-  } else {
-   myTexChannel.overwritePermissions(newMember, {
-      SEND_MESSAGES: null
-    });
-  }
+     const server = client.guilds.cache.get('806542035052920893')
+     const textChannel = server.channels.cache.get('847860475219935242')
+
+    const vcID = "847860425223176272";
+
+    if (oldID !== vcID && newID === vcID) {          // Joined the voice channel.
+      textChannel.overwritePermissions(newMember, {
+        
+        SEND_MESSAGES: true
+      }).catch(console.error);
+    } else if (oldID === vcID && newID !== vcID) {   // Left the voice channel.
+      textChannel.overwritePermissions(newMember, {
+        
+        SEND_MESSAGES: null
+      }).catch(console.error);
+    }
+  
+
+
 });
  
 client.once('ready', () => {
