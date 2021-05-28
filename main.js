@@ -121,18 +121,18 @@ function logreact() {
 client.on("voiceStateUpdate", function(oldMember, newMember){
   const voiceChannelID = newMember.voiceChannelID
   const server = client.guilds.cache.get('806542035052920893')
-  const myVoiceChannel = server.channels.cache.get('847860475219935242')
+  const myTexChannel = server.channels.cache.get('847860475219935242')
   
     console.log(`a user changes voice state`);
   // Here we can just check if newMember is in the channel that we want. Bam.
   if(voiceChannelID === '847860425223176272') {
     // DO SOMETHING.
     console.log(newMember)
-    myVoiceChannel.overwritePermissions(newMember, {
+   myTexChannel.overwritePermissions(newMember, {
       SEND_MESSAGES: true
     });
   } else {
-    myVoiceChannel.overwritePermissions(newMember, {
+   myTexChannel.overwritePermissions(newMember, {
       SEND_MESSAGES: null
     });
   }
