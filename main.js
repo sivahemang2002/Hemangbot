@@ -117,10 +117,9 @@ function logreact() {
 }
 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
-  let oldID;
-  let newID;
-  if (oldMember.voiceChannel) oldID = oldMember.voiceChannel.id;
-  if (newMember.voiceChannel) newID = newMember.voiceChannel.id;
+  let newUserChannel = newMember.channelID;
+       let oldUserChannel = oldMember.channelID;
+   
 
   
      const server = client.guilds.cache.get('806542035052920893')
@@ -128,13 +127,14 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
 
     const vcID = "847860425223176272";
 
-    if (oldID !== vcID && newID === vcID) {   
-      console.log(newMember)       // Joined the voice channel.
+    if (newUserChannel === "847860425223176272") {   
+        console.log("Joined vc with id "+newUserChannel);   // Joined the voice channel.
       textChannel.overwritePermissions(newMember, {
         
         SEND_MESSAGES: true
       }).catch(console.error);
-    } else if (oldID === vcID && newID !== vcID) {   // Left the voice channel.
+    } else  { 
+         console.log("Left vc");
       textChannel.overwritePermissions(newMember, {
         
         SEND_MESSAGES: null
