@@ -119,9 +119,10 @@ function logreact() {
 
 
 client.on("voiceStateUpdate", function(oldMember, newMember){
+  const voiceChannelID = member.voiceChannelID
     console.log(`a user changes voice state`);
   // Here we can just check if newMember is in the channel that we want. Bam.
-  if(newMember.voiceChannel.id == '847860425223176272') {
+  if(voiceChannelID === '847860425223176272') {
     // DO SOMETHING.
     myVoiceChannel.overwritePermissions(newMember, {
       SEND_MESSAGES: true
