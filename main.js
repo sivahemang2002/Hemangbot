@@ -125,7 +125,6 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
      const server = client.guilds.cache.get('806542035052920893')
      const textChannel = server.channels.cache.get('847860475219935242')
 
-    const vcID = "847860425223176272";
 
     if (newUserChannel === "847860425223176272") {   
         console.log("Joined vc with id "+newUserChannel);   // Joined the voice channel.
