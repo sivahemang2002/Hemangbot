@@ -140,7 +140,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
         SEND_MESSAGES: null
       }).catch(console.error);
     }
-  }
+  
 });
 client.once('ready', () => {
 
