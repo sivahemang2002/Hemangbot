@@ -129,13 +129,13 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
 
     if (newUserChannel === "847860425223176272") {   
         console.log("Joined vc with id "+newUserChannel);   // Joined the voice channel.
-      textChannel.overwritePermissions(newMember, {
+      textChannel.updateOverwrite(newMember, {
         
         SEND_MESSAGES: true
       }).catch(console.error);
     } else  { 
          console.log("Left vc");
-      textChannel.overwritePermissions(newMember, {
+      textChannel.updateOverwrite(newMember, {
         
         SEND_MESSAGES: false
       }).catch(console.error);
