@@ -118,8 +118,8 @@ function logreact() {
 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
   console.log(newMember)
-  let newUserChannel = newMember.voiceChannel.id;
-       let oldUserChannel = oldMember.voiceChannel.id;
+  let newUserChannel = newMember.id;
+       let oldUserChannel = oldMember.id;
  
 
   
