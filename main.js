@@ -29,9 +29,6 @@ let muted = [
 
 
 ]
-let pairs = [
-  
-]
 
 
 let memberlog = "809152418163327049"
