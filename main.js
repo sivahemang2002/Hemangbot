@@ -116,7 +116,7 @@ function logreact() {
   });
 }
 
-const pairs = require('./channelPairs.json'); // Keep in mind the path may vary
+
 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
   let oldID;
