@@ -8,7 +8,7 @@ const welcome1 = require('./welcome1');
 const path = require('path')
 const fs = require('fs')
 const firstmessage = require('./firstmessage')
-
+const pairs = require('./vc.json')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
 const TicTacToe = require('discord-tictactoe');
@@ -116,7 +116,36 @@ function logreact() {
   });
 }
 
+const pairs = require('./channelPairs.json'); // Keep in mind the path may vary
 
+client.on('voiceStateUpdate', (oldMember, newMember) => {
+  let oldID;
+  let newID;
+  if (oldMember.voiceChannel) oldID = oldMember.voiceChannel.id;
+  if (newMember.voiceChannel) newID = newMember.voiceChannel.id;
+
+  for (let i = 0; i < pairs.length; i++) {
+    const textChannel = newMember.guild.channels.get(pairs[i].text);
+    if (!textChannel) {
+      console.log('Invalid text channel ID in json.');
+      continue;
+    }
+
+    const vcID = pairs[i].voice;
+
+    if (oldID !== vcID && newID === vcID) {          // Joined the voice channel.
+      textChannel.overwritePermissions(newMember, {
+        
+        SEND_MESSAGES: true
+      }).catch(console.error);
+    } else if (oldID === vcID && newID !== vcID) {   // Left the voice channel.
+      textChannel.overwritePermissions(newMember, {
+        
+        SEND_MESSAGES: null
+      }).catch(console.error);
+    }
+  }
+});
 client.once('ready', () => {
 
   console.log('PrisonBot is online');
