@@ -231,6 +231,18 @@ client.on('message', async message => {
 
     }
   }
+   if (message.content.startsWith("!parole")) {
+    console.log("Command Acknowleged")
+    let mention = message.mentions.members.first()
+    if (mention) {
+      console.log("Trying to add role")
+      message.guild.members.cache.get(mention.id).roles.add("727460669561110628")
+
+      
+
+
+    }
+  }
   if (message.content === "-birthdaylist") {
     message.channel.send("● Jan-01: 335439318141239297 Nazrani#9974 - Nickname: Allen \n● Jan-01: 690594833806393414 Annabie#3105 - Nickname: Anika \n● Jan-14: 245483264502923265 SNM#2408 - Nickname: Shardul👑");
   }
