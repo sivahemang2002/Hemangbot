@@ -90,8 +90,8 @@ function logreact() {
   }).catch(err => {
     console.error(err)
   })
-  
-  
+
+
   client.on('messageReactionAdd', (reaction, user) => {
     if (reaction.emoji.name === "✅" && reaction.message.channel.id == myChannel) {
       console.log(reaction.users);
@@ -127,14 +127,14 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
      const textChannel = server.channels.cache.get('847860475219935242')
 
 
-    if (newUserChannel === "847860425223176272" && oldUserChannel === "847860425223176272") {   
+    if (newUserChannel === "847860425223176272") {   
       
         console.log("Joined vc with id "+newUserChannel);   // Joined the voice channel.
       textChannel.updateOverwrite(newMember.id, {
         
         SEND_MESSAGES: true
       }).catch(console.error);
-    } else if(oldUserChannel === "847860425223176272" && newUserChannel !== "847860425223176272") { 
+    } else if(oldUserChannel === "847860425223176272" ) { 
          console.log("Left vc");
       textChannel.updateOverwrite(newMember.id, {
         
