@@ -15,7 +15,7 @@ const TicTacToe = require('discord-tictactoe');
 const scaling = require('./scaling');
 const bye = require('./bye');
 const roleclaim = require('./roleclaim');
-
+const scaling1 = require('./scaling1')
 const bye1 = require('./bye1');
 const cron = require("cron");
 
@@ -156,7 +156,7 @@ client.once('ready', () => {
   bye(client)
   bye1(client)
   roleclaim(client)
-
+ scaling1(client)
   logreact()
 
 
