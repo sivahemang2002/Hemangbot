@@ -354,7 +354,7 @@ client.on('message', async message => {
       .setFooter("Only on Yaquta's Prison")
     message.channel.send(Embed4)
   }
-  if (message.content === "!Rules") {
+  if (message.content === "!Rulees") {
     const Embed4 = new Discord.MessageEmbed()
       .setColor(0XC27C0E)
       .setTitle("**Rules**")
