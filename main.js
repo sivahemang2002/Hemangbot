@@ -235,19 +235,7 @@ client.on('message', async message => {
   }
 
   
-  async function replyWithInvite(invites) {
-    let invite = await message.channel.createInvite(
-    {
-      maxAge: 10 * 60 * 1000, // maximum time for the invite, in milliseconds
-      maxUses: 1 // maximum times it can be used
-    },
-    `Requested with command by ${message.author.tag}`
-  )
-  .catch(console.log);
   
-    message.reply(invite ? `Here's your invite: ${invite}` : "There has been an error during the creation of the invite.");
-  }
-
 
 
 
@@ -366,7 +354,15 @@ client.on('message', async message => {
       .setFooter("Only on Yaquta's Prison")
     message.channel.send(Embed4)
   }
-
+  if (message.content === "!Rules") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**Rules**")
+      .setThumbnail("https://imgur.com/pbU176i.png")
+      .setDescription("**Dear <@&811822746937065503>** \n\n\n ** Here are some of the basic rules to be followed in Cyka Blyats** \n\n **-Be kind to one another** \n **-Personal attack by an individual or group against a member of the server is not allowed.** \n **-Bullying a member of the server is not allowed.** \n **-Racism is forbidden on the server.** \n **- Sexism against a person or group is not allowed.** \n **-No Toxic behaviour will be tolerated** \n **-No spamming is allowed** ")
+      .setFooter("Only on Yaquta's Prison")
+    message.channel.send(Embed4)
+  }
 
   
   if (message.channel.id === "712412653338886185") {
