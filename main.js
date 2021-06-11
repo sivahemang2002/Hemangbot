@@ -373,7 +373,16 @@ client.on('message', async message => {
         message.react('🇨');
         message.react('🇩')
       })
-
+      if (message.content === "!info") {
+        const Embed4 = new Discord.MessageEmbed()
+          .setColor(0XC27C0E)
+          .setTitle("**PRISON ONE YEAR ANNIVERSARY**")
+          .setThumbnail("https://imgur.com/zqeOLZC.png")
+          .setDescription("**INFORMATION** \n\n\n\n **<#715340560826630174> is where we'll be notified of new inmates. This channel will remain empty most of the time, so keep track of it, when you can.#is where we'll be notified of new inmates. This channel will remain empty most of the time, so keep track of it, when you can.** \n **The server celebrates its one year birthday on the 20th of May. Like every first birthday, this  too is special. In order to relive all the memories made here, and spend some time together we'll be hosting a GAME NIGHT of the 20th at 10:30pm IST. This server would have never have meant so much had it not been for all of you. So bring along some food and drinks and let's party together!**")
+          
+          .setFooter("Yaquta's Prison")
+        message.channel.send(Embed4)
+      }
   
 
 
