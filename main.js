@@ -359,7 +359,7 @@ client.on('message', async message => {
       .setColor(0XC27C0E)
       .setTitle("**Rules**")
       .setThumbnail("https://imgur.com/pbU176i.png")
-      .setDescription("**Dear <@&811822746937065503>** \n\n\n ** Here are some of the basic rules to be followed in Cyka Blyats** \n\n **-Be kind to one another** \n **-Personal attack by an individual or group against a member of the server is not allowed.** \n **-Bullying a member of the server is not allowed.** \n **-Racism is forbidden on the server.** \n **- Sexism against a person or group is not allowed.** \n **-No Toxic behaviour will be tolerated** \n **-No spamming is allowed** ")
+      .setDescription("**Dear <@&811822746937065503>** \n\n\n ** Here are some of the basic rules to be followed in Cyka Blyats** \n\n **-Be kind to one another** \n **-Personal attack by an individual or group against a member of the server is not allowed.** \n **-Bullying a member of the server is not allowed.** \n **-Racism is forbidden on the server.** \n **-Sexism against a person or group is not allowed.** \n **-No Toxic behaviour will be tolerated** \n **-No spamming is allowed** ")
       .setFooter("Cyka Blyats TM")
     message.channel.send(Embed4)
   }
