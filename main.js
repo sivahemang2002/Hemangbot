@@ -585,7 +585,7 @@ if(messageid)
   let mention2 = message.mentions.members.first()
  var response1 = [mention,mention2]
  console.log(response1)
- if(message.startsWith("Robo") && message.content.includes("Pick"))
+ if(message.content.startsWith("Robo") && message.content.includes("Pick"))
  {
    if(mention && mention2){
     var row1 = Math.floor(Math.random() * ((response1.length) - 1) + 1);
