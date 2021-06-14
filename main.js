@@ -581,9 +581,9 @@ if(messageid)
     var row1 = Math.floor(Math.random() * ((response1.length) - 1) + 1);
     message.channel.send("Hey" + " " + "<@" + message.author + ">" + " " + response1[row1])
   }
-  let mention = message.mentions.members
-  let mention2 = message.mentions.members
- var response1 = ["<@" + mention + ">","<@" + mention2 + ">","<@" + mention2 + ">"]
+  let mention = message.mentions.members()
+  let mention2 = message.mentions.members()
+ var response1 = [ mention , mention2  , mention2  ]
  console.log(response1)
  if(message.content.startsWith("Robo") && message.content.includes("Pick"))
  {
