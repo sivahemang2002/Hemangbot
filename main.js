@@ -584,6 +584,7 @@ if(messageid)
   let mention = message.mentions.members.first()
   let mention2 = message.mentions.members.first()
  var response1 = [mention,mention2]
+ console.log(response1)
  if(message.mentions.has(client.user) && message.content.includes("Pick"))
  {
    if(mention && mention2){
