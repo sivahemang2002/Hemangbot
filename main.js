@@ -589,7 +589,7 @@ if(messageid)
  {
    if(mention && mention2){
     var row1 = Math.floor(Math.random() * ((response1.length) - 1) + 1);
-    message.channel.send("<@" + message.author + ">" + " " + " I pick" + "<@" + response1[row1] + ">")
+    message.channel.send(" I pick" + " " + "<@" + response1[row1] + ">")
   }
    
  }
