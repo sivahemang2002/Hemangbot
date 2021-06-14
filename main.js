@@ -582,7 +582,7 @@ if(messageid)
     message.channel.send("Hey" + " " + "<@" + message.author + ">" + " " + response1[row1])
   }
   let mention = message.mentions.members.first()
-  let mention2 = message.mentions.members.second()
+  let mention2 = message.mentions.members.first()
  var response1 = [mention,mention2]
  if(message.mentions.has(client.user) && message.content.includes("Pick"))
  {
