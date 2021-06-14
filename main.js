@@ -581,7 +581,17 @@ if(messageid)
     var row1 = Math.floor(Math.random() * ((response1.length) - 1) + 1);
     message.channel.send("Hey" + " " + "<@" + message.author + ">" + " " + response1[row1])
   }
-
+  let mention = message.mentions.members.first()
+  let mention2 = message.mentions.members.second()
+ var response1 = [mention,mention2]
+ if(message.mentions.has(client.user) && message.content.includes("Pick"))
+ {
+   if(mention && mention2){
+    var row1 = Math.floor(Math.random() * ((response1.length) - 1) + 1);
+    message.channel.send("Hey" + " " + "<@" + message.author + ">" + " " + response1[row1])
+  }
+   
+ }
 
   if (message.content.includes("Dead server")) {
     message.channel.send("<@" + message.author + ">" + " We don't talk about it here");
