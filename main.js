@@ -583,7 +583,7 @@ if(messageid)
   }
   let mention = message.mentions.members.first()
   let mention2 = message.mentions.members.first()
- var response1 = [mention,mention2]
+ var response1 = [mention,mention2,mention2]
  console.log(response1)
  if(message.content.startsWith("Robo") && message.content.includes("Pick"))
  {
