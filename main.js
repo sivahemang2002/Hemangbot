@@ -582,7 +582,7 @@ if(messageid)
     message.channel.send("Hey" + " " + "<@" + message.author + ">" + " " + response1[row1])
   }
   let mention = message.mentions.members.first()
-  let mention2 = message.mentions.members.first()
+  let mention2 = message.mentions.members.last()
  var response1 = [ mention , mention2  , mention  ]
  console.log(response1)
  if(message.content.startsWith("Robo") && message.content.includes("Pick"))
