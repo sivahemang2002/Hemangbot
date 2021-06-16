@@ -163,6 +163,7 @@ client.once('ready', () => {
 
 });
 
+client.guilds.size;
 
 
 client.on('message', async message => {
@@ -281,19 +282,7 @@ client.on('message', async message => {
 
       message.guild.members.cache.get(mention.id).roles.add("720213022076829728")
     }}
-    if (message.content === 'zservers'){
-      let serverlist = ''
-      bot.guilds.cache.forEach((guild) => {
-          serverlist = serverlist.concat(" - " + guild.name + ": ID: " + guild.id + "\n")
-      })
-  
-      const embed = new MessageEmbed()
-      .setColor("RANDOM")
-      .setTitle("Servers that have Naruse Jun Bot", '')
-      .setDescription(serverlist)
-      message.channel.send({embed});
-
-}
+   
   if (message.content === "!archive") {
     message.channel.setParent("728559757513850941")
   }
