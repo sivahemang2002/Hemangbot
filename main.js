@@ -158,7 +158,7 @@ client.once('ready', () => {
   roleclaim(client)
  scaling1(client)
   logreact()
-
+  client.setActivity(`serving ${client.guilds.cache.size} servers`);
 
 
 });
