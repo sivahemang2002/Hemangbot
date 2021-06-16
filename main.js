@@ -145,7 +145,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
 
 
 });
- 
+client.setActivity(`serving ${client.guilds.cache.size} servers`);
 client.once('ready', () => {
 
   console.log('PrisonBot is online');
@@ -158,7 +158,7 @@ client.once('ready', () => {
   roleclaim(client)
  scaling1(client)
   logreact()
-  client.setActivity(`serving ${client.guilds.cache.size} servers`);
+  
 
 
 });
