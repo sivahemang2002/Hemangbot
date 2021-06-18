@@ -421,7 +421,7 @@ client.on('message', async message => {
       .setColor(0XC27C0E)
       .setTitle("**Birthdays on July**")
       .setThumbnail("https://imgur.com/PBIBQvM.png")
-      .setDescription("**1.Jul-08: ** \n\n **2.Jul-25: Madhu** \n\n **3.Jul-30: Jill ✨" )
+      .setDescription("**1.Jul-08: ** \n\n **2.Jul-25: Madhu** \n\n **3.Jul-30: Jill ✨**" )
     message.channel.send(Embed4)
   }
   if (message.content === "!bday October") {
@@ -455,14 +455,17 @@ client.on('message', async message => {
           .setTitle("**Birthdays on November**")
           .setThumbnail("https://imgur.com/PBIBQvM.png")
           .setDescription("**1.Nov-11: Muskan (Rosy)** \n\n **2.Nov-12: Awais** \n\n **3.Nov-13: Neil** \n\n **4.Nov-14: Ajinkya(junkie)** \n\n **5.Nov-17: Anubhav** \n\n **6.Nov-18: prasanth**\n\n **7.Nov-18: Nihari Reddy**\n\n **8.Nov-25: Mansi**")
-          .setFooter("Yaquta's Prison")}
+          .setFooter("Yaquta's Prison")
+          message.channel.send(Embed4)}
           if (message.content === "!bday December") {
             const Embed4 = new Discord.MessageEmbed()
               .setColor(0XC27C0E)
               .setTitle("**Birthdays on December**")
               .setThumbnail("https://imgur.com/PBIBQvM.png")
               .setDescription("**1.Dec-03: Anoushka** \n\n **2.Dec-04: Lekhika** \n\n **3.Dec-08: Ankit** \n\n **4.Dec-14:Momo ** \n\n **5.Dec-15: Simran** \n\n **6.Dec-17: Ritika**\n\n **7.Dec-26: kanchan**\n\n **8.Dec-26: Manvi (gillette)**")
-              .setFooter("Yaquta's Prison")}
+              .setFooter("Yaquta's Prison")
+              message.channel.send(Embed4)
+            }
   if (message.channel.id === "712412653338886185") {
     let mes = message.content.substr(0);
     let sentence = mes.split("\n");
