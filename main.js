@@ -382,6 +382,15 @@ client.on('message', async message => {
       .setFooter("Yaquta's Prison")
     message.channel.send(Embed4)
   }
+  if (message.content === "!bday March") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**Birthdays on March**")
+      .setThumbnail("https://imgur.com/PBIBQvM.png")
+      .setDescription("**1.Mar-15: Pallavi (Pallu 🧇)** \n\n **2.Mar-16: Harsh \n\n **3.Mar-19: Dr. Arjun ⚕** \n\n **4.Mar-21: Sakshi** \n\n **5.Mar-28: Medha** \n\n **6.Mar-31: Janhavi")
+      .setFooter("Yaquta's Prison")
+    message.channel.send(Embed4)
+  }
   if (message.channel.id === "712412653338886185") {
     let mes = message.content.substr(0);
     let sentence = mes.split("\n");
