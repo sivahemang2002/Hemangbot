@@ -364,8 +364,24 @@ client.on('message', async message => {
       .setFooter("Cyka Blyats TM")
     message.channel.send(Embed4)
   }
-
-  
+  if (message.content === "!bday January") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**Birthdays on January**")
+      .setThumbnail("https://imgur.com/PBIBQvM.png")
+      .setDescription("**1.Jan-01: Allen** \n\n **2.Jan-01: Anika \n\n **3.Jan-14: Shardul👑** \n\n **4.Jan-17:  Shashank(6ix9ine)(fake engineer)** ")
+      .setFooter("Yaquta's Prison")
+    message.channel.send(Embed4)
+  }
+  if (message.content === "!bday February") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**Birthdays on February**")
+      .setThumbnail("https://imgur.com/PBIBQvM.png")
+      .setDescription("**1.Feb-15: Abhinav** \n\n **2.Feb-23: addu 🍗 \n\n **3.Feb-28: Dhvani**")
+      .setFooter("Yaquta's Prison")
+    message.channel.send(Embed4)
+  }
   if (message.channel.id === "712412653338886185") {
     let mes = message.content.substr(0);
     let sentence = mes.split("\n");
