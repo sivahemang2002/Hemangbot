@@ -391,6 +391,78 @@ client.on('message', async message => {
       .setFooter("Yaquta's Prison")
     message.channel.send(Embed4)
   }
+  if (message.content === "!bday April") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**Birthdays on April**")
+      .setThumbnail("https://imgur.com/PBIBQvM.png")
+      .setDescription("**1.Apr-10: Thani MAA (Tandoori Thanima)** \n\n **2.Apr-21: Sana** \n\n **3.Apr-25: Shreekaar** \n\n **4.Apr-26: Divyansh** \n\n **5.Apr-27: fanil** \n\n **6.Apr-27: Janki**")
+      .setFooter("Yaquta's Prison")
+    message.channel.send(Embed4)
+  }
+  if (message.content === "!bday May") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**Birthdays on May**")
+      .setThumbnail("https://imgur.com/PBIBQvM.png")
+      .setDescription("**1.May-12: Savan** \n\n **2.May-21: Sanjana** \n\n **3.May-24: Ansh** \n\n **4.May-26: Vaishnavi** \n\n **5.May-30: yaquta** \n\n **6.May-31: Aaradhan**")
+      .setFooter("Yaquta's Prison")
+    message.channel.send(Embed4)}
+  if (message.content === "!bday June") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**Birthdays on June**")
+      .setThumbnail("https://imgur.com/PBIBQvM.png")
+      .setDescription("**1.Jun-08: Mayank** \n\n **2.Jun-17: Ansh (Joel Dsouza)**" )
+    message.channel.send(Embed4)
+  }
+  if (message.content === "!bday July") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**Birthdays on July**")
+      .setThumbnail("https://imgur.com/PBIBQvM.png")
+      .setDescription("**1.Jul-08: ** \n\n **2.Jul-25: Madhu** \n\n **3.Jul-30: Jill ✨" )
+    message.channel.send(Embed4)
+  }
+  if (message.content === "!bday October") {
+    const Embed4 = new Discord.MessageEmbed()
+      .setColor(0XC27C0E)
+      .setTitle("**Birthdays on October**")
+      .setThumbnail("https://imgur.com/PBIBQvM.png")
+      .setDescription("**1.Oct-03: Rose Jose** \n\n **2.Oct-04: Kunal** \n\n **3.Oct-13: Samhitha (sam)** \n\n **4.Oct-23: Shreya (Mod nahi Mood)** \n\n **5.Oct-24: nora (🌚)** \n\n **6.Oct-26: Shweta**\n\n **7.Oct-29: Siddhi**")
+      .setFooter("Yaquta's Prison")
+    message.channel.send(Embed4)}
+    if (message.content === "!bday August") {
+      const Embed4 = new Discord.MessageEmbed()
+        .setColor(0XC27C0E)
+        .setTitle("**Birthdays on August**")
+        .setThumbnail("https://imgur.com/PBIBQvM.png")
+        .setDescription("**1.Aug-02: Muhsina** \n\n **2.Aug-02: Devesh** \n\n **3.Aug-13: Shreya Tatke (ur local nerd)** \n\n **4.Aug-14: Shiva** \n\n **5.Aug-16: cynu** \n\n **6.Aug-21: Atharva**")
+        .setFooter("Yaquta's Prison")
+      message.channel.send(Embed4)}
+      if (message.content === "!bday September") {
+        const Embed4 = new Discord.MessageEmbed()
+          .setColor(0XC27C0E)
+          .setTitle("**Birthdays on September**")
+          .setThumbnail("https://imgur.com/PBIBQvM.png")
+          .setDescription("**1.Sep-04: Hemang** \n\n **2.Sep-10: Titiksha** \n\n **3.Sep-26: Megha (Megs)** \n\n **4.Sep-30: Akshara** ")
+          .setFooter("Yaquta's Prison")
+        message.channel.send(Embed4)
+      }
+      if (message.content === "!bday November") {
+        const Embed4 = new Discord.MessageEmbed()
+          .setColor(0XC27C0E)
+          .setTitle("**Birthdays on November**")
+          .setThumbnail("https://imgur.com/PBIBQvM.png")
+          .setDescription("**1.Nov-11: Muskan (Rosy)** \n\n **2.Nov-12: Awais** \n\n **3.Nov-13: Neil** \n\n **4.Nov-14: Ajinkya(junkie)** \n\n **5.Nov-17: Anubhav** \n\n **6.Nov-18: prasanth**\n\n **7.Nov-18: Nihari Reddy**\n\n **8.Nov-25: Mansi**")
+          .setFooter("Yaquta's Prison")}
+          if (message.content === "!bday December") {
+            const Embed4 = new Discord.MessageEmbed()
+              .setColor(0XC27C0E)
+              .setTitle("**Birthdays on December**")
+              .setThumbnail("https://imgur.com/PBIBQvM.png")
+              .setDescription("**1.Dec-03: Anoushka** \n\n **2.Dec-04: Lekhika** \n\n **3.Dec-08: Ankit** \n\n **4.Dec-14:Momo ** \n\n **5.Dec-15: Simran** \n\n **6.Dec-17: Ritika**\n\n **7.Dec-26: kanchan**\n\n **8.Dec-26: Manvi (gillette)**")
+              .setFooter("Yaquta's Prison")}
   if (message.channel.id === "712412653338886185") {
     let mes = message.content.substr(0);
     let sentence = mes.split("\n");
