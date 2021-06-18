@@ -421,7 +421,7 @@ client.on('message', async message => {
       .setColor(0XC27C0E)
       .setTitle("**Birthdays on July**")
       .setThumbnail("https://imgur.com/PBIBQvM.png")
-      .setDescription("**1.Jul-08: Mayank** \n\n **2.Jul-25: Madhu** \n\n **3.Jul-30: Jill ✨**" )
+      .setDescription("**1.Jul-08: Shreya** \n\n **2.Jul-25: Madhu** \n\n **3.Jul-30: Jill ✨**" )
     message.channel.send(Embed4)
   }
   if (message.content === "!bday October") {
