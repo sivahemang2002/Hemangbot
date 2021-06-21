@@ -18,7 +18,7 @@ const roleclaim = require('./roleclaim');
 const scaling1 = require('./scaling1')
 const bye1 = require('./bye1');
 const cron = require("cron");
-
+const welcome3 = require('./welcome3');
 const PREFIX = "!"
 new TicTacToe({
   language: 'en',
@@ -158,7 +158,7 @@ client.once('ready', () => {
   roleclaim(client)
  scaling1(client)
   logreact()
-  
+  welcome3(client)
 
 
 });
