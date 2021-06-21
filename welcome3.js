@@ -9,8 +9,7 @@ client.on('guildMemberAdd',(member)=>{
     
     const channel = member.guild.channels.cache.get(channelId)
     if(channel){
-        var roleNamex = member.roles.cache.find(r => r.name === "Blyats")
-        member.roles.add(roleNamex)
+       
          channel.send(message)}
     
 
