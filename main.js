@@ -5,6 +5,7 @@ const { Client } = require('pg')
 const client = new Discord.Client();
 const config = require('./configda.json')
 const welcome1 = require('./welcome1');
+const welcome3 = require('./welcome3');
 const path = require('path')
 const fs = require('fs')
 const firstmessage = require('./firstmessage')
@@ -18,7 +19,7 @@ const roleclaim = require('./roleclaim');
 const scaling1 = require('./scaling1')
 const bye1 = require('./bye1');
 const cron = require("cron");
-const welcome3 = require('./welcome3');
+
 const PREFIX = "!"
 new TicTacToe({
   language: 'en',
@@ -152,13 +153,14 @@ client.once('ready', () => {
 
   welcome(client)
   welcome1(client)
+  welcome3(client)
   scaling(client)
   bye(client)
   bye1(client)
   roleclaim(client)
  scaling1(client)
   logreact()
-  welcome3(client)
+ 
 
 
 });
