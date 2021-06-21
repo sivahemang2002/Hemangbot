@@ -18,6 +18,7 @@ const bye = require('./bye');
 const roleclaim = require('./roleclaim');
 const scaling1 = require('./scaling1')
 const bye1 = require('./bye1');
+const addd = require('./addd.js')
 const cron = require("cron");
 
 const PREFIX = "!"
@@ -160,7 +161,7 @@ client.once('ready', () => {
   roleclaim(client)
  scaling1(client)
   logreact()
- 
+ addd(client)
 
 
 });
