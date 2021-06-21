@@ -8,7 +8,7 @@ client.on('guildMemberAdd',(member)=>{
     const message = "Welcome to the server Cyka Blyat" + " " + "<@" + member + ">" + " " + "\n Read <#852820956396519434> ";
     const channel = member.guild.channels.cache.get(channelId)
     if(channel){
-        member.roles.add(roleNamex)
+        
     channel.send(message)}
     
 
