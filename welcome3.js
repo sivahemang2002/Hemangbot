@@ -1,7 +1,7 @@
 const { Message } = require("discord.js");
 
 module.exports = client => {
-const channelId = "807635969896874015" //welcome channel
+const channelId = "809152418163327049" //welcome channel
 const roleNamex = message.member.roles.cache.find(r => r.id === "811822746937065503")
 client.on('guildMemberAdd',(member)=>{
     console.log(member)
