@@ -1,4 +1,5 @@
-const firstmessage1 = require('./firstmessage1')
+const firstmessage1 = require('./firstmessage1.js')
+
 
 module.exports = (client) => {
   const channelId = '829967221815246884'
@@ -7,23 +8,21 @@ module.exports = (client) => {
     client.emojis.cache.find((emoji) => emoji.name == emojiName)
 
   const emojis = {
-    
-        '📀':'CSK Fan',
-        '🔵':'DC Fan',
-        '🟣':'KKR Fan',
-        '💙':'MI Fan',
-        '🟥':'PK Fan',
-        '🔴':'RCB Fan',
-        '🟠':'SRH Fan',
-        '🎀':'RR Fan'
+    '📀':'CSK Fan',
+    '🔵':'DC Fan',
+    '🟣':'KKR Fan',
+    '💙':'MI Fan',
+    '🟥':'PK Fan',
+    '🔴':'RCB Fan',
+    '🟠':'SRH Fan',
+    '🎀':'RR Fan'
 
 
   }
 
   const reactions = []
 
-  let emojiText = 'IPL Season is back!!!! Select the team which you support'
-  
+  let emojiText = 'IPL Season is back!!!! Select the team which you support.\n\n'
   for (const key in emojis) {
     
     reactions.push(key)
@@ -33,7 +32,7 @@ module.exports = (client) => {
     emojiText += `${key}  ${role}\n`
   }
 
-  firstmessage(client, channelId, emojiText, reactions)
+  firstmessage1(client, channelId, emojiText, reactions)
 
   const handleReaction = (reaction, user, add) => {
     if (user.id === '806539885778829312') {
