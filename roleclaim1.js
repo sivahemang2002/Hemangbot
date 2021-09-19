@@ -8,6 +8,7 @@ module.exports = (client) => {
     client.emojis.cache.find((emoji) => emoji.name == emojiName)
 
   const emojis = {
+    ':green_heart:' : 'IPL Fanatique🏏',
     '📀':'CSK Fan',
     '🔵':'DC Fan',
     '🟣':'KKR Fan',
