@@ -9,6 +9,7 @@ const welcome3 = require('./welcome3');
 const path = require('path')
 const fs = require('fs')
 const firstmessage = require('./firstmessage')
+const firstmessage1 = require('/firstmessage1')
 const pairs = require('./vc.json')
 const fetch = require('node-fetch')
 const querystring = require('querystring')
