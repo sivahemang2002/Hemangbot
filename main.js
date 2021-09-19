@@ -716,7 +716,7 @@ if(messageid)
             .setTitle("Prediction Time")
             .setDescription(" **ITS TIME FOR TODAY'S PREDICTIONS:** \n\n\ **winning team:** \n **1st innings score:** \n\n\ **(please note predictions to be done within the first 5 overs of the particular innings**")
           message.channel.send(Embed2)
-          message.channel.send("<@&830078512270278697 >")
+          message.channel.send("<@&830078512270278697>")
         }}
   if (message.content === "!Rules") {
     const Embed3 = new Discord.MessageEmbed()
