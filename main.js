@@ -708,8 +708,7 @@ if(messageid)
     var ping = Date.now() - message.createdTimestamp;
     message.channel.send("Your ping is `" + `${ping}` + " ms`");
   }
-  const roleNamex = message.member.roles.cache.find(r => r.id === "712754991521333319" || r.id === "811822746937065503")
-      if (roleNamex) {
+  
         if (message.content === "Prediction time") {
           const Embed2 = new Discord.MessageEmbed()
             .setColor(0XFFC300)
